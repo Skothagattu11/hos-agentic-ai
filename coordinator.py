@@ -14,14 +14,14 @@ from health_agents.user_profile import get_user_profile_context
 from health_agents.nutrition_plan_agent import create_personalized_nutrition_plan, NutritionPlanResult
 from health_agents.routine_plan_agent import create_personalized_routine_plan, RoutinePlanResult, RoutinePlanService
 from health_agents.behavior_analysis_agent import analyze_user_behavior, BehaviorAnalysisResult
-from health_agents.memory_manager import MemoryManager
+from health_agents.analysis_history_manager import AnalysisHistoryManager
 
 console = Console()
 
 class HealthCoordinator:
     def __init__(self, profile_id: str, database_url: str = None):
         self.profile_id = profile_id
-        self.memory_manager = MemoryManager(database_url)
+        self.analysis_history = AnalysisHistoryManager(database_url)
         self.routine_service = RoutinePlanService()
 
     def serialize_data(self, obj):
@@ -71,7 +71,7 @@ class HealthCoordinator:
         
         return max(numbers) + 1 if numbers else 1
 
-    def log_input_data(self, user_context, user_memory, memory_context):
+    def log_input_data(self, user_context, latest_analysis, analysis_context):
         """Log input data (user profile and memory context) to input_N.txt in JSON format"""
         try:
             # Prepare input data for logging
@@ -93,16 +93,16 @@ class HealthCoordinator:
                     "archetypes": [self.serialize_data(archetype) for archetype in user_context.archetypes],
                     "biomarkers": [self.serialize_data(biomarker) for biomarker in user_context.biomarkers]
                 },
-                "memory_context": {
-                    "has_memory": user_memory is not None,
-                    "total_analyses": user_memory.total_analyses if user_memory else 0,
-                    "last_analysis_date": user_memory.last_analysis_date.isoformat() if user_memory and user_memory.last_analysis_date else None,
-                    "user_preferences": user_memory.user_preferences if user_memory else {},
-                    "health_goals": user_memory.health_goals if user_memory else {},
-                    "dietary_restrictions": user_memory.dietary_restrictions if user_memory else {},
-                    "lifestyle_context": user_memory.lifestyle_context if user_memory else {},
-                    "medical_conditions": user_memory.medical_conditions if user_memory else {},
-                    "formatted_context": memory_context
+                "analysis_context": {
+                    "has_previous_analysis": latest_analysis is not None,
+                    "previous_analysis_date": latest_analysis.analysis_date.isoformat() if latest_analysis else None,
+                    "previous_archetype": latest_analysis.archetype if latest_analysis else None,
+                    "user_preferences": latest_analysis.user_preferences if latest_analysis else {},
+                    "health_goals": latest_analysis.health_goals if latest_analysis else {},
+                    "dietary_restrictions": latest_analysis.dietary_restrictions if latest_analysis else {},
+                    "lifestyle_context": latest_analysis.lifestyle_context if latest_analysis else {},
+                    "medical_conditions": latest_analysis.medical_conditions if latest_analysis else {},
+                    "formatted_context": analysis_context
                 }
             }
             
@@ -328,56 +328,44 @@ class HealthCoordinator:
         with trace("Health Analysis Workflow"):
             console.print(f"[bold cyan]🏥 Starting Comprehensive Health Analysis for Profile: {self.profile_id}[/bold cyan]")
             
-            # Step 0: Initialize memory and retrieve user memory
-            console.print("[cyan]🧠 Retrieving user memory and context...[/cyan]")
+            # Step 0: Initialize analysis history and retrieve previous analysis
+            console.print("[cyan]🧠 Retrieving analysis history and context...[/cyan]")
             try:
-                await self.memory_manager.connect()
-                user_memory = await self.memory_manager.get_user_memory(self.profile_id)
+                await self.analysis_history.connect()
+                latest_analysis = await self.analysis_history.get_latest_analysis(self.profile_id)
+                analysis_count = await self.analysis_history.get_analysis_count(self.profile_id)
                 
                 # Determine data fetching strategy and analysis type
-                if user_memory and user_memory.total_analyses > 0:
+                if latest_analysis and analysis_count > 0:
                     # Follow-up mode: 1 day of data
                     data_days = 1
                     analysis_type = "Follow-up Analysis"
                     has_previous_analysis = True
                     console.print(Panel(
-                        f"[bold green]✅ Memory Retrieved Successfully[/bold green]\n"
-                        f"[yellow]Previous Analyses:[/yellow] {user_memory.total_analyses}\n"
-                        f"[yellow]Last Analysis:[/yellow] {user_memory.last_analysis_date}\n"
-                        f"[yellow]Has Nutrition Plan:[/yellow] {'Yes' if user_memory.last_nutrition_plan else 'No'}\n"
-                        f"[yellow]Has Routine Plan:[/yellow] {'Yes' if user_memory.last_routine_plan else 'No'}\n"
-                        f"[yellow]User Preferences:[/yellow] {len(user_memory.user_preferences)} items\n"
-                        f"[yellow]Health Goals:[/yellow] {len(user_memory.health_goals)} items\n"
+                        f"[bold green]✅ Analysis History Retrieved[/bold green]\n"
+                        f"[yellow]Previous Analyses:[/yellow] {analysis_count}\n"
+                        f"[yellow]Last Analysis:[/yellow] {latest_analysis.analysis_date}\n"
+                        f"[yellow]Last Archetype:[/yellow] {latest_analysis.archetype}\n"
+                        f"[yellow]Has Nutrition Plan:[/yellow] {'Yes' if latest_analysis.nutrition_plan else 'No'}\n"
+                        f"[yellow]Has Routine Plan:[/yellow] {'Yes' if latest_analysis.routine_plan else 'No'}\n"
                         f"[yellow]Data Fetching:[/yellow] {data_days} day(s) (Follow-up mode)",
-                        title="🧠 User Memory Summary"
+                        title="🧠 Analysis History Summary"
                     ))
                 else:
                     # Initial mode: 7 days of data
                     data_days = days
                     analysis_type = "Initial Analysis"
                     has_previous_analysis = False
-                    if not user_memory:
-                        console.print("[yellow]⚠️ No previous memory found. Creating new memory record...[/yellow]")
-                        await self.memory_manager.create_user_memory(
-                            self.profile_id,
-                            user_preferences={},
-                            health_goals={},
-                            dietary_restrictions={},
-                            lifestyle_context={},
-                            medical_conditions={}
-                        )
-                        user_memory = await self.memory_manager.get_user_memory(self.profile_id)
-                    
                     console.print(Panel(
-                        f"[bold green]✅ New User Setup Complete[/bold green]\n"
+                        f"[bold green]✅ New User Analysis Setup[/bold green]\n"
                         f"[yellow]Analysis Type:[/yellow] {analysis_type}\n"
                         f"[yellow]Data Fetching:[/yellow] {data_days} day(s) (Complete profile mode)",
-                        title="🧠 User Memory Summary"
+                        title="🧠 Analysis History Summary"
                     ))
                 
             except Exception as e:
-                console.print(f"[bold red]❌ Error retrieving user memory: {str(e)}[/bold red]")
-                user_memory = None
+                console.print(f"[bold red]❌ Error retrieving analysis history: {str(e)}[/bold red]")
+                latest_analysis = None
                 data_days = days
                 analysis_type = "Initial Analysis"
                 has_previous_analysis = False
@@ -406,25 +394,25 @@ class HealthCoordinator:
             # Log input data (user profile and memory context)
             console.print("[cyan]📝 Logging input data...[/cyan]")
             try:
-                # Format memory context for analysis
-                memory_context = ""
+                # Format analysis context for analysis
+                analysis_context = ""
                 previous_analysis = {}
-                if user_memory:
-                    memory_context = self.memory_manager.format_memory_context(user_memory)
+                if latest_analysis:
+                    analysis_context = f"Previous analysis from {latest_analysis.analysis_date}: {latest_analysis.archetype} archetype"
                     if has_previous_analysis:
-                        console.print("[dim]📝 Including previous memory context for follow-up analysis...[/dim]")
+                        console.print("[dim]📝 Including previous analysis context for follow-up analysis...[/dim]")
                         # Extract previous analysis data
-                        if user_memory.last_behavior_analysis:
-                            previous_analysis["behavior_analysis"] = user_memory.last_behavior_analysis
+                        if latest_analysis.behavior_analysis:
+                            previous_analysis["behavior_analysis"] = latest_analysis.behavior_analysis
                     else:
                         console.print("[dim]📝 Initial analysis - no previous context available...[/dim]")
                 
-                # Log input data before analysis
-                self.log_input_data(user_context, user_memory, memory_context)
+                # Log input data before analysis  
+                self.log_input_data(user_context, latest_analysis, analysis_context)
                 
             except Exception as e:
                 console.print(f"[red]⚠️ Error logging input data: {str(e)}[/red]")
-                memory_context = ""
+                analysis_context = ""
                 previous_analysis = {}
 
             # Step 2: Run comprehensive behavior analysis
@@ -435,7 +423,7 @@ class HealthCoordinator:
                     previous_behavior_data = previous_analysis.get("behavior_analysis") if has_previous_analysis else None
                     behavior_analysis = await analyze_user_behavior(
                         user_context, 
-                        memory_context, 
+                        analysis_context, 
                         previous_behavior_data
                     )
                 
@@ -444,10 +432,7 @@ class HealthCoordinator:
                 # Display the behavior analysis results
                 self.display_behavior_analysis(behavior_analysis)
                 
-                # Update memory with behavior analysis result
-                if user_memory:
-                    await self.memory_manager.update_behavior_analysis(self.profile_id, behavior_analysis)
-                    console.print("[dim]💾 Behavior analysis saved to memory...[/dim]")
+                # Note: Behavior analysis will be saved to analysis history at the end
                 
             except Exception as e:
                 console.print(f"[bold red]❌ Error during behavior analysis: {str(e)}[/bold red]")
@@ -464,10 +449,7 @@ class HealthCoordinator:
                 # Display the nutrition plan
                 self.display_nutrition_plan(nutrition_plan)
                 
-                # Update memory with nutrition plan
-                if user_memory:
-                    await self.memory_manager.update_nutrition_plan(self.profile_id, nutrition_plan)
-                    console.print("[dim]💾 Nutrition plan saved to memory...[/dim]")
+                # Note: Nutrition plan will be saved to analysis history at the end
                 
             except Exception as e:
                 console.print(f"[bold red]❌ Error creating nutrition plan: {str(e)}[/bold red]")
@@ -484,31 +466,28 @@ class HealthCoordinator:
                 # Display the routine plan
                 self.display_routine_plan(routine_plan, selected_archetype)
                 
-                # Update memory with routine plan and archetype
-                if user_memory:
-                    await self.memory_manager.update_archetype_routine_plan(self.profile_id, selected_archetype, routine_plan)
-                    console.print("[dim]💾 Routine plan and archetype saved to memory...[/dim]")
+                # Note: Routine plan will be saved to analysis history at the end
                 
             except Exception as e:
                 console.print(f"[bold red]❌ Error creating routine plan: {str(e)}[/bold red]")
                 routine_plan = None
             
-            # Step 6: Update memory with comprehensive results
-            console.print("[cyan]💾 Updating user memory with analysis results...[/cyan]")
+            # Step 6: Create analysis history record
+            console.print("[cyan]💾 Creating analysis history record...[/cyan]")
             try:
-                # Update memory with analysis results
-                await self.memory_manager.update_analysis_results(
+                # Create comprehensive analysis record
+                analysis_id = await self.analysis_history.create_analysis_record(
                     self.profile_id,
-                    user_context, # Changed to user_context
+                    selected_archetype,
+                    behavior_analysis,
                     nutrition_plan,
                     routine_plan,
-                    behavior_analysis,
-                    selected_archetype
+                    user_context
                 )
-                console.print("[green]✅ Memory updated successfully[/green]")
+                console.print(f"[green]✅ Analysis record created: {analysis_id}[/green]")
                 
             except Exception as e:
-                console.print(f"[red]⚠️ Error updating memory: {str(e)}[/red]")
+                console.print(f"[red]⚠️ Error creating analysis record: {str(e)}[/red]")
             
             # Log complete output data (analysis + behavior analysis + nutrition plan + routine plan)
             console.print("[cyan]📝 Logging complete output data...[/cyan]")
@@ -533,6 +512,6 @@ class HealthCoordinator:
             
             # Cleanup
             try:
-                await self.memory_manager.disconnect()
+                await self.analysis_history.disconnect()
             except Exception as e:
                 console.print(f"[dim]⚠️ Warning: Error disconnecting from database: {str(e)}[/dim]")

@@ -221,8 +221,10 @@ class SupabaseAsyncPGAdapter:
         for i, arg in enumerate(args, 1):
             placeholder = f"${i}"
             if isinstance(arg, str):
+                # Clean string args to remove null terminators
+                cleaned_arg = arg.rstrip('\x00').strip()
                 # Escape single quotes in strings
-                escaped_arg = arg.replace("'", "''")
+                escaped_arg = cleaned_arg.replace("'", "''")
                 processed_query = processed_query.replace(placeholder, f"'{escaped_arg}'")
             elif hasattr(arg, 'isoformat'):  # datetime object
                 # Format datetime for PostgreSQL compatibility
@@ -400,8 +402,11 @@ class SupabaseAsyncPGAdapter:
     def _create_memory_insert_data(self, args: tuple) -> Dict[str, Any]:
         """Create data dict for memory table INSERT"""
         if len(args) >= 6:
+            # Clean profile_id to remove any null terminators or unwanted characters
+            profile_id = str(args[0]).rstrip('\x00').strip() if args[0] else ''
+            
             return {
-                'profile_id': args[0],
+                'profile_id': profile_id,
                 'user_preferences': json.loads(args[1]) if isinstance(args[1], str) else args[1],
                 'health_goals': json.loads(args[2]) if isinstance(args[2], str) else args[2],
                 'dietary_restrictions': json.loads(args[3]) if isinstance(args[3], str) else args[3],

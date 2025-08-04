@@ -77,15 +77,9 @@ class MemoryManager:
             await self.connect()
         
         try:
+            # Use a simpler query that works better with Supabase
             query = """
-                SELECT profile_id, user_preferences, health_goals, dietary_restrictions, 
-                       lifestyle_context, medical_conditions, last_analysis_result, 
-                       analysis_insights, last_nutrition_plan, last_routine_plan, 
-                       last_behavior_analysis, transformation_seeker_plan, systematic_improver_plan,
-                       peak_performer_plan, resilience_rebuilder_plan, connected_explorer_plan,
-                       foundation_builder_plan, last_archetype, health_trends, improvement_areas, 
-                       success_patterns, total_analyses, last_analysis_date, nutrition_plan_date, 
-                       routine_plan_date, behavior_analysis_date
+                SELECT *
                 FROM memory 
                 WHERE profile_id = $1
             """
@@ -139,21 +133,44 @@ class MemoryManager:
             await self.connect()
         
         try:
-            query = """
-                INSERT INTO memory (profile_id, user_preferences, health_goals, 
-                                  dietary_restrictions, lifestyle_context, medical_conditions)
-                VALUES ($1, $2, $3, $4, $5, $6)
-                ON CONFLICT (profile_id) DO NOTHING
+            # First try to update existing record
+            update_query = """
+                UPDATE memory 
+                SET user_preferences = $2,
+                    health_goals = $3,
+                    dietary_restrictions = $4,
+                    lifestyle_context = $5,
+                    medical_conditions = $6,
+                    updated_at = NOW()
+                WHERE profile_id = $1
             """
             
-            await self.connection.execute(
-                query, profile_id,
+            result = await self.connection.execute(
+                update_query, profile_id,
                 self._serialize_for_json(user_preferences or {}),
                 self._serialize_for_json(health_goals or {}),
                 self._serialize_for_json(dietary_restrictions or {}),
                 self._serialize_for_json(lifestyle_context or {}),
                 self._serialize_for_json(medical_conditions or {})
             )
+            
+            # If no rows were updated, insert new record
+            if result == "UPDATE 0":
+                insert_query = """
+                    INSERT INTO memory (profile_id, user_preferences, health_goals, 
+                                      dietary_restrictions, lifestyle_context, medical_conditions)
+                    VALUES ($1, $2, $3, $4, $5, $6)
+                """
+                
+                await self.connection.execute(
+                    insert_query, profile_id,
+                    self._serialize_for_json(user_preferences or {}),
+                    self._serialize_for_json(health_goals or {}),
+                    self._serialize_for_json(dietary_restrictions or {}),
+                    self._serialize_for_json(lifestyle_context or {}),
+                    self._serialize_for_json(medical_conditions or {})
+                )
+            
             return True
             
         except Exception as e:
@@ -549,17 +566,48 @@ class MemoryManager:
 
     async def ensure_user_memory_exists(self, profile_id: str) -> bool:
         """Ensure a memory record exists for the user, create if not"""
-        existing_memory = await self.get_user_memory(profile_id)
-        if not existing_memory:
-            return await self.create_user_memory(
-                profile_id,
-                user_preferences={},
-                health_goals={},
-                dietary_restrictions={},
-                lifestyle_context={},
-                medical_conditions={}
+        if not self.connection:
+            await self.connect()
+        
+        try:
+            # First check if record exists using a simple query that works with Supabase
+            try:
+                existing = await self.connection.fetchrow(
+                    "SELECT id FROM memory WHERE profile_id = $1", profile_id
+                )
+                
+                if existing:
+                    print(f"[MEMORY] Record already exists for profile_id: {profile_id}")
+                    return True
+            except Exception as select_error:
+                print(f"[MEMORY] SELECT check failed: {select_error}")
+                # Continue to INSERT, handle constraint error below
+            
+            # If no record exists, create one
+            query = """
+                INSERT INTO memory (profile_id, user_preferences, health_goals, 
+                                  dietary_restrictions, lifestyle_context, medical_conditions)
+                VALUES ($1, $2, $3, $4, $5, $6)
+            """
+            
+            await self.connection.execute(
+                query, profile_id,
+                self._serialize_for_json({}),
+                self._serialize_for_json({}),
+                self._serialize_for_json({}),
+                self._serialize_for_json({}),
+                self._serialize_for_json({})
             )
-        return True
+            print(f"[MEMORY] Created new record for profile_id: {profile_id}")
+            return True
+            
+        except Exception as e:
+            print(f"Error ensuring user memory exists: {e}")
+            # If it's a duplicate key error, the record exists, which is fine
+            if "duplicate key" in str(e).lower() or "unique constraint" in str(e).lower():
+                print(f"[MEMORY] Record already exists (from constraint error)")
+                return True
+            return False
 
     async def update_analysis_results(self, profile_id: str, 
                                     user_context = None,

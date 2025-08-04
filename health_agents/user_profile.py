@@ -81,6 +81,7 @@ class UserProfileService:
         if self.use_api:
             try:
                 print(f"[API] Fetching scores for {profile_id}")
+                print(f"[API DEBUG] Date range: {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}")
                 api_data = await self.api_client.get_scores(profile_id, start_date, end_date)
                 scores = self.data_mapper.map_scores(api_data)
                 print(f"[API] Retrieved {len(scores)} scores")
@@ -92,14 +93,14 @@ class UserProfileService:
         try:
             conn = await self.get_db_connection()
             
-            # Use created_at for filtering since score_date_time is unreliable (has old dates and nulls)
+            # Use score_date_time for filtering since it's now been corrected
             query = """
                 SELECT id, profile_id, type, score, data, score_date_time, created_at, updated_at
                 FROM scores 
                 WHERE profile_id = $1 
-                AND created_at >= $2 
-                AND created_at <= $3
-                ORDER BY created_at DESC
+                AND score_date_time >= $2 
+                AND score_date_time <= $3
+                ORDER BY score_date_time DESC
             """
             
             # Pass datetime objects directly (AsyncPG expects datetime, not strings)
