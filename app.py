@@ -150,7 +150,7 @@ async def start_analysis(request: AnalysisRequest):
         try:
             logger.info("=== STARTING SUBPROCESS ===")
             # Start the Python analysis process with comprehensive Unicode handling
-            cmd = [sys.executable, "main_api.py", request.user_id, request.archetype]
+            cmd = [sys.executable, "main.py", request.user_id, request.archetype]
             logger.info(f"Command: {' '.join(cmd)}")
             logger.info(f"Working directory: {os.getcwd()}")
             

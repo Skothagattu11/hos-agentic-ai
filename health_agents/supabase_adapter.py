@@ -108,6 +108,9 @@ class SupabaseAsyncPGAdapter:
                     else:
                         print(f"[MEMORY] {field}: {str(value)[:50]}{'...' if len(str(value)) > 50 else ''}")
                 
+                # Debug WHERE clause
+                print(f"[MEMORY] WHERE {parsed_query.get('where_column')} = {parsed_query.get('where_value')}")
+                
                 result = self.client.table(parsed_query['table']).update(update_data).eq(
                     parsed_query['where_column'], parsed_query['where_value']
                 ).execute()
@@ -140,6 +143,10 @@ class SupabaseAsyncPGAdapter:
         try:
             parsed_query = self._parse_query(query, args)
             self._validate_query(parsed_query, 'SELECT')
+            
+            # Handle COUNT queries specially
+            if 'COUNT' in query.upper():
+                return await self._handle_count_query(parsed_query, args)
             
             # Build Supabase query
             supabase_query = self.client.table(parsed_query['table']).select(parsed_query['columns'])
@@ -182,10 +189,14 @@ class SupabaseAsyncPGAdapter:
 
     async def fetchrow(self, query: str, *args) -> Optional[Dict[str, Any]]:
         """
-        Fetch single row (SELECT queries)
+        Fetch single row (SELECT queries or INSERT with RETURNING)
         Returns dictionary or None like asyncpg
         """
         try:
+            # Handle INSERT with RETURNING specially
+            if 'INSERT' in query.upper() and 'RETURNING' in query.upper():
+                return await self._handle_insert_returning(query, args)
+            
             rows = await self.fetch(query, *args)
             return rows[0] if rows else None
         except Exception as e:
@@ -248,8 +259,11 @@ class SupabaseAsyncPGAdapter:
                 table_end = query.find(' ', table_match)
             result['table'] = query[table_match:table_end].strip()
             
+            # For analysis_memory table INSERTs, create data dict from args
+            if result['table'] == 'analysis_memory':
+                result['data'] = self._create_analysis_memory_insert_data(args)
             # For memory table INSERTs, create data dict from args
-            if result['table'] == 'memory':
+            elif result['table'] == 'memory':
                 result['data'] = self._create_memory_insert_data(args)
             
         # Parse UPDATE queries  
@@ -261,17 +275,29 @@ class SupabaseAsyncPGAdapter:
             table_end = query.find(' SET', table_start)
             result['table'] = query[table_start:table_end].strip()
             
-            # Extract WHERE clause
+            # Extract WHERE clause with parameter replacement
             where_pos = query_upper.find('WHERE ')
             if where_pos != -1:
                 where_clause = query[where_pos + 6:].strip()
                 if '=' in where_clause:
                     where_parts = where_clause.split('=')
                     result['where_column'] = where_parts[0].strip()
-                    result['where_value'] = where_parts[1].strip().replace("'", "")
+                    where_value_raw = where_parts[1].strip()
+                    
+                    # Handle parameter placeholders in WHERE clause
+                    if where_value_raw.startswith('$'):
+                        param_num = int(where_value_raw[1:])
+                        if param_num <= len(args):
+                            result['where_value'] = args[param_num - 1]
+                        else:
+                            result['where_value'] = where_value_raw.replace("'", "")
+                    else:
+                        result['where_value'] = where_value_raw.replace("'", "")
             
-            # For memory table UPDATEs, create data dict from query
-            if result['table'] == 'memory':
+            # For analysis_memory and memory table UPDATEs, create data dict from query
+            if result['table'] == 'analysis_memory':
+                result['data'] = self._create_analysis_memory_update_data(query, args)
+            elif result['table'] == 'memory':
                 result['data'] = self._create_memory_update_data(query, args)
                 
         # Parse SELECT queries
@@ -324,23 +350,28 @@ class SupabaseAsyncPGAdapter:
             where_clause = query[where_start:where_end].strip()
             result['where_conditions'] = self._parse_where_clause(where_clause)
         
-        # Extract ORDER BY
+        # Extract ORDER BY - Robust parsing for multi-line queries
         order_pos = query_upper.find(' ORDER BY ')
         if order_pos != -1:
+            # Get everything after ORDER BY
             order_start = order_pos + 10  # Skip past " ORDER BY "
             order_end = self._find_next_keyword_pos(query_upper, order_start, [' LIMIT ', ' GROUP BY '])
             order_clause = query[order_start:order_end].strip()
             
-            # Parse ORDER BY clause
-            if 'DESC' in order_clause.upper():
+            # Clean the order clause - remove newlines and extra spaces
+            order_clause = ' '.join(order_clause.split())
+            
+            # Parse ORDER BY clause - Improved parsing
+            if order_clause:
+                # Check for DESC/ASC
+                is_desc = 'DESC' in order_clause.upper()
+                
+                # Extract column name by removing DESC/ASC
+                column_name = order_clause.upper().replace(' DESC', '').replace(' ASC', '').strip()
+                
                 result['order_by'] = {
-                    'column': order_clause.replace(' DESC', '').replace(' desc', '').strip(),
-                    'desc': True
-                }
-            else:
-                result['order_by'] = {
-                    'column': order_clause.replace(' ASC', '').replace(' asc', '').strip(),
-                    'desc': False
+                    'column': column_name.lower(),  # Convert back to lowercase
+                    'desc': is_desc
                 }
         
         # Extract LIMIT
@@ -399,6 +430,23 @@ class SupabaseAsyncPGAdapter:
         
         return conditions
 
+    def _create_analysis_memory_insert_data(self, args: tuple) -> Dict[str, Any]:
+        """Create data dict for analysis_memory table INSERT"""
+        if len(args) >= 7:
+            # Clean profile_id to remove any null terminators or unwanted characters
+            profile_id = str(args[0]).rstrip('\x00').strip() if args[0] else ''
+            
+            return {
+                'profile_id': profile_id,
+                'analysis_type': args[1],
+                'archetype': args[2],
+                'previous_analysis_id': args[3] if args[3] else None,
+                'behavior_analysis': json.loads(args[4]) if args[4] and isinstance(args[4], str) else args[4],
+                'nutrition_plan': json.loads(args[5]) if args[5] and isinstance(args[5], str) else args[5],
+                'routine_plan': json.loads(args[6]) if args[6] and isinstance(args[6], str) else args[6]
+            }
+        return {}
+
     def _create_memory_insert_data(self, args: tuple) -> Dict[str, Any]:
         """Create data dict for memory table INSERT"""
         if len(args) >= 6:
@@ -414,6 +462,55 @@ class SupabaseAsyncPGAdapter:
                 'medical_conditions': json.loads(args[5]) if isinstance(args[5], str) else args[5]
             }
         return {}
+
+    def _create_analysis_memory_update_data(self, query: str, args: tuple) -> Dict[str, Any]:
+        """Create data dict for analysis_memory table UPDATE"""
+        import json
+        from datetime import datetime
+        
+        data = {}
+        
+        # Parse SET clause
+        set_pos = query.upper().find(' SET ') + 5
+        where_pos = query.upper().find(' WHERE ')
+        if where_pos == -1:
+            where_pos = len(query)
+            
+        set_clause = query[set_pos:where_pos].strip()
+        
+        # Simple parsing for analysis_memory UPDATE - handle common patterns
+        assignments = [assign.strip() for assign in set_clause.split(',')]
+        
+        for assignment in assignments:
+            if '=' not in assignment:
+                continue
+                
+            field_part, value_part = assignment.split('=', 1)
+            field_name = field_part.strip()
+            value_part = value_part.strip()
+            
+            # Handle parameter placeholders like $1, $2
+            if value_part.startswith('$'):
+                param_num = int(value_part[1:])
+                if param_num <= len(args):
+                    raw_value = args[param_num - 1]
+                    # Handle JSON fields
+                    if field_name in ['engagement_metrics', 'performance_metrics', 'behavior_analysis', 'nutrition_plan', 'routine_plan']:
+                        if isinstance(raw_value, str):
+                            try:
+                                data[field_name] = json.loads(raw_value)
+                            except json.JSONDecodeError:
+                                data[field_name] = raw_value
+                        else:
+                            data[field_name] = raw_value
+                    else:
+                        data[field_name] = raw_value
+                        
+            elif value_part.upper() == 'NOW()':
+                # Special case for NOW() function
+                data[field_name] = datetime.now().isoformat()
+        
+        return data
 
     def _create_memory_update_data(self, query: str, args: tuple) -> Dict[str, Any]:
         """Create data dict for memory table UPDATE with generic parsing and JSON handling"""
@@ -531,6 +628,56 @@ class SupabaseAsyncPGAdapter:
         
         if parsed_query['operation'] in ['SELECT', 'UPDATE', 'DELETE'] and not parsed_query.get('table'):
             raise ValueError(f"{parsed_query['operation']} query missing table name")
+    
+    async def _handle_count_query(self, parsed_query: Dict[str, Any], args: tuple) -> List[Dict[str, Any]]:
+        """Handle COUNT queries using Supabase's count parameter"""
+        try:
+            # Use Supabase's count functionality
+            supabase_query = self.client.table(parsed_query['table']).select('*', count='exact', head=True)
+            
+            # Apply WHERE conditions
+            if parsed_query.get('where_conditions'):
+                for condition in parsed_query['where_conditions']:
+                    column = condition['column']
+                    operator = condition['operator']
+                    value = condition['value']
+                    
+                    if operator == 'eq':
+                        supabase_query = supabase_query.eq(column, value)
+                    elif operator == 'gte':
+                        supabase_query = supabase_query.gte(column, value)
+                    elif operator == 'lte':
+                        supabase_query = supabase_query.lte(column, value)
+            
+            # Execute query
+            result = supabase_query.execute()
+            count_value = result.count if result.count is not None else 0
+            
+            # Return in format expected by fetchval
+            return [{"count": count_value}]
+            
+        except Exception as e:
+            print(f"[ERROR] Count query failed: {e}")
+            return [{"count": 0}]
+    
+    async def _handle_insert_returning(self, query: str, args: tuple) -> Optional[Dict[str, Any]]:
+        """Handle INSERT with RETURNING using Supabase's correct insert pattern"""
+        try:
+            # Parse the INSERT query
+            parsed_query = self._parse_query(query, args)
+            
+            if parsed_query['operation'] != 'INSERT':
+                raise ValueError(f"Expected INSERT query, got {parsed_query['operation']}")
+            
+            # Use the correct Supabase client pattern for insert with return
+            result = self.client.table(parsed_query['table']).insert(parsed_query['data']).execute()
+            
+            # Return the first inserted record
+            return result.data[0] if result.data else None
+            
+        except Exception as e:
+            print(f"[ERROR] INSERT RETURNING failed: {e}")
+            raise
     
     def _log_query_debug(self, query: str, args: tuple, parsed_query: Dict[str, Any] = None) -> None:
         """Enhanced debug logging for query issues"""

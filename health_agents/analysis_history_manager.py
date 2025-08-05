@@ -69,41 +69,37 @@ class AnalysisHistoryManager:
             await self.connect()
         
         try:
-            query = """
-                SELECT *
-                FROM analysis_memory 
-                WHERE profile_id = $1 
-                ORDER BY analysis_date DESC 
-                LIMIT 1
-            """
+            # Use direct Supabase client instead of broken adapter
+            result = self.connection.client.table('analysis_memory').select('*').eq('profile_id', profile_id).order('analysis_date', desc=True).limit(1).execute()
             
-            row = await self.connection.fetchrow(query, profile_id)
+            if not result.data:
+                return None
+                
+            row = result.data[0]
             
-            if row:
-                return AnalysisRecord(
-                    id=str(row['id']),
-                    profile_id=row['profile_id'],
-                    analysis_date=row['analysis_date'],
-                    analysis_type=row['analysis_type'],
-                    archetype=row['archetype'],
-                    previous_analysis_id=str(row['previous_analysis_id']) if row['previous_analysis_id'] else None,
-                    behavior_analysis=row['behavior_analysis'] or {},
-                    nutrition_plan=row['nutrition_plan'] or {},
-                    routine_plan=row['routine_plan'] or {},
-                    user_preferences=row['user_preferences'] or {},
-                    health_goals=row['health_goals'] or {},
-                    dietary_restrictions=row['dietary_restrictions'] or {},
-                    lifestyle_context=row['lifestyle_context'] or {},
-                    medical_conditions=row['medical_conditions'] or {},
-                    analysis_insights=row['analysis_insights'] or {},
-                    health_trends=row['health_trends'] or {},
-                    improvement_areas=row['improvement_areas'] or {},
-                    success_patterns=row['success_patterns'] or {},
-                    engagement_metrics=row['engagement_metrics'] or {},
-                    performance_metrics=row['performance_metrics'] or {},
-                    extras=row['extras'] or {}
-                )
-            return None
+            return AnalysisRecord(
+                id=str(row['id']),
+                profile_id=row['profile_id'],
+                analysis_date=row['analysis_date'],
+                analysis_type=row['analysis_type'],
+                archetype=row['archetype'],
+                previous_analysis_id=str(row['previous_analysis_id']) if row['previous_analysis_id'] else None,
+                behavior_analysis=row['behavior_analysis'] or {},
+                nutrition_plan=row['nutrition_plan'] or {},
+                routine_plan=row['routine_plan'] or {},
+                user_preferences=row['user_preferences'] or {},
+                health_goals=row['health_goals'] or {},
+                dietary_restrictions=row['dietary_restrictions'] or {},
+                lifestyle_context=row['lifestyle_context'] or {},
+                medical_conditions=row['medical_conditions'] or {},
+                analysis_insights=row['analysis_insights'] or {},
+                health_trends=row['health_trends'] or {},
+                improvement_areas=row['improvement_areas'] or {},
+                success_patterns=row['success_patterns'] or {},
+                engagement_metrics=row['engagement_metrics'] or {},
+                performance_metrics=row['performance_metrics'] or {},
+                extras=row['extras'] or {}
+            )
             
         except Exception as e:
             print(f"Error retrieving latest analysis: {e}")
@@ -133,22 +129,20 @@ class AnalysisHistoryManager:
             nutrition_json = self._convert_nutrition_plan(nutrition_plan) if nutrition_plan else None
             routine_json = self._convert_routine_plan(routine_plan) if routine_plan else None
             
-            query = """
-                INSERT INTO analysis_memory (
-                    profile_id, analysis_type, archetype, previous_analysis_id,
-                    behavior_analysis, nutrition_plan, routine_plan
-                ) VALUES ($1, $2, $3, $4, $5, $6, $7)
-                RETURNING id
-            """
+            # Use direct Supabase client instead of broken adapter
+            data = {
+                'profile_id': profile_id,
+                'analysis_type': analysis_type,
+                'archetype': archetype,
+                'previous_analysis_id': previous_analysis_id,
+                'behavior_analysis': behavior_json,
+                'nutrition_plan': nutrition_json,
+                'routine_plan': routine_json
+            }
             
-            result = await self.connection.fetchrow(
-                query, profile_id, analysis_type, archetype, previous_analysis_id,
-                self._serialize_for_json(behavior_json) if behavior_json else None,
-                self._serialize_for_json(nutrition_json) if nutrition_json else None,
-                self._serialize_for_json(routine_json) if routine_json else None
-            )
+            result = self.connection.client.table('analysis_memory').insert(data).execute()
             
-            analysis_id = str(result['id'])
+            analysis_id = str(result.data[0]['id'])
             print(f"[ANALYSIS] Created new analysis record: {analysis_id}")
             return analysis_id
             
@@ -208,11 +202,9 @@ class AnalysisHistoryManager:
             await self.connect()
         
         try:
-            result = await self.connection.fetchval(
-                "SELECT COUNT(*) FROM analysis_memory WHERE profile_id = $1", 
-                profile_id
-            )
-            return result or 0
+            # Use direct Supabase client instead of broken adapter
+            result = self.connection.client.table('analysis_memory').select('*', count='exact', head=True).eq('profile_id', profile_id).execute()
+            return result.count or 0
         except Exception as e:
             print(f"Error getting analysis count: {e}")
             return 0
@@ -223,13 +215,12 @@ class AnalysisHistoryManager:
             await self.connect()
         
         try:
-            query = """
-                UPDATE analysis_memory 
-                SET engagement_metrics = $2, updated_at = NOW()
-                WHERE id = $1
-            """
+            # Use direct Supabase client instead of broken adapter
+            result = self.connection.client.table('analysis_memory').update({
+                'engagement_metrics': metrics,
+                'updated_at': datetime.now().isoformat()
+            }).eq('id', analysis_id).execute()
             
-            await self.connection.execute(query, analysis_id, self._serialize_for_json(metrics))
             print(f"[ENGAGEMENT] Updated metrics for analysis: {analysis_id}")
             return True
             

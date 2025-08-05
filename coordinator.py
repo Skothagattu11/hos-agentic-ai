@@ -2,6 +2,7 @@ import time
 import json
 import os
 from datetime import datetime, date, time as datetime_time
+from typing import Dict, Any
 from agents import Runner, trace
 from duckduckgo_search import DDGS
 from rich.console import Console
@@ -23,6 +24,7 @@ class HealthCoordinator:
         self.profile_id = profile_id
         self.analysis_history = AnalysisHistoryManager(database_url)
         self.routine_service = RoutinePlanService()
+        self.current_analysis_id = None  # Store current analysis ID for engagement updates
 
     def serialize_data(self, obj):
         """Helper method to serialize objects with datetime handling"""
@@ -52,6 +54,19 @@ class HealthCoordinator:
                 return item
         
         return convert_datetime(data)
+
+    async def update_engagement_metrics(self, analysis_id: str, metrics: Dict[str, Any]) -> bool:
+        """Update engagement metrics for a specific analysis"""
+        try:
+            if not self.analysis_history.connection:
+                await self.analysis_history.connect()
+            
+            success = await self.analysis_history.update_engagement_metrics(analysis_id, metrics)
+            console.print(f"[green]✅ Updated engagement metrics for analysis: {analysis_id}[/green]" if success else f"[red]❌ Failed to update engagement metrics[/red]")
+            return success
+        except Exception as e:
+            console.print(f"[red]❌ Error updating engagement metrics: {str(e)}[/red]")
+            return False
 
     def get_next_file_number(self, prefix: str) -> int:
         """Get the next incremental number for input/output files"""
@@ -332,6 +347,18 @@ class HealthCoordinator:
             console.print("[cyan]🧠 Retrieving analysis history and context...[/cyan]")
             try:
                 await self.analysis_history.connect()
+                
+                # Ensure profile exists (create if needed for foreign key constraint)
+                try:
+                    profile_data = {
+                        'id': self.profile_id,
+                        'created_at': datetime.now().isoformat(),
+                        'updated_at': datetime.now().isoformat()
+                    }
+                    self.analysis_history.connection.client.table('profiles').upsert(profile_data).execute()
+                except Exception as profile_error:
+                    console.print(f"[dim]Note: Profile creation skipped: {profile_error}[/dim]")
+                
                 latest_analysis = await self.analysis_history.get_latest_analysis(self.profile_id)
                 analysis_count = await self.analysis_history.get_analysis_count(self.profile_id)
                 
@@ -484,6 +511,7 @@ class HealthCoordinator:
                     routine_plan,
                     user_context
                 )
+                self.current_analysis_id = analysis_id  # Store for later engagement updates
                 console.print(f"[green]✅ Analysis record created: {analysis_id}[/green]")
                 
             except Exception as e:

@@ -1,12 +1,42 @@
+#!/usr/bin/env python3
+"""
+Health Analysis System - Main Entry Point
+Supports both interactive CLI mode and API command-line mode
+"""
+
+import sys
+import os
+import asyncio
+from pathlib import Path
 from dotenv import load_dotenv
 from rich.console import Console
-import asyncio
 from rich.prompt import Prompt
 from coordinator import HealthCoordinator
 from health_agents.routine_plan_agent import RoutinePlanService
-import os
 
-load_dotenv()
+# Load environment variables from .env file
+# Check multiple locations for .env file
+current_dir = Path(__file__).parent
+parent_dir = current_dir.parent
+env_locations = [
+    current_dir / ".env",
+    parent_dir / ".env",
+    Path.cwd() / ".env"
+]
+
+env_loaded = False
+for env_path in env_locations:
+    if env_path.exists():
+        load_dotenv(env_path)
+        env_loaded = True
+        import logging
+        logging.getLogger(__name__).info(f"Loaded .env from: {env_path}")
+        break
+
+if not env_loaded:
+    import logging
+    logging.getLogger(__name__).info("No .env file found. Please create one using env.example as template.")
+    load_dotenv()  # Load from system environment
 
 console = Console()
 
@@ -67,12 +97,74 @@ def get_archetype_selection():
         console.print("[yellow]⚠️ Using Foundation Builder as default.[/yellow]")
         return "Foundation Builder"
 
-async def main() -> None:
+def validate_archetype(archetype: str) -> bool:
+    """Validate archetype selection"""
+    valid_archetypes = [
+        "Foundation Builder",
+        "Transformation Seeker", 
+        "Systematic Improver",
+        "Peak Performer",
+        "Resilience Rebuilder",
+        "Connected Explorer"
+    ]
+    return archetype in valid_archetypes
+
+async def run_api_mode(user_id: str, archetype: str):
+    """Run analysis in API mode (command-line arguments)"""
+    try:
+        # Get database connection options from environment
+        supabase_url = os.getenv("SUPABASE_URL")
+        supabase_key = os.getenv("SUPABASE_KEY")
+        database_url = os.getenv("DATABASE_URL")
+        openai_api_key = os.getenv("OPENAI_API_KEY")
+        
+        # Check for database connection options
+        if not (supabase_url and supabase_key) and not database_url:
+            print("[ERROR] No database connection configured.")
+            print("Please provide either:")
+            print("  1. SUPABASE_URL and SUPABASE_KEY, or")
+            print("  2. DATABASE_URL")
+            print("See env.example file for template.")
+            sys.exit(1)
+        
+        if not openai_api_key:
+            print("[ERROR] OPENAI_API_KEY not found in environment variables.")
+            print("Please add your OpenAI API key to the .env file.")
+            print("See env.example file for template.")
+            sys.exit(1)
+        
+        print("Starting health analysis...")
+        print(f"Selected archetype: {archetype}")
+        print("Initializing analysis systems...")
+        
+        # Initialize the coordinator (it will use smart connection)
+        coordinator = HealthCoordinator(user_id, database_url)
+        
+        # Run the analysis
+        await coordinator.run_analysis(archetype)
+        
+    except Exception as e:
+        print(f"[ERROR] Error during analysis: {e}")
+        sys.exit(1)
+
+async def run_interactive_mode():
+    """Run analysis in interactive CLI mode"""
     console.print("[bold green]🏥 Welcome to the Health Analysis System![/bold green]")
 
-    # Basic environment check
-    if not os.getenv("DATABASE_URL") or not os.getenv("OPENAI_API_KEY"):
-        console.print("[bold red]❌ Missing required environment variables (DATABASE_URL, OPENAI_API_KEY)[/bold red]")
+    # Basic environment check - check for Supabase or DATABASE_URL
+    supabase_url = os.getenv("SUPABASE_URL")
+    supabase_key = os.getenv("SUPABASE_KEY")
+    database_url = os.getenv("DATABASE_URL")
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    
+    if not ((supabase_url and supabase_key) or database_url):
+        console.print("[bold red]❌ Missing database configuration. Please provide either:[/bold red]")
+        console.print("  1. SUPABASE_URL and SUPABASE_KEY, or")
+        console.print("  2. DATABASE_URL")
+        return
+        
+    if not openai_api_key:
+        console.print("[bold red]❌ Missing OPENAI_API_KEY environment variable[/bold red]")
         return
 
     # Get user input
@@ -85,8 +177,35 @@ async def main() -> None:
     selected_archetype = get_archetype_selection()
 
     # Initialize and run health coordinator with selected archetype
-    health_coordinator = HealthCoordinator(profile_id=profile_id)
+    health_coordinator = HealthCoordinator(profile_id=profile_id, database_url=database_url)
     await health_coordinator.run_analysis(selected_archetype=selected_archetype)
+
+async def main():
+    """Main entry point - supports both API and interactive modes"""
+    # Check if running in API mode (command-line arguments)
+    if len(sys.argv) == 3:
+        user_id = sys.argv[1]
+        archetype = sys.argv[2]
+        
+        # Validate archetype
+        if not validate_archetype(archetype):
+            print(f"[ERROR] Invalid archetype: {archetype}")
+            print("Valid archetypes: Foundation Builder, Transformation Seeker, Systematic Improver, Peak Performer, Resilience Rebuilder, Connected Explorer")
+            sys.exit(1)
+        
+        # Run in API mode
+        await run_api_mode(user_id, archetype)
+    
+    elif len(sys.argv) == 1:
+        # Run in interactive mode
+        await run_interactive_mode()
+    
+    else:
+        print("Usage:")
+        print("  Interactive mode: python main.py")
+        print("  API mode: python main.py <user_id> <archetype>")
+        print("Archetypes: Foundation Builder, Transformation Seeker, Systematic Improver, Peak Performer, Resilience Rebuilder, Connected Explorer")
+        sys.exit(1)
 
 if __name__ == "__main__":
     asyncio.run(main())
