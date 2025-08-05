@@ -1,0 +1,75 @@
+2025-08-05 16:26:06,771 - WARNING - Dashboard API endpoints not available
+2025-08-05 16:26:06,773 - INFO - Health Analysis API starting up...
+2025-08-05 16:26:06,774 - WARNING - Dashboard API not available at startup
+2025-08-05 16:27:58,073 - INFO - Health Analysis API shutting down...
+2025-08-05 16:27:58,620 - WARNING - Dashboard API endpoints not available
+2025-08-05 16:27:58,623 - INFO - Health Analysis API starting up...
+2025-08-05 16:27:58,623 - WARNING - Dashboard API not available at startup
+2025-08-05 16:29:27,071 - INFO - Health Analysis API shutting down...
+2025-08-05 16:29:27,556 - WARNING - Dashboard API endpoints not available
+2025-08-05 16:29:27,559 - INFO - Health Analysis API starting up...
+2025-08-05 16:29:27,559 - WARNING - Dashboard API not available at startup
+2025-08-05 16:29:29,551 - INFO - Health Analysis API shutting down...
+2025-08-05 16:29:31,268 - WARNING - Dashboard API endpoints not available
+2025-08-05 16:29:31,271 - INFO - Health Analysis API starting up...
+2025-08-05 16:29:31,271 - WARNING - Dashboard API not available at startup
+2025-08-05 16:31:13,777 - INFO - Health Analysis API shutting down...
+2025-08-05 16:31:21,707 - WARNING - Dashboard API endpoints not available
+2025-08-05 16:31:21,709 - INFO - Health Analysis API starting up...
+2025-08-05 16:31:21,709 - WARNING - Dashboard API not available at startup
+2025-08-05 16:31:50,709 - INFO - Health Analysis API shutting down...
+2025-08-05 16:32:00,311 - INFO - Dashboard API Phase 1 endpoints included
+2025-08-05 16:32:00,313 - INFO - Health Analysis API starting up...
+2025-08-05 16:32:00,313 - INFO - Dashboard API Phase 1 initialized successfully
+2025-08-05 16:32:00,675 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-05 16:32:01,079 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/ "HTTP/1.1 200 OK"
+2025-08-05 16:32:01,079 - INFO - hos-fapi health check: healthy
+2025-08-05 16:32:01,079 - INFO - External hos-fapi API connection successful
+2025-08-05 16:32:16,799 - INFO - Supabase client initialized successfully
+2025-08-05 16:32:16,799 - INFO - CacheService initialized
+2025-08-05 16:32:17,140 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-05 16:32:17,140 - INFO - DashboardService initialized
+2025-08-05 16:32:17,140 - INFO - Listing users: limit=20, offset=0
+2025-08-05 16:32:17,980 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=id "HTTP/2 200 OK"
+2025-08-05 16:32:18,310 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.test_user_123&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:19,436 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.test_user_123&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:19,772 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.test_user_123 "HTTP/2 200 OK"
+2025-08-05 16:32:20,064 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.test_user_123 "HTTP/2 200 OK"
+2025-08-05 16:32:20,065 - ERROR - Error getting analysis summary for test_user_123: 'AnalysisRecord' object has no attribute 'get'
+2025-08-05 16:32:20,374 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:20,670 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:20,986 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1 "HTTP/2 200 OK"
+2025-08-05 16:32:21,309 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.demo_user_456&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:21,629 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.demo_user_456&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:21,772 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.demo_user_456 "HTTP/2 200 OK"
+2025-08-05 16:32:22,073 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.demo_user_456 "HTTP/2 200 OK"
+2025-08-05 16:32:22,074 - ERROR - Error getting analysis summary for demo_user_456: 'AnalysisRecord' object has no attribute 'get'
+2025-08-05 16:32:22,403 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:22,534 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:22,656 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-05 16:32:22,982 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-05 16:32:22,983 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-05 16:32:23,199 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/1.1 404 Not Found"
+2025-08-05 16:32:23,200 - WARNING - No scores found for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-05 16:32:23,502 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:23,505 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=uJgv8HSUVsdtcFOw4f4nLUG4lYt1 "HTTP/1.1 404 Not Found"
+2025-08-05 16:32:23,506 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=test_user_123 "HTTP/1.1 404 Not Found"
+2025-08-05 16:32:23,506 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=demo_user_456 "HTTP/1.1 404 Not Found"
+2025-08-05 16:32:23,507 - WARNING - No scores found for user uJgv8HSUVsdtcFOw4f4nLUG4lYt1
+2025-08-05 16:32:23,809 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:23,810 - WARNING - No scores found for user test_user_123
+2025-08-05 16:32:24,113 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.test_user_123&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:24,114 - WARNING - No scores found for user demo_user_456
+2025-08-05 16:32:24,414 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.demo_user_456&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:32:24,415 - INFO - Retrieved 4 users (limit=20, offset=0, total=4)
+2025-08-05 16:32:24,415 - INFO - Successfully listed 4 users
+2025-08-05 16:33:12,847 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-05 16:33:13,217 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:33:13,592 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-05 16:33:13,914 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-05 16:33:14,212 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-05 16:33:14,214 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-05 16:33:14,219 - INFO - Retrieved complete profile for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-05 16:33:14,220 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-05 16:33:58,676 - INFO - Health Analysis API shutting down...
+2025-08-05 16:33:58,676 - INFO - Dashboard API cleanup completed

@@ -13,6 +13,20 @@ import uvicorn
 from pathlib import Path
 from dotenv import load_dotenv
 
+# Import Phase 1 Dashboard API endpoints
+try:
+    from dashboard_api.endpoints.phase1_endpoints import router as dashboard_router
+    DASHBOARD_API_AVAILABLE = True
+    print(f"[INFO] Dashboard API loaded successfully")
+except ImportError as e:
+    DASHBOARD_API_AVAILABLE = False
+    dashboard_router = None
+    print(f"[WARNING] Dashboard API not available: {e}")
+except Exception as e:
+    DASHBOARD_API_AVAILABLE = False
+    dashboard_router = None
+    print(f"[ERROR] Dashboard API error: {e}")
+
 # Load environment variables from .env file
 # Check multiple locations for .env file
 current_dir = Path(__file__).parent
@@ -63,6 +77,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include Dashboard API routes if available
+if DASHBOARD_API_AVAILABLE and dashboard_router:
+    app.include_router(dashboard_router)
+    logger.info("Dashboard API Phase 1 endpoints included")
+else:
+    logger.warning("Dashboard API endpoints not available")
 
 # Pydantic models
 class AnalysisRequest(BaseModel):
@@ -343,6 +364,45 @@ async def get_status():
         "active_processes": len(active_processes),
         "timestamp": "2024-01-01T00:00:00Z"
     }
+
+@app.on_event("startup")
+async def startup_event():
+    """Initialize services on startup"""
+    logger.info("Health Analysis API starting up...")
+    
+    if DASHBOARD_API_AVAILABLE:
+        logger.info("Dashboard API Phase 1 initialized successfully")
+        
+        # Test external API connectivity on startup
+        try:
+            from dashboard_api.clients.hos_fapi_client import HosFapiClient
+            client = HosFapiClient()
+            
+            is_healthy = await client.health_check()
+            if is_healthy:
+                logger.info("External hos-fapi API connection successful")
+            else:
+                logger.warning("External hos-fapi API health check failed")
+            
+            await client.close()
+        except Exception as e:
+            logger.error(f"External API connection test failed: {e}")
+    else:
+        logger.warning("Dashboard API not available at startup")
+
+@app.on_event("shutdown") 
+async def shutdown_event():
+    """Cleanup on shutdown"""
+    logger.info("Health Analysis API shutting down...")
+    
+    # Cleanup any active dashboard services
+    if DASHBOARD_API_AVAILABLE:
+        try:
+            # Note: In a production app, you'd want proper dependency injection
+            # and cleanup of service instances here
+            logger.info("Dashboard API cleanup completed")
+        except Exception as e:
+            logger.error(f"Error during dashboard API cleanup: {e}")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
