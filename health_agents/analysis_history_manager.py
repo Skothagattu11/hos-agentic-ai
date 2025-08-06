@@ -151,50 +151,16 @@ class AnalysisHistoryManager:
             raise
     
     def _convert_behavior_analysis(self, behavior_analysis: BehaviorAnalysisResult) -> Dict[str, Any]:
-        """Convert behavior analysis to dictionary"""
-        return {
-            "analysis_date": behavior_analysis.analysis_date,
-            "user_id": behavior_analysis.user_id,
-            "behavioral_signature": {
-                "signature": behavior_analysis.behavioral_signature.signature,
-                "confidence": behavior_analysis.behavioral_signature.confidence
-            },
-            "sophistication_assessment": {
-                "score": behavior_analysis.sophistication_assessment.score,
-                "category": behavior_analysis.sophistication_assessment.category,
-                "justification": behavior_analysis.sophistication_assessment.justification
-            },
-            "primary_goal": {
-                "goal": behavior_analysis.primary_goal.goal,
-                "timeline": behavior_analysis.primary_goal.timeline,
-                "success_metrics": behavior_analysis.primary_goal.success_metrics
-            },
-            "readiness_level": behavior_analysis.readiness_level,
-            "habit_formation_stage": behavior_analysis.habit_formation_stage,
-            "recommendations": behavior_analysis.recommendations
-        }
+        """Convert behavior analysis to dictionary - use Pydantic serialization to preserve ALL data"""
+        return behavior_analysis.model_dump()
     
     def _convert_nutrition_plan(self, nutrition_plan: NutritionPlanResult) -> Dict[str, Any]:
-        """Convert nutrition plan to dictionary"""
-        return {
-            "date": nutrition_plan.date,
-            "summary": nutrition_plan.nutrition.summary,
-            "calories": nutrition_plan.nutrition.nutritional_info.calories,
-            "protein": nutrition_plan.nutrition.nutritional_info.protein,
-            "carbs": nutrition_plan.nutrition.nutritional_info.carbs,
-            "fat": nutrition_plan.nutrition.nutritional_info.fat
-        }
+        """Convert nutrition plan to dictionary - use Pydantic serialization to preserve ALL data"""
+        return nutrition_plan.model_dump()
     
     def _convert_routine_plan(self, routine_plan: RoutinePlanResult) -> Dict[str, Any]:
-        """Convert routine plan to dictionary"""
-        return {
-            "date": routine_plan.date,
-            "summary": routine_plan.routine.summary,
-            "morning_wakeup": routine_plan.routine.morning_wakeup.time_range,
-            "focus_block": routine_plan.routine.focus_block.time_range,
-            "afternoon_recharge": routine_plan.routine.afternoon_recharge.time_range,
-            "evening_winddown": routine_plan.routine.evening_winddown.time_range
-        }
+        """Convert routine plan to dictionary - use Pydantic serialization to preserve ALL data"""
+        return routine_plan.model_dump()
     
     async def get_analysis_count(self, profile_id: str) -> int:
         """Get total number of analyses for a profile"""

@@ -19,6 +19,7 @@ class CacheService:
             "user_scores": 180,      # 3 minutes
             "health_check": 60,      # 1 minute
             "user_list": 300,        # 5 minutes
+            "analysis_data": 3600,   # 1 hour (for Phase 2)
         }
         
         # Statistics
@@ -111,6 +112,27 @@ class CacheService:
         key = self._generate_key("health_check")
         self._set_cache(key, data, "health_check")
     
+    # Generic cache methods for Phase 2
+    async def get(self, cache_key: str) -> Optional[Any]:
+        """Generic get method for custom cache keys"""
+        return self._get_cache(cache_key)
+    
+    async def set(self, cache_key: str, data: Any, ttl: int = None) -> None:
+        """Generic set method for custom cache keys with optional TTL"""
+        if ttl:
+            # Use custom TTL
+            expiry = datetime.now() + timedelta(seconds=ttl)
+            self._cache[cache_key] = {
+                "value": data,
+                "expiry": expiry,
+                "cache_type": "custom",
+                "created": datetime.now()
+            }
+            logger.debug(f"Cached custom entry with key {cache_key[:8]}... for {ttl} seconds")
+        else:
+            # Use default analysis_data TTL
+            self._set_cache(cache_key, data, "analysis_data")
+    
     def get_stats(self) -> Dict[str, Any]:
         """Get cache statistics"""
         total_requests = self.hit_count + self.miss_count
@@ -133,7 +155,7 @@ class CacheService:
             "cached_entries": len(self._cache),
             "cache_types": {
                 cache_type: len([k for k, v in self._cache.items() if v.get("cache_type") == cache_type])
-                for cache_type in self.ttl_settings.keys()
+                for cache_type in list(self.ttl_settings.keys()) + ["custom"]
             }
         }
     

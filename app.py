@@ -13,18 +13,22 @@ import uvicorn
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Import Phase 1 Dashboard API endpoints
+# Import Dashboard API endpoints (Phase 1 and Phase 2)
 try:
-    from dashboard_api.endpoints.phase1_endpoints import router as dashboard_router
+    from dashboard_api.endpoints.phase1_endpoints import router as phase1_router
+    from dashboard_api.endpoints.phase2_endpoints import router as phase2_router
+    from dashboard_api.endpoints.phase3_endpoints import router as phase3_router
     DASHBOARD_API_AVAILABLE = True
-    print(f"[INFO] Dashboard API loaded successfully")
+    print(f"[INFO] Dashboard API Phase 1 & 2 loaded successfully")
 except ImportError as e:
     DASHBOARD_API_AVAILABLE = False
-    dashboard_router = None
+    phase1_router = None
+    phase2_router = None
     print(f"[WARNING] Dashboard API not available: {e}")
 except Exception as e:
     DASHBOARD_API_AVAILABLE = False
-    dashboard_router = None
+    phase1_router = None
+    phase2_router = None
     print(f"[ERROR] Dashboard API error: {e}")
 
 # Load environment variables from .env file
@@ -79,9 +83,23 @@ app.add_middleware(
 )
 
 # Include Dashboard API routes if available
-if DASHBOARD_API_AVAILABLE and dashboard_router:
-    app.include_router(dashboard_router)
-    logger.info("Dashboard API Phase 1 endpoints included")
+if DASHBOARD_API_AVAILABLE:
+    if phase1_router:
+        app.include_router(phase1_router)
+        logger.info("Dashboard API Phase 1 endpoints included")
+    
+    if phase2_router:
+        app.include_router(phase2_router) 
+        logger.info("Dashboard API Phase 2 endpoints included")
+    
+    if phase3_router:
+        app.include_router(phase3_router)
+        logger.info("Dashboard API Phase 3 endpoints included")
+    
+    if phase1_router or phase2_router or phase3_router:
+        logger.info("Dashboard API successfully initialized")
+    else:
+        logger.warning("Dashboard API available but no routers loaded")
 else:
     logger.warning("Dashboard API endpoints not available")
 
@@ -371,7 +389,7 @@ async def startup_event():
     logger.info("Health Analysis API starting up...")
     
     if DASHBOARD_API_AVAILABLE:
-        logger.info("Dashboard API Phase 1 initialized successfully")
+        logger.info("Dashboard API Phase 1 & 2 initialized successfully")
         
         # Test external API connectivity on startup
         try:
@@ -387,6 +405,13 @@ async def startup_event():
             await client.close()
         except Exception as e:
             logger.error(f"External API connection test failed: {e}")
+        
+        # Log available Phase 2 features
+        logger.info("Phase 2 Analysis Data API features available:")
+        logger.info("  - Date-based analysis data extraction")
+        logger.info("  - JSON column parsing (behavior, nutrition, routine, engagement)")
+        logger.info("  - Multiple analyses per day support")
+        logger.info("  - Intelligent caching (5min today, 1hr historical)")
     else:
         logger.warning("Dashboard API not available at startup")
 

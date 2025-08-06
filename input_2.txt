@@ -1,0 +1,3040 @@
+{
+  "timestamp": "2025-08-06T13:18:46.001183",
+  "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+  "user_profile": {
+    "date_range": {
+      "start_date": "2025-07-30T17:18:45.999903+00:00",
+      "end_date": "2025-08-06T17:18:45.999903+00:00",
+      "days": "1970-01-01 00:00:07+00:00"
+    },
+    "data_summary": {
+      "scores_count": 25,
+      "archetypes_count": 28,
+      "biomarkers_count": 81
+    },
+    "scores": [
+      {
+        "id": "ca635832-91a6-47da-92cf-11ef86b7f5e9",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "mental_wellbeing",
+        "score": 0.73,
+        "data": {
+          "id": "9427d6e6-28b9-5ca8-971e-de93d6cc53c5",
+          "type": "mental_wellbeing",
+          "score": 0.73,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity",
+            "sleep"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:11+00:00",
+          "scoreDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:14.882293+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "528fc44e-d209-4630-8c67-ed2da70d2f6c",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "wellbeing",
+        "score": 0.69,
+        "data": {
+          "id": "f69f2f8d-2a76-51ab-b916-0f4d49e59325",
+          "type": "wellbeing",
+          "score": 0.69,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep",
+            "activity"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:09+00:00",
+          "scoreDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:14.934872+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "9528c050-5f91-47a5-b779-fa4311a9ec54",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "activity",
+        "score": 0.65,
+        "data": {
+          "id": "d39297fd-62cb-514f-a427-1fdb0cf9ad31",
+          "type": "activity",
+          "score": 0.65,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity"
+          ],
+          "createdAtUtc": "2025-08-04T03:11:04+00:00",
+          "scoreDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.068551+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "c4646ac6-430c-4a16-bef6-9293e9cdee97",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "readiness",
+        "score": 0.6,
+        "data": {
+          "id": "26edc9b4-c2a7-5217-a87c-d79e5551934d",
+          "type": "readiness",
+          "score": 0.6,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep",
+            "activity"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:13+00:00",
+          "scoreDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.009178+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "dd862944-2512-4fc0-a225-01b74e22ff1c",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "sleep",
+        "score": 0.73,
+        "data": {
+          "id": "ca684b70-525a-5d5d-8964-2607d02bd13f",
+          "type": "sleep",
+          "score": 0.73,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:08+00:00",
+          "scoreDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.116423+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "6c7c4249-45c7-49d8-a885-fa9712d5fb2d",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "mental_wellbeing",
+        "score": 0.64,
+        "data": {
+          "id": "6acbd612-859c-5dd7-b187-350eb30b3343",
+          "type": "mental_wellbeing",
+          "score": 0.64,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity",
+            "sleep"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:11+00:00",
+          "scoreDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-02T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.268477+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "a2048b23-4710-4a84-97bc-25099ad115a6",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "readiness",
+        "score": 0.76,
+        "data": {
+          "id": "690cdca5-c477-5e8e-a8c7-5d7f7179efcf",
+          "type": "readiness",
+          "score": 0.76,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep",
+            "activity",
+            "vitals"
+          ],
+          "createdAtUtc": "2025-08-04T03:11:39+00:00",
+          "scoreDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-02T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.316194+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "0b40959f-7ab3-4594-9cd7-4cbf958ec138",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "sleep",
+        "score": 0.76,
+        "data": {
+          "id": "b921efae-9063-5bbd-910c-be29bee306bb",
+          "type": "sleep",
+          "score": 0.76,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:08+00:00",
+          "scoreDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-02T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.213193+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "5da45e7f-2304-4a23-878b-5ae9aca01283",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "wellbeing",
+        "score": 0.63,
+        "data": {
+          "id": "ab1ac6e2-bfe3-577f-8120-d9c8b11a5733",
+          "type": "wellbeing",
+          "score": 0.63,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep",
+            "activity"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:09+00:00",
+          "scoreDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-02T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.364889+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "1851b900-cca2-4a6f-afe2-a3c3e8a4297a",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "activity",
+        "score": 0.51,
+        "data": {
+          "id": "49e25b41-79a0-5b98-af56-f9fd1887bc70",
+          "type": "activity",
+          "score": 0.51,
+          "state": "low",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity"
+          ],
+          "createdAtUtc": "2025-08-04T03:11:04+00:00",
+          "scoreDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-02T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.165845+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "7bb4a482-99bb-4cc2-8c38-ef4ae3b3cded",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "sleep",
+        "score": 0.74,
+        "data": {
+          "id": "1476b372-b1ec-599a-a312-64845b3e2183",
+          "type": "sleep",
+          "score": 0.74,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:08+00:00",
+          "scoreDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-01T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.562498+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "bc27624b-1c4f-45ea-8190-3fc9a21cdc05",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "mental_wellbeing",
+        "score": 0.78,
+        "data": {
+          "id": "e3dd18d4-7fd2-51ee-bf7f-129bb3f2472d",
+          "type": "mental_wellbeing",
+          "score": 0.78,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity",
+            "sleep"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:11+00:00",
+          "scoreDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-01T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.506832+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "03f77823-2f64-4f9d-9bf7-13b465117a0f",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "readiness",
+        "score": 0.56,
+        "data": {
+          "id": "66194475-ecc3-5fd5-bbd5-be0b223edd77",
+          "type": "readiness",
+          "score": 0.56,
+          "state": "low",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep",
+            "activity",
+            "vitals"
+          ],
+          "createdAtUtc": "2025-08-04T03:11:39+00:00",
+          "scoreDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-01T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.457074+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "cafc6218-45a1-42ef-8bc1-6021107d8818",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "activity",
+        "score": 0.72,
+        "data": {
+          "id": "33e13447-5c4c-58ce-bdac-f3421a152f10",
+          "type": "activity",
+          "score": 0.72,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity"
+          ],
+          "createdAtUtc": "2025-08-04T03:11:04+00:00",
+          "scoreDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-01T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.410060+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "8dc09f2e-182b-4c57-8da1-36b68591f2f0",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "wellbeing",
+        "score": 0.73,
+        "data": {
+          "id": "12af313a-8d11-5f64-8011-5d428684a339",
+          "type": "wellbeing",
+          "score": 0.73,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep",
+            "activity"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:09+00:00",
+          "scoreDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "score_date_time": "2025-08-01T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.620977+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "bd9918bb-f363-4eb3-a496-a67c9f204378",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "mental_wellbeing",
+        "score": 0.86,
+        "data": {
+          "id": "a08be151-9048-5b81-8c41-afbd4c72feba",
+          "type": "mental_wellbeing",
+          "score": 0.86,
+          "state": "high",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity",
+            "sleep",
+            "exercise"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:11+00:00",
+          "scoreDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.870087+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "9345811c-c825-4242-b511-700b053934e9",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "readiness",
+        "score": 0.6,
+        "data": {
+          "id": "67dffb78-872b-56c0-8d60-50694b1d32a8",
+          "type": "readiness",
+          "score": 0.6,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep",
+            "activity",
+            "exercise",
+            "vitals"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:13+00:00",
+          "scoreDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.716045+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "a0429579-b10b-49a3-9542-52efb3b59880",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "activity",
+        "score": 0.92,
+        "data": {
+          "id": "e7d4f2af-1b6f-5fde-b97f-88f400742345",
+          "type": "activity",
+          "score": 0.92,
+          "state": "high",
+          "factors": [
+            {
+              "id": "03af4b97-f8de-5472-bbed-baa135410a4e",
+              "goal": 10,
+              "name": "active_hours",
+              "unit": "hour",
+              "score": 0.23000000417232513,
+              "state": "minimal",
+              "value": 0
+            },
+            {
+              "id": "39800e81-cf89-523b-bad3-3304684d456d",
+              "goal": 500,
+              "name": "active_calories",
+              "unit": "kcal",
+              "score": 0.6000000238418579,
+              "state": "low",
+              "value": 261
+            },
+            {
+              "id": "924f7c6a-b933-518c-b7d1-733268a5fb10",
+              "goal": 30,
+              "name": "intense_activity_duration",
+              "unit": "minute",
+              "score": 0.9599999785423279,
+              "state": "high",
+              "value": 28
+            },
+            {
+              "id": "75ddd8e6-9c37-5655-be55-5d6391911869",
+              "goal": 600,
+              "name": "extended_inactivity",
+              "unit": "minute",
+              "score": 0.3100000023841858,
+              "state": "minimal",
+              "value": 1440
+            }
+          ],
+          "version": 1,
+          "dataSources": [
+            "activity",
+            "exercise"
+          ],
+          "createdAtUtc": "2025-08-04T03:11:04+00:00",
+          "scoreDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.769241+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "ee28e836-de50-490d-824b-52d5bcae7992",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "sleep",
+        "score": 0.93,
+        "data": {
+          "id": "8658c2b2-533a-5987-88ef-da3775e532aa",
+          "type": "sleep",
+          "score": 0.93,
+          "state": "high",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:08+00:00",
+          "scoreDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.821168+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "6074bda9-d7bd-4e2c-b8f8-881ac605bc57",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "wellbeing",
+        "score": 0.92,
+        "data": {
+          "id": "1b112f7b-da50-58a0-b42e-59f566b46c5b",
+          "type": "wellbeing",
+          "score": 0.92,
+          "state": "high",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity",
+            "exercise"
+          ],
+          "createdAtUtc": "2025-08-04T03:11:05+00:00",
+          "scoreDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.669765+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "33abaed5-ea7d-440f-a89e-4aff861d479e",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "readiness",
+        "score": 0.78,
+        "data": {
+          "id": "4355f489-e237-5742-b867-b277dba64958",
+          "type": "readiness",
+          "score": 0.78,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep",
+            "activity",
+            "vitals"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:13+00:00",
+          "scoreDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-30T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:16.106122+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "b047b2ed-214d-4c73-9377-6c479baeaa5f",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "activity",
+        "score": 0.7,
+        "data": {
+          "id": "f4af8e45-229d-5a1a-9015-e8ca6d53cfd0",
+          "type": "activity",
+          "score": 0.7,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity"
+          ],
+          "createdAtUtc": "2025-08-04T03:11:04+00:00",
+          "scoreDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-30T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.919075+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "3168b84b-c69d-4319-991d-fae469ffba9e",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "wellbeing",
+        "score": 0.8,
+        "data": {
+          "id": "81d192d8-511d-5337-a90f-61b14ac676a1",
+          "type": "wellbeing",
+          "score": 0.8,
+          "state": "high",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep",
+            "activity"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:09+00:00",
+          "scoreDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-30T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:15.967613+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "1f087c58-899a-402f-8aac-0bd110257e4b",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "mental_wellbeing",
+        "score": 0.79,
+        "data": {
+          "id": "aeba0fa8-c6e2-5530-bf03-ee620f2ea404",
+          "type": "mental_wellbeing",
+          "score": 0.79,
+          "state": "medium",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "activity",
+            "sleep"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:11+00:00",
+          "scoreDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-30T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:16.013471+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      },
+      {
+        "id": "f0b7e43f-9f01-44d8-ac8e-73a23d5e44af",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "type": "sleep",
+        "score": 0.92,
+        "data": {
+          "id": "29351c6c-0ac6-53d3-8821-314092d96a7c",
+          "type": "sleep",
+          "score": 0.92,
+          "state": "high",
+          "factors": [],
+          "version": 1,
+          "dataSources": [
+            "sleep"
+          ],
+          "createdAtUtc": "2025-08-04T03:12:08+00:00",
+          "scoreDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "score_date_time": "2025-07-30T04:00:00+00:00",
+        "created_at": "2025-08-04T03:15:16.057739+00:00",
+        "updated_at": "2025-08-04T14:41:23.063210+00:00"
+      }
+    ],
+    "archetypes": [
+      {
+        "id": "490ccc80-2016-4926-9db8-3f8e6dec8b3b",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "overall_wellness",
+        "periodicity": "weekly",
+        "value": "good_wellness",
+        "data": {
+          "id": "a7d863e6-176f-5b15-9e61-11e3ab4096fd",
+          "name": "overall_wellness",
+          "value": "good_wellness",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:14:32.909378+00:00",
+        "updated_at": "2025-08-04T03:14:32.909382+00:00"
+      },
+      {
+        "id": "3002374b-5b57-445b-896b-1b20d0ab37b6",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_efficiency",
+        "periodicity": "weekly",
+        "value": "highly_efficient_sleeper",
+        "data": {
+          "id": "ae4f539a-1dbc-5a6c-9b5d-c0a576763099",
+          "name": "sleep_efficiency",
+          "value": "highly_efficient_sleeper",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 3,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.799839+00:00",
+        "updated_at": "2025-08-04T03:13:05.799843+00:00"
+      },
+      {
+        "id": "025d11d5-235b-407d-bec4-bf7bd112c9ea",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "bed_schedule",
+        "periodicity": "weekly",
+        "value": "late_sleeper",
+        "data": {
+          "id": "a6a039f3-beaa-55a0-9840-88b0d9a20409",
+          "name": "bed_schedule",
+          "value": "late_sleeper",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.772834+00:00",
+        "updated_at": "2025-08-04T03:13:05.772839+00:00"
+      },
+      {
+        "id": "cde9ca90-093a-411a-b024-1fffb978ad1a",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "wake_schedule",
+        "periodicity": "weekly",
+        "value": "early_riser",
+        "data": {
+          "id": "ac11e9af-93b6-56b9-9a8c-abe0abf91513",
+          "name": "wake_schedule",
+          "value": "early_riser",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 1,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.751101+00:00",
+        "updated_at": "2025-08-04T03:13:05.751106+00:00"
+      },
+      {
+        "id": "07e9198b-0caa-43b9-87df-d101c8da38aa",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_pattern",
+        "periodicity": "weekly",
+        "value": "consistent_late_sleeper",
+        "data": {
+          "id": "6522496b-c8f4-5596-8a06-b97377da2139",
+          "name": "sleep_pattern",
+          "value": "consistent_late_sleeper",
+          "version": 1,
+          "dataType": "categorical",
+          "ordinality": 0,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.726271+00:00",
+        "updated_at": "2025-08-04T03:13:05.726277+00:00"
+      },
+      {
+        "id": "954ea8f1-1009-4bc5-8940-aa672ac72298",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_quality",
+        "periodicity": "weekly",
+        "value": "optimal_sleep_quality",
+        "data": {
+          "id": "220f2e9d-d793-5ca1-9c51-ffc8f4d1f515",
+          "name": "sleep_quality",
+          "value": "optimal_sleep_quality",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 3,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.698315+00:00",
+        "updated_at": "2025-08-04T03:13:05.698321+00:00"
+      },
+      {
+        "id": "b3460854-9243-42e9-ace7-757e8c6c8bb0",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "secondary_exercise",
+        "periodicity": "weekly",
+        "value": "other",
+        "data": {
+          "id": "164055de-80e6-581b-8659-e4181afddaa9",
+          "name": "secondary_exercise",
+          "value": "other",
+          "version": 1,
+          "dataType": "categorical",
+          "ordinality": 0,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.025019+00:00",
+        "updated_at": "2025-08-04T03:13:06.025022+00:00"
+      },
+      {
+        "id": "7f55b3dc-e186-479d-86ec-eeab3ccc9f66",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "mental_wellness",
+        "periodicity": "monthly",
+        "value": "optimal_mental_wellness",
+        "data": {
+          "id": "8113aafe-3556-5fba-b284-1f1533674d45",
+          "name": "mental_wellness",
+          "value": "optimal_mental_wellness",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 3,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.454323+00:00",
+        "updated_at": "2025-08-04T03:13:06.454327+00:00"
+      },
+      {
+        "id": "19fb41e9-00af-48de-a35d-203dc2059ced",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_pattern",
+        "periodicity": "monthly",
+        "value": "consistent_late_sleeper",
+        "data": {
+          "id": "3fd4d0aa-ea87-57e0-84ac-22cc6ae479a6",
+          "name": "sleep_pattern",
+          "value": "consistent_late_sleeper",
+          "version": 1,
+          "dataType": "categorical",
+          "ordinality": 0,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.431491+00:00",
+        "updated_at": "2025-08-04T03:13:06.431493+00:00"
+      },
+      {
+        "id": "9d5b7e4d-64b4-4c80-ac3d-8d4aadc35255",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "wake_schedule",
+        "periodicity": "monthly",
+        "value": "early_riser",
+        "data": {
+          "id": "60d0ad81-97f8-5bf2-9895-99313bcc27a4",
+          "name": "wake_schedule",
+          "value": "early_riser",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 1,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.409396+00:00",
+        "updated_at": "2025-08-04T03:13:06.409398+00:00"
+      },
+      {
+        "id": "ffe4d3df-9a13-44c7-aa71-c2cd0446d216",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "bed_schedule",
+        "periodicity": "monthly",
+        "value": "late_sleeper",
+        "data": {
+          "id": "ffdeb156-b090-559c-b0b8-0f5864898242",
+          "name": "bed_schedule",
+          "value": "late_sleeper",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.385414+00:00",
+        "updated_at": "2025-08-04T03:13:06.385417+00:00"
+      },
+      {
+        "id": "a32a407d-9ec2-4c63-a043-24dda4f5e949",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_efficiency",
+        "periodicity": "monthly",
+        "value": "highly_efficient_sleeper",
+        "data": {
+          "id": "7cda29e5-cbac-591d-9677-5ee96493d35c",
+          "name": "sleep_efficiency",
+          "value": "highly_efficient_sleeper",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 3,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.359269+00:00",
+        "updated_at": "2025-08-04T03:13:06.359273+00:00"
+      },
+      {
+        "id": "d1f78d79-d305-4169-9ca0-f6b789b3048c",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_regularity",
+        "periodicity": "monthly",
+        "value": "regular_sleeper",
+        "data": {
+          "id": "40fbbf34-1d69-5ed2-8f0a-c1c48d9820e4",
+          "name": "sleep_regularity",
+          "value": "regular_sleeper",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.273069+00:00",
+        "updated_at": "2025-08-04T03:13:06.273073+00:00"
+      },
+      {
+        "id": "c3e6ce1c-7048-4ced-9442-eff3177796d4",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_duration",
+        "periodicity": "monthly",
+        "value": "short_sleeper",
+        "data": {
+          "id": "f1efea46-e758-580a-9c82-52d8bbe2882c",
+          "name": "sleep_duration",
+          "value": "short_sleeper",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 1,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.246266+00:00",
+        "updated_at": "2025-08-04T03:13:06.246270+00:00"
+      },
+      {
+        "id": "bb09c6a5-5351-4537-96ba-552bb1143636",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "overall_wellness",
+        "periodicity": "monthly",
+        "value": "good_wellness",
+        "data": {
+          "id": "c7fba379-ca63-53c0-bf95-c0361f03bea4",
+          "name": "overall_wellness",
+          "value": "good_wellness",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.223766+00:00",
+        "updated_at": "2025-08-04T03:13:06.223772+00:00"
+      },
+      {
+        "id": "b298119c-0849-4a7e-b1cc-91a709b58b0f",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "activity_level",
+        "periodicity": "monthly",
+        "value": "moderately_active",
+        "data": {
+          "id": "1261d242-6a38-5966-8be0-ccf5ceaf4cb1",
+          "name": "activity_level",
+          "value": "moderately_active",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.197967+00:00",
+        "updated_at": "2025-08-04T03:13:06.197973+00:00"
+      },
+      {
+        "id": "7e632ad2-8b52-4861-a9c3-e4e631e29f18",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "primary_exercise_type",
+        "periodicity": "monthly",
+        "value": "strength_oriented",
+        "data": {
+          "id": "170aaec2-0c10-5755-b914-1328a93d0a22",
+          "name": "primary_exercise_type",
+          "value": "strength_oriented",
+          "version": 1,
+          "dataType": "categorical",
+          "ordinality": 0,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.176476+00:00",
+        "updated_at": "2025-08-04T03:13:06.176480+00:00"
+      },
+      {
+        "id": "92aab3b5-49d2-4ebf-a838-67d40049da65",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "primary_exercise",
+        "periodicity": "monthly",
+        "value": "traditional_strength_training",
+        "data": {
+          "id": "170aaec2-0c10-5755-b914-1328a93d0a22",
+          "name": "primary_exercise",
+          "value": "traditional_strength_training",
+          "version": 1,
+          "dataType": "categorical",
+          "ordinality": 0,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.154093+00:00",
+        "updated_at": "2025-08-04T03:13:06.154098+00:00"
+      },
+      {
+        "id": "a8c76b83-1751-487b-bae5-9868ab3e3303",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "exercise_frequency",
+        "periodicity": "monthly",
+        "value": "frequent_exerciser",
+        "data": {
+          "id": "a7886634-000e-5349-963e-d56c561af1f8",
+          "name": "exercise_frequency",
+          "value": "frequent_exerciser",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 3,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.126765+00:00",
+        "updated_at": "2025-08-04T03:13:06.126769+00:00"
+      },
+      {
+        "id": "b5a1d19e-f90f-4fab-aa66-c5dc3377ea28",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "secondary_exercise",
+        "periodicity": "monthly",
+        "value": "running",
+        "data": {
+          "id": "a430afb4-67a6-504f-bb98-b164e4577894",
+          "name": "secondary_exercise",
+          "value": "running",
+          "version": 1,
+          "dataType": "categorical",
+          "ordinality": 0,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.105146+00:00",
+        "updated_at": "2025-08-04T03:13:06.105151+00:00"
+      },
+      {
+        "id": "874e4668-f2f2-44e6-ba70-46261e616e58",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_quality",
+        "periodicity": "monthly",
+        "value": "optimal_sleep_quality",
+        "data": {
+          "id": "3bdb6e9a-7881-5a8e-883e-67a8ac8e9d28",
+          "name": "sleep_quality",
+          "value": "optimal_sleep_quality",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 3,
+          "endDateTime": "2025-07-31T00:00:00-04:00",
+          "periodicity": "monthly",
+          "startDateTime": "2025-07-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-01T04:00:00+00:00",
+        "end_date_time": "2025-07-31T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.080012+00:00",
+        "updated_at": "2025-08-04T03:13:06.080017+00:00"
+      },
+      {
+        "id": "0370e3a7-703e-4031-a88c-e1b85d191b82",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "primary_exercise",
+        "periodicity": "weekly",
+        "value": "running",
+        "data": {
+          "id": "7b1123aa-e255-52f7-9208-4668fc96cf3c",
+          "name": "primary_exercise",
+          "value": "running",
+          "version": 1,
+          "dataType": "categorical",
+          "ordinality": 0,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:06.048676+00:00",
+        "updated_at": "2025-08-04T03:13:06.048680+00:00"
+      },
+      {
+        "id": "0025c46d-8273-48af-8401-709773930d97",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "exercise_frequency",
+        "periodicity": "weekly",
+        "value": "regular_exerciser",
+        "data": {
+          "id": "2408d961-9b8c-5840-922c-3a89ac1c9264",
+          "name": "exercise_frequency",
+          "value": "regular_exerciser",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.990589+00:00",
+        "updated_at": "2025-08-04T03:13:05.990593+00:00"
+      },
+      {
+        "id": "4a38efa4-5226-4bf8-bf63-986cea31fc1a",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "primary_exercise_type",
+        "periodicity": "weekly",
+        "value": "cardio_oriented",
+        "data": {
+          "id": "7b1123aa-e255-52f7-9208-4668fc96cf3c",
+          "name": "primary_exercise_type",
+          "value": "cardio_oriented",
+          "version": 1,
+          "dataType": "categorical",
+          "ordinality": 0,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.964734+00:00",
+        "updated_at": "2025-08-04T03:13:05.964738+00:00"
+      },
+      {
+        "id": "45d89740-f29a-4e02-af8e-751bcfd990fb",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "mental_wellness",
+        "periodicity": "weekly",
+        "value": "good_mental_wellness",
+        "data": {
+          "id": "5872b9ab-8544-5887-a01f-1e48adb5d623",
+          "name": "mental_wellness",
+          "value": "good_mental_wellness",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.942212+00:00",
+        "updated_at": "2025-08-04T03:13:05.942218+00:00"
+      },
+      {
+        "id": "8af6b60a-b554-4675-94a8-c831e200b6a2",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "activity_level",
+        "periodicity": "weekly",
+        "value": "moderately_active",
+        "data": {
+          "id": "2fe6cf00-b4ed-5e00-ab55-125080542d60",
+          "name": "activity_level",
+          "value": "moderately_active",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.919250+00:00",
+        "updated_at": "2025-08-04T03:13:05.919255+00:00"
+      },
+      {
+        "id": "c6a6c8f1-6e78-4319-800b-5f6550d870ad",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_duration",
+        "periodicity": "weekly",
+        "value": "short_sleeper",
+        "data": {
+          "id": "045a482f-e25b-5710-a755-98de73eb4245",
+          "name": "sleep_duration",
+          "value": "short_sleeper",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 1,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.857176+00:00",
+        "updated_at": "2025-08-04T03:13:05.857179+00:00"
+      },
+      {
+        "id": "839229f8-277c-4016-964c-3f1a49a2c3d3",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "name": "sleep_regularity",
+        "periodicity": "weekly",
+        "value": "regular_sleeper",
+        "data": {
+          "id": "1660b04c-08fb-5199-a443-8d8bd8b222da",
+          "name": "sleep_regularity",
+          "value": "regular_sleeper",
+          "version": 1,
+          "dataType": "ordinal",
+          "ordinality": 2,
+          "endDateTime": "2025-08-03T00:00:00-04:00",
+          "periodicity": "weekly",
+          "startDateTime": "2025-07-28T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-28T04:00:00+00:00",
+        "end_date_time": "2025-08-03T04:00:00+00:00",
+        "created_at": "2025-08-04T03:13:05.834985+00:00",
+        "updated_at": "2025-08-04T03:13:05.834988+00:00"
+      }
+    ],
+    "biomarkers": [
+      {
+        "id": "b5d42a5a-486a-4346-ab7b-f950c95ea984",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_hours",
+        "data": {
+          "id": "2e0a9663-8a47-5a3c-84a5-1555ed3ee6eb",
+          "type": "active_hours",
+          "unit": "hour",
+          "value": "0",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T23:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-03T04:00:00+00:00",
+        "end_date_time": "2025-08-04T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:06.464505+00:00",
+        "updated_at": "2025-08-04T03:11:06.464511+00:00"
+      },
+      {
+        "id": "05b53bd3-85d6-4321-8d4d-d84630bd6acc",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_sedentary_duration",
+        "data": {
+          "id": "676b4b6f-b3f1-5929-8309-eb995ea46813",
+          "type": "activity_sedentary_duration",
+          "unit": "minute",
+          "value": "1440",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T23:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-03T04:00:00+00:00",
+        "end_date_time": "2025-08-04T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:06.542332+00:00",
+        "updated_at": "2025-08-04T03:11:06.542491+00:00"
+      },
+      {
+        "id": "8f5b801e-3a65-4891-8ae7-f63842395414",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_energy_burned",
+        "data": {
+          "id": "6910dac2-3aec-5ffe-9f9f-f3c173142ce7",
+          "type": "active_energy_burned",
+          "unit": "kcal",
+          "value": "118",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T23:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-03T04:00:00+00:00",
+        "end_date_time": "2025-08-04T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.099605+00:00",
+        "updated_at": "2025-08-04T03:11:24.099611+00:00"
+      },
+      {
+        "id": "3597a4d6-512c-4b4b-ac26-1d64189c66d4",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_high_intensity_duration",
+        "data": {
+          "id": "596ba316-75ac-5964-b72f-a417e67cae4f",
+          "type": "activity_high_intensity_duration",
+          "unit": "minute",
+          "value": "0",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T23:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-03T04:00:00+00:00",
+        "end_date_time": "2025-08-04T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.204927+00:00",
+        "updated_at": "2025-08-04T03:11:24.204933+00:00"
+      },
+      {
+        "id": "f24f5682-4df4-4e5a-bd94-217dd5573bef",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "steps",
+        "data": {
+          "id": "fe3fdf96-dada-5117-868a-2b4de9ad4be2",
+          "type": "steps",
+          "unit": "count",
+          "value": "5035",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T23:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-03T04:00:00+00:00",
+        "end_date_time": "2025-08-04T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.253153+00:00",
+        "updated_at": "2025-08-04T03:11:24.253158+00:00"
+      },
+      {
+        "id": "08d4122f-633d-4777-889e-3d59e70771cb",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_duration",
+        "data": {
+          "id": "eb663326-e576-5083-a0dc-b01a5cbe7cd4",
+          "type": "active_duration",
+          "unit": "minute",
+          "value": "166",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T23:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-03T04:00:00+00:00",
+        "end_date_time": "2025-08-04T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.309815+00:00",
+        "updated_at": "2025-08-04T03:11:24.309821+00:00"
+      },
+      {
+        "id": "ff105b05-7a6d-4cee-9770-0020d646a18e",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_low_intensity_duration",
+        "data": {
+          "id": "b587221b-4118-54ab-914c-67890eb89223",
+          "type": "activity_low_intensity_duration",
+          "unit": "minute",
+          "value": "166",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T23:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-03T04:00:00+00:00",
+        "end_date_time": "2025-08-04T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.408713+00:00",
+        "updated_at": "2025-08-04T03:11:24.408718+00:00"
+      },
+      {
+        "id": "fff970ed-a3da-45b4-a091-0f25a4084efb",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_medium_intensity_duration",
+        "data": {
+          "id": "983192d6-ec92-5a89-947d-a691fbcfbaff",
+          "type": "activity_medium_intensity_duration",
+          "unit": "minute",
+          "value": "0",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T23:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-03T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-03T04:00:00+00:00",
+        "end_date_time": "2025-08-04T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.354872+00:00",
+        "updated_at": "2025-08-04T03:11:24.354877+00:00"
+      },
+      {
+        "id": "5268807f-8308-466e-aff5-75736e2914bc",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_start_time",
+        "data": {
+          "id": "36f9e550-1814-5c3b-90af-8d3b0f128faf",
+          "type": "sleep_start_time",
+          "unit": "datetime",
+          "value": "2025-08-03T00:03:21-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-08-03T17:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-02T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T22:00:00+00:00",
+        "end_date_time": "2025-08-03T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:14.755999+00:00",
+        "updated_at": "2025-08-04T03:12:14.756004+00:00"
+      },
+      {
+        "id": "880b9f18-a0ce-4194-b3c5-ecf91ecbd5e4",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_duration",
+        "data": {
+          "id": "5c84c3dd-491d-5cea-896f-1c3df7e330ee",
+          "type": "sleep_duration",
+          "unit": "minute",
+          "value": "615",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T17:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-02T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T22:00:00+00:00",
+        "end_date_time": "2025-08-03T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:14.815849+00:00",
+        "updated_at": "2025-08-04T03:12:14.815853+00:00"
+      },
+      {
+        "id": "693b5f0c-fda4-466b-bcc4-b62ae1394b07",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_mid_time",
+        "data": {
+          "id": "70a827ae-9650-5565-92db-e3209e57dfa6",
+          "type": "sleep_mid_time",
+          "unit": "datetime",
+          "value": "2025-08-03T05:11:12-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-08-03T17:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-02T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T22:00:00+00:00",
+        "end_date_time": "2025-08-03T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:14.524287+00:00",
+        "updated_at": "2025-08-04T03:12:14.524291+00:00"
+      },
+      {
+        "id": "283cb360-8dd1-4bdc-9aa8-dd27c047e012",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_end_time",
+        "data": {
+          "id": "b81727c3-30df-5fa7-a433-077d9f04cf54",
+          "type": "sleep_end_time",
+          "unit": "datetime",
+          "value": "2025-08-03T10:19:03-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-08-03T17:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-02T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T22:00:00+00:00",
+        "end_date_time": "2025-08-03T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:14.943476+00:00",
+        "updated_at": "2025-08-04T03:12:14.943481+00:00"
+      },
+      {
+        "id": "df2cb182-95d1-4273-a680-1de40212bb74",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_in_bed_duration",
+        "data": {
+          "id": "4801234f-a799-5feb-bef2-cdb6dca8b966",
+          "type": "sleep_in_bed_duration",
+          "unit": "minute",
+          "value": "615",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-03T17:59:59-04:00",
+          "periodicity": "intraday",
+          "startDateTime": "2025-08-02T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T22:00:00+00:00",
+        "end_date_time": "2025-08-03T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:14.696000+00:00",
+        "updated_at": "2025-08-04T03:12:14.696004+00:00"
+      },
+      {
+        "id": "d99c4132-beeb-49fc-ac3f-a932d6580a09",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "heart_rate_resting",
+        "data": {
+          "id": "21916c5b-4d2b-563d-a9ad-fb180fd4a343",
+          "type": "heart_rate_resting",
+          "unit": "bpm",
+          "value": "87.0",
+          "category": "vitals",
+          "valueType": "long",
+          "aggregation": "average",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:06.951470+00:00",
+        "updated_at": "2025-08-04T03:11:06.951475+00:00"
+      },
+      {
+        "id": "c71f8893-16fd-4da6-8bfa-6a8c8b300868",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_hours",
+        "data": {
+          "id": "a3734726-4725-5a5b-a469-a6db975b8966",
+          "type": "active_hours",
+          "unit": "hour",
+          "value": "0",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:06.613582+00:00",
+        "updated_at": "2025-08-04T03:11:06.613587+00:00"
+      },
+      {
+        "id": "c25f8e60-5345-4514-9309-0b462af1c9f1",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "oxygen_saturation_sleep",
+        "data": {
+          "id": "293c48b3-ea99-5b50-b4fc-7c8edbd21c94",
+          "type": "oxygen_saturation_sleep",
+          "unit": "percentage",
+          "value": "0.913",
+          "category": "vitals",
+          "valueType": "double",
+          "aggregation": "average",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:06.774187+00:00",
+        "updated_at": "2025-08-04T03:11:06.774192+00:00"
+      },
+      {
+        "id": "46c15c2b-4054-4b46-b5b2-e683576a4ba7",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "respiratory_rate",
+        "data": {
+          "id": "e050bc08-987a-5019-b44f-27a46ee46db8",
+          "type": "respiratory_rate",
+          "unit": "count/minute",
+          "value": "13.887",
+          "category": "vitals",
+          "valueType": "long",
+          "aggregation": "average",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:06.829096+00:00",
+        "updated_at": "2025-08-04T03:11:06.829102+00:00"
+      },
+      {
+        "id": "a97c036e-748f-462c-8b90-554e069f12fe",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_sedentary_duration",
+        "data": {
+          "id": "c63c0c9c-fcd0-536d-bf3f-8992701caf5a",
+          "type": "activity_sedentary_duration",
+          "unit": "minute",
+          "value": "1440",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:06.665155+00:00",
+        "updated_at": "2025-08-04T03:11:06.665161+00:00"
+      },
+      {
+        "id": "ec8cfef3-43c2-4cfb-893b-25f022dce66a",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "oxygen_saturation",
+        "data": {
+          "id": "6ec982d8-31bb-53b1-ae1d-a792a08f8222",
+          "type": "oxygen_saturation",
+          "unit": "percentage",
+          "value": "0.913",
+          "category": "vitals",
+          "valueType": "double",
+          "aggregation": "average",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:06.883797+00:00",
+        "updated_at": "2025-08-04T03:11:06.883803+00:00"
+      },
+      {
+        "id": "a296620f-92b0-4c59-8c68-518e6484a05c",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_high_intensity_duration",
+        "data": {
+          "id": "25e8d5a1-8b3f-50e7-8b4c-ea55cf811d91",
+          "type": "activity_high_intensity_duration",
+          "unit": "minute",
+          "value": "0",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.481067+00:00",
+        "updated_at": "2025-08-04T03:11:24.481072+00:00"
+      },
+      {
+        "id": "a3a9c552-f9a0-4165-b46b-fa8d4d61273c",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_duration",
+        "data": {
+          "id": "43d7fa10-dbf5-51e6-a4ab-f63617b05352",
+          "type": "active_duration",
+          "unit": "minute",
+          "value": "87",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.599049+00:00",
+        "updated_at": "2025-08-04T03:11:24.599054+00:00"
+      },
+      {
+        "id": "ee49b725-e338-4996-ad29-1eebe9a71c02",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_medium_intensity_duration",
+        "data": {
+          "id": "6589c8ec-18a0-5078-a255-591ab5b73712",
+          "type": "activity_medium_intensity_duration",
+          "unit": "minute",
+          "value": "0",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.645785+00:00",
+        "updated_at": "2025-08-04T03:11:24.645790+00:00"
+      },
+      {
+        "id": "6deb7232-7849-457d-8013-033aced5ed1d",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_low_intensity_duration",
+        "data": {
+          "id": "3d0f27ce-923e-5726-8bb5-65eaba5cdbfe",
+          "type": "activity_low_intensity_duration",
+          "unit": "minute",
+          "value": "87",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.694576+00:00",
+        "updated_at": "2025-08-04T03:11:24.694579+00:00"
+      },
+      {
+        "id": "82bb2b21-ce7a-4286-bd6d-beeff8eaf74a",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_energy_burned",
+        "data": {
+          "id": "f0a15f41-b19e-5351-b1b6-b825854b010c",
+          "type": "active_energy_burned",
+          "unit": "kcal",
+          "value": "31",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.742011+00:00",
+        "updated_at": "2025-08-04T03:11:24.742016+00:00"
+      },
+      {
+        "id": "3d2f30c1-bee8-4287-9426-0d4f85589f15",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "respiratory_rate_sleep",
+        "data": {
+          "id": "6b20a255-f232-567f-99fc-4a88d4c5092c",
+          "type": "respiratory_rate_sleep",
+          "unit": "count/minute",
+          "value": "13.887",
+          "category": "vitals",
+          "valueType": "long",
+          "aggregation": "average",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:06.719386+00:00",
+        "updated_at": "2025-08-04T03:11:06.719391+00:00"
+      },
+      {
+        "id": "f5a5ede7-3262-47cb-8618-b479ffa67157",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "steps",
+        "data": {
+          "id": "81f5027d-509c-50d9-95e4-d40115449e0e",
+          "type": "steps",
+          "unit": "count",
+          "value": "1547",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-02T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-02T04:00:00+00:00",
+        "end_date_time": "2025-08-03T03:59:59+00:00",
+        "created_at": "2025-08-04T03:11:24.544949+00:00",
+        "updated_at": "2025-08-04T03:11:24.544954+00:00"
+      },
+      {
+        "id": "904a0a20-71f5-420d-b544-4499bd3e51f9",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_latency",
+        "data": {
+          "id": "55fc915e-2c5b-5c76-abf9-f988b8571221",
+          "type": "sleep_latency",
+          "unit": "minute",
+          "value": "0",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "average",
+          "endDateTime": "2025-08-02T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T22:00:00+00:00",
+        "end_date_time": "2025-08-02T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:15.462700+00:00",
+        "updated_at": "2025-08-04T03:12:15.462705+00:00"
+      },
+      {
+        "id": "4f96531a-c9bf-4e75-b39c-74b203d44046",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_interruptions",
+        "data": {
+          "id": "0e842331-cfe3-57d5-8d1e-dd470c373172",
+          "type": "sleep_interruptions",
+          "unit": "count",
+          "value": "13",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T22:00:00+00:00",
+        "end_date_time": "2025-08-02T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:15.523279+00:00",
+        "updated_at": "2025-08-04T03:12:15.523283+00:00"
+      },
+      {
+        "id": "a93e1bac-9b4e-4647-a64f-4e8c90013c33",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_mid_time",
+        "data": {
+          "id": "84247f63-874f-583c-93d8-4c64249808ea",
+          "type": "sleep_mid_time",
+          "unit": "datetime",
+          "value": "2025-08-02T05:01:12.120-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-08-02T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T22:00:00+00:00",
+        "end_date_time": "2025-08-02T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:15.646813+00:00",
+        "updated_at": "2025-08-04T03:12:15.646820+00:00"
+      },
+      {
+        "id": "5016e093-c74b-484e-9ed6-b56f2a8c83e3",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_duration",
+        "data": {
+          "id": "6da519b4-77a3-5cc9-83d9-7ec0651d394e",
+          "type": "sleep_duration",
+          "unit": "minute",
+          "value": "348",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T22:00:00+00:00",
+        "end_date_time": "2025-08-02T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:15.299568+00:00",
+        "updated_at": "2025-08-04T03:12:15.299573+00:00"
+      },
+      {
+        "id": "2289f922-b64b-4247-9253-5a79dd7a16f2",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_start_time",
+        "data": {
+          "id": "6c9347d7-2537-5db4-a86e-f0e1d33a3775",
+          "type": "sleep_start_time",
+          "unit": "datetime",
+          "value": "2025-08-02T01:52:57.710-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-08-02T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T22:00:00+00:00",
+        "end_date_time": "2025-08-02T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:15.352576+00:00",
+        "updated_at": "2025-08-04T03:12:15.352581+00:00"
+      },
+      {
+        "id": "7553beb8-2d45-470e-9a47-353fab75141a",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_in_bed_duration",
+        "data": {
+          "id": "9e6dd4b5-7633-5836-b79d-2712865700c7",
+          "type": "sleep_in_bed_duration",
+          "unit": "minute",
+          "value": "377",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T22:00:00+00:00",
+        "end_date_time": "2025-08-02T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:15.407488+00:00",
+        "updated_at": "2025-08-04T03:12:15.407493+00:00"
+      },
+      {
+        "id": "6a5cde54-6510-4e3e-a2b8-5d8998132798",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_efficiency",
+        "data": {
+          "id": "3f725647-e172-5e72-bc2e-c8f320d5e559",
+          "type": "sleep_efficiency",
+          "unit": "percentage",
+          "value": "0.925",
+          "category": "sleep",
+          "valueType": "double",
+          "aggregation": "average",
+          "endDateTime": "2025-08-02T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T22:00:00+00:00",
+        "end_date_time": "2025-08-02T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:15.002531+00:00",
+        "updated_at": "2025-08-04T03:12:15.002555+00:00"
+      },
+      {
+        "id": "c30bb649-6c4d-4ccd-83a0-5ab20755fac3",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_awake_duration",
+        "data": {
+          "id": "6467cd29-2c9f-5c1f-bc83-1038505aa3f3",
+          "type": "sleep_awake_duration",
+          "unit": "minute",
+          "value": "28",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-02T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T22:00:00+00:00",
+        "end_date_time": "2025-08-02T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:15.091547+00:00",
+        "updated_at": "2025-08-04T03:12:15.091552+00:00"
+      },
+      {
+        "id": "fe08ca16-1cb4-495a-8b99-21207efe7a89",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_end_time",
+        "data": {
+          "id": "fc64d5cd-e37e-5427-beed-3d252e2b7901",
+          "type": "sleep_end_time",
+          "unit": "datetime",
+          "value": "2025-08-02T08:09:26.530-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-08-02T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T18:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T22:00:00+00:00",
+        "end_date_time": "2025-08-02T21:59:59+00:00",
+        "created_at": "2025-08-04T03:12:15.162824+00:00",
+        "updated_at": "2025-08-04T03:12:15.162828+00:00"
+      },
+      {
+        "id": "000d9d9f-b8c5-44a2-a626-73562795b5c1",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_hours",
+        "data": {
+          "id": "fca7fee9-0cdb-50b4-8c43-eff1b18ca2b1",
+          "type": "active_hours",
+          "unit": "hour",
+          "value": "12",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:54.470444+00:00",
+        "updated_at": "2025-08-04T03:13:54.470449+00:00"
+      },
+      {
+        "id": "4a59be1c-b752-4a75-9686-95e8c41ddae9",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_sedentary_duration",
+        "data": {
+          "id": "cafcbe77-a560-557e-b47e-d1abca366206",
+          "type": "activity_sedentary_duration",
+          "unit": "minute",
+          "value": "1250",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:54.529774+00:00",
+        "updated_at": "2025-08-04T03:13:54.529778+00:00"
+      },
+      {
+        "id": "b82d1d34-535e-4666-b0e8-6e23f948b34c",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "steps",
+        "data": {
+          "id": "4afbb521-e314-5e74-8214-e43db2807fe5",
+          "type": "steps",
+          "unit": "count",
+          "value": "5739",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:54.587734+00:00",
+        "updated_at": "2025-08-04T03:13:54.587741+00:00"
+      },
+      {
+        "id": "437626a4-9b78-46fa-88d2-d3609cc34680",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_duration",
+        "data": {
+          "id": "f59310f0-6977-5af1-b1d7-b12fb9e997c9",
+          "type": "active_duration",
+          "unit": "minute",
+          "value": "189",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:54.651805+00:00",
+        "updated_at": "2025-08-04T03:13:54.651809+00:00"
+      },
+      {
+        "id": "ea34d815-d470-4a54-b505-eca630eeec8e",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_medium_intensity_duration",
+        "data": {
+          "id": "de46d91b-5fd6-557a-8a8e-753714341b06",
+          "type": "activity_medium_intensity_duration",
+          "unit": "minute",
+          "value": "0",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:54.707870+00:00",
+        "updated_at": "2025-08-04T03:13:54.707875+00:00"
+      },
+      {
+        "id": "fd006f14-43ad-4980-80c7-3f44a8e475bd",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_low_intensity_duration",
+        "data": {
+          "id": "e92d7718-bab5-5443-9940-1e55bc53f877",
+          "type": "activity_low_intensity_duration",
+          "unit": "minute",
+          "value": "189",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:54.770622+00:00",
+        "updated_at": "2025-08-04T03:13:54.770628+00:00"
+      },
+      {
+        "id": "17e5a5f7-3fe4-4209-9530-4a0ff4b770b9",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_energy_burned",
+        "data": {
+          "id": "bea7090c-c0f0-5b81-97bd-943bdc83e33e",
+          "type": "active_energy_burned",
+          "unit": "kcal",
+          "value": "147",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:54.834880+00:00",
+        "updated_at": "2025-08-04T03:13:54.834884+00:00"
+      },
+      {
+        "id": "83079af9-0905-487e-8e93-cb6ccdf4f773",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "respiratory_rate_sleep",
+        "data": {
+          "id": "698ba93c-4a44-58cf-bd6a-7c8562b8a018",
+          "type": "respiratory_rate_sleep",
+          "unit": "count/minute",
+          "value": "12.539",
+          "category": "vitals",
+          "valueType": "long",
+          "aggregation": "average",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:56.004835+00:00",
+        "updated_at": "2025-08-04T03:13:56.004841+00:00"
+      },
+      {
+        "id": "b21360d6-e4bf-4db2-9f54-c4e7c56f3bd3",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "oxygen_saturation_sleep",
+        "data": {
+          "id": "6c7a6929-686f-525f-8290-561a08f118f9",
+          "type": "oxygen_saturation_sleep",
+          "unit": "percentage",
+          "value": "0.938",
+          "category": "vitals",
+          "valueType": "double",
+          "aggregation": "average",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:56.075446+00:00",
+        "updated_at": "2025-08-04T03:13:56.075452+00:00"
+      },
+      {
+        "id": "a619a538-9ff5-4e93-ae96-43529ade3313",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "respiratory_rate",
+        "data": {
+          "id": "7f1207e6-11b9-5aa7-923f-4433f5d5ec0e",
+          "type": "respiratory_rate",
+          "unit": "count/minute",
+          "value": "12.539",
+          "category": "vitals",
+          "valueType": "long",
+          "aggregation": "average",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:56.134172+00:00",
+        "updated_at": "2025-08-04T03:13:56.134177+00:00"
+      },
+      {
+        "id": "c79a306e-f53f-4e06-8096-9a533fd958f4",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "oxygen_saturation",
+        "data": {
+          "id": "08031d65-5f8e-5c68-bac2-9cf8ab5ada83",
+          "type": "oxygen_saturation",
+          "unit": "percentage",
+          "value": "0.938",
+          "category": "vitals",
+          "valueType": "double",
+          "aggregation": "average",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:56.195540+00:00",
+        "updated_at": "2025-08-04T03:13:56.195544+00:00"
+      },
+      {
+        "id": "4ec66b9b-5ab2-4d73-848d-52b09adc1393",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "heart_rate_resting",
+        "data": {
+          "id": "6d3af363-155c-5155-95df-673ad3f64bcc",
+          "type": "heart_rate_resting",
+          "unit": "bpm",
+          "value": "75.0",
+          "category": "vitals",
+          "valueType": "long",
+          "aggregation": "average",
+          "endDateTime": "2025-08-01T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-08-01T00:00:00-04:00"
+        },
+        "start_date_time": "2025-08-01T04:00:00+00:00",
+        "end_date_time": "2025-08-02T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:56.254752+00:00",
+        "updated_at": "2025-08-04T03:13:56.254757+00:00"
+      },
+      {
+        "id": "8f3a9aa3-fdab-4e96-9951-1f7bd09319fd",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_mid_time",
+        "data": {
+          "id": "cc912da0-bde0-505e-b117-14e8bced09c3",
+          "type": "sleep_mid_time",
+          "unit": "datetime",
+          "value": "2025-08-01T04:33:45.190-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-08-01T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T22:00:00+00:00",
+        "end_date_time": "2025-08-01T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:55.229822+00:00",
+        "updated_at": "2025-08-04T03:13:55.229828+00:00"
+      },
+      {
+        "id": "63ebf374-eed3-4330-9ab0-9a445fc171d4",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_awake_duration",
+        "data": {
+          "id": "7b7a2674-beba-5eff-89ff-d1d55a3632f9",
+          "type": "sleep_awake_duration",
+          "unit": "minute",
+          "value": "37",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T22:00:00+00:00",
+        "end_date_time": "2025-08-01T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:55.332494+00:00",
+        "updated_at": "2025-08-04T03:13:55.332500+00:00"
+      },
+      {
+        "id": "471e1756-cc50-4838-8a1b-e61b4d26a637",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_in_bed_duration",
+        "data": {
+          "id": "ecf4eb41-9421-5775-a139-211db43e3e20",
+          "type": "sleep_in_bed_duration",
+          "unit": "minute",
+          "value": "352",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T22:00:00+00:00",
+        "end_date_time": "2025-08-01T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:55.392525+00:00",
+        "updated_at": "2025-08-04T03:13:55.392530+00:00"
+      },
+      {
+        "id": "e20da8d1-ae41-4546-93a6-2a70b5a7eb6f",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_start_time",
+        "data": {
+          "id": "9e2a2302-3c55-583c-b168-2d05019b3a39",
+          "type": "sleep_start_time",
+          "unit": "datetime",
+          "value": "2025-08-01T01:37:46.420-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-08-01T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T22:00:00+00:00",
+        "end_date_time": "2025-08-01T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:55.470647+00:00",
+        "updated_at": "2025-08-04T03:13:55.470653+00:00"
+      },
+      {
+        "id": "b2ddf9f8-c7a0-496e-9bf7-aaf7bc99e4b7",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_interruptions",
+        "data": {
+          "id": "b7a722b4-6b62-5dc9-b018-67e4b2390a49",
+          "type": "sleep_interruptions",
+          "unit": "count",
+          "value": "11",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T22:00:00+00:00",
+        "end_date_time": "2025-08-01T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:55.527557+00:00",
+        "updated_at": "2025-08-04T03:13:55.527561+00:00"
+      },
+      {
+        "id": "40873604-5970-4394-9f11-bb8e8d929edf",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_efficiency",
+        "data": {
+          "id": "4cffe200-3ce5-5a7d-a81c-4ca729fc02d4",
+          "type": "sleep_efficiency",
+          "unit": "percentage",
+          "value": "0.893",
+          "category": "sleep",
+          "valueType": "double",
+          "aggregation": "average",
+          "endDateTime": "2025-08-01T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T22:00:00+00:00",
+        "end_date_time": "2025-08-01T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:55.583256+00:00",
+        "updated_at": "2025-08-04T03:13:55.583262+00:00"
+      },
+      {
+        "id": "a68ae8f9-cd34-4983-b862-e4a9d73bd230",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_end_time",
+        "data": {
+          "id": "72f57014-d0e3-5391-9bdf-73fdd923b005",
+          "type": "sleep_end_time",
+          "unit": "datetime",
+          "value": "2025-08-01T07:29:43.960-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-08-01T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T22:00:00+00:00",
+        "end_date_time": "2025-08-01T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:55.632915+00:00",
+        "updated_at": "2025-08-04T03:13:55.632920+00:00"
+      },
+      {
+        "id": "1507f035-bd32-4dd6-889d-a0c2a6a6d0c7",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_latency",
+        "data": {
+          "id": "d373d560-7af3-5b94-bdde-b688bb5cfda2",
+          "type": "sleep_latency",
+          "unit": "minute",
+          "value": "0",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "average",
+          "endDateTime": "2025-08-01T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T22:00:00+00:00",
+        "end_date_time": "2025-08-01T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:55.687663+00:00",
+        "updated_at": "2025-08-04T03:13:55.687668+00:00"
+      },
+      {
+        "id": "23f5e5df-407c-4f1e-b191-cbdbaeedf8b5",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_duration",
+        "data": {
+          "id": "59f0e8ff-d132-5174-a55c-05d02ce018d9",
+          "type": "sleep_duration",
+          "unit": "minute",
+          "value": "314",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-08-01T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T22:00:00+00:00",
+        "end_date_time": "2025-08-01T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:55.745953+00:00",
+        "updated_at": "2025-08-04T03:13:55.745957+00:00"
+      },
+      {
+        "id": "0f59c706-1f43-4e9f-bf87-38ac038f588d",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "heart_rate_variability_sdnn",
+        "data": {
+          "id": "77cb5d02-3b0e-5048-9093-6a4b4361173b",
+          "type": "heart_rate_variability_sdnn",
+          "unit": "millisecond",
+          "value": "59.525",
+          "category": "vitals",
+          "valueType": "double",
+          "aggregation": "average",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:15.004976+00:00",
+        "updated_at": "2025-08-04T03:13:15.004981+00:00"
+      },
+      {
+        "id": "f72c9264-17ab-4686-9c2c-becedef99096",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_hours",
+        "data": {
+          "id": "b29c18f2-786c-53fa-bdf1-1ff2b7c5ba13",
+          "type": "active_hours",
+          "unit": "hour",
+          "value": "12",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:13.782513+00:00",
+        "updated_at": "2025-08-04T03:13:13.782519+00:00"
+      },
+      {
+        "id": "1534515a-983e-410c-835c-e41eb3f9839e",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_energy_burned",
+        "data": {
+          "id": "01d5a5e9-c1b6-59df-99d7-2a4e98ee2782",
+          "type": "active_energy_burned",
+          "unit": "kcal",
+          "value": "438",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:13.831440+00:00",
+        "updated_at": "2025-08-04T03:13:13.831445+00:00"
+      },
+      {
+        "id": "3264f027-7b44-4c19-9755-8f009ee0bd89",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_medium_intensity_duration",
+        "data": {
+          "id": "73137bbf-0c98-5a3f-b97c-11d95915f3db",
+          "type": "activity_medium_intensity_duration",
+          "unit": "minute",
+          "value": "28",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:13.880425+00:00",
+        "updated_at": "2025-08-04T03:13:13.880431+00:00"
+      },
+      {
+        "id": "1152f77b-4f78-4767-ac9b-27ade06644fc",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_duration",
+        "data": {
+          "id": "d2ac92fd-5ede-5de6-8233-0ea6e54e1db9",
+          "type": "active_duration",
+          "unit": "minute",
+          "value": "225",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:13.930431+00:00",
+        "updated_at": "2025-08-04T03:13:13.930436+00:00"
+      },
+      {
+        "id": "632d6d0e-108b-4944-acce-fbba97e791a7",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_sedentary_duration",
+        "data": {
+          "id": "c6b11aa9-f955-5883-9b87-c7d68f8f3729",
+          "type": "activity_sedentary_duration",
+          "unit": "minute",
+          "value": "1243",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:13.983831+00:00",
+        "updated_at": "2025-08-04T03:13:13.983837+00:00"
+      },
+      {
+        "id": "b0fb9d3f-aaf4-48d5-abd3-5706638d8ccc",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_high_intensity_duration",
+        "data": {
+          "id": "8d283c74-1915-5397-b780-4bea978fcf8f",
+          "type": "activity_high_intensity_duration",
+          "unit": "minute",
+          "value": "0",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:14.034986+00:00",
+        "updated_at": "2025-08-04T03:13:14.034992+00:00"
+      },
+      {
+        "id": "d0aae679-4bc4-4e52-99d1-be323023ae5d",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "heart_rate_resting",
+        "data": {
+          "id": "c95337c0-53ad-5f84-9b3c-387f83f00805",
+          "type": "heart_rate_resting",
+          "unit": "bpm",
+          "value": "85.0",
+          "category": "vitals",
+          "valueType": "long",
+          "aggregation": "average",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:15.054288+00:00",
+        "updated_at": "2025-08-04T03:13:15.054293+00:00"
+      },
+      {
+        "id": "6b2e3719-30b7-4188-8a4c-38735054ea46",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "steps",
+        "data": {
+          "id": "145342b2-3e7d-597c-a339-1d174ad9030a",
+          "type": "steps",
+          "unit": "count",
+          "value": "6647",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:14.093087+00:00",
+        "updated_at": "2025-08-04T03:13:14.093091+00:00"
+      },
+      {
+        "id": "dbf52f77-03e2-4b05-9602-74344e50a8a8",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_low_intensity_duration",
+        "data": {
+          "id": "8d9f8156-5bba-5786-b038-654ebd2f3f43",
+          "type": "activity_low_intensity_duration",
+          "unit": "minute",
+          "value": "196",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-31T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-31T04:00:00+00:00",
+        "end_date_time": "2025-08-01T03:59:59+00:00",
+        "created_at": "2025-08-04T03:13:14.148275+00:00",
+        "updated_at": "2025-08-04T03:13:14.148280+00:00"
+      },
+      {
+        "id": "bc4141aa-684b-4dca-8b7c-64f311ff7802",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_end_time",
+        "data": {
+          "id": "ffcf2e2e-acf5-5026-87c2-1a6c357c14f3",
+          "type": "sleep_end_time",
+          "unit": "datetime",
+          "value": "2025-07-31T07:35:55-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-07-31T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T22:00:00+00:00",
+        "end_date_time": "2025-07-31T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:14.615176+00:00",
+        "updated_at": "2025-08-04T03:13:14.615182+00:00"
+      },
+      {
+        "id": "5ccf69c7-d300-438b-95df-c81b5de09aa3",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_in_bed_duration",
+        "data": {
+          "id": "c5246244-5bf9-5219-9bc6-1b057a5f4f92",
+          "type": "sleep_in_bed_duration",
+          "unit": "minute",
+          "value": "485",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T22:00:00+00:00",
+        "end_date_time": "2025-07-31T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:14.781175+00:00",
+        "updated_at": "2025-08-04T03:13:14.781229+00:00"
+      },
+      {
+        "id": "22531f7c-2b8d-4923-b0ea-5ed502ca2609",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_duration",
+        "data": {
+          "id": "82394d8a-18a9-5983-8639-1b1ebdc39f63",
+          "type": "sleep_duration",
+          "unit": "minute",
+          "value": "485",
+          "category": "sleep",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-31T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T22:00:00+00:00",
+        "end_date_time": "2025-07-31T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:14.727304+00:00",
+        "updated_at": "2025-08-04T03:13:14.727310+00:00"
+      },
+      {
+        "id": "d114cc2f-623c-4299-8150-31472c34e903",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_start_time",
+        "data": {
+          "id": "7d68e5f3-17f6-5e3e-8135-f97b71c6ec39",
+          "type": "sleep_start_time",
+          "unit": "datetime",
+          "value": "2025-07-30T23:30-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-07-31T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T22:00:00+00:00",
+        "end_date_time": "2025-07-31T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:14.447073+00:00",
+        "updated_at": "2025-08-04T03:13:14.447080+00:00"
+      },
+      {
+        "id": "844e00ba-56d4-4730-9ce7-8b0fae540b75",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "sleep",
+        "type": "sleep_mid_time",
+        "data": {
+          "id": "31406c03-b768-5a19-81f0-387406df1f63",
+          "type": "sleep_mid_time",
+          "unit": "datetime",
+          "value": "2025-07-31T03:32:57.500-04:00",
+          "category": "sleep",
+          "valueType": "datetime",
+          "aggregation": "none",
+          "endDateTime": "2025-07-31T17:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T18:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T22:00:00+00:00",
+        "end_date_time": "2025-07-31T21:59:59+00:00",
+        "created_at": "2025-08-04T03:13:14.563030+00:00",
+        "updated_at": "2025-08-04T03:13:14.563036+00:00"
+      },
+      {
+        "id": "5b2b2d50-fb12-4bd2-89a4-b3a044590876",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_hours",
+        "data": {
+          "id": "fd10c6e0-6d2d-5899-96d4-f2913334ae85",
+          "type": "active_hours",
+          "unit": "hour",
+          "value": "9",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:39.130263+00:00",
+        "updated_at": "2025-08-04T03:12:39.130267+00:00"
+      },
+      {
+        "id": "0c8c3698-aa6d-4c45-85db-97cd19cccb33",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_high_intensity_duration",
+        "data": {
+          "id": "4e5102b5-7a68-5a41-b313-bf440cf174e6",
+          "type": "activity_high_intensity_duration",
+          "unit": "minute",
+          "value": "0",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:39.184119+00:00",
+        "updated_at": "2025-08-04T03:12:39.184124+00:00"
+      },
+      {
+        "id": "1cb72cf3-2def-485a-9481-37ff84c265dc",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_sedentary_duration",
+        "data": {
+          "id": "6f86cc00-0f5f-58f9-bad9-95b611eed596",
+          "type": "activity_sedentary_duration",
+          "unit": "minute",
+          "value": "1372",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:39.227900+00:00",
+        "updated_at": "2025-08-04T03:12:39.227905+00:00"
+      },
+      {
+        "id": "2b25fe50-19c1-49e9-8902-e31e614a2d4e",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "steps",
+        "data": {
+          "id": "0d023462-cd5a-5679-859f-e71f5a2d10de",
+          "type": "steps",
+          "unit": "count",
+          "value": "3748",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:39.273042+00:00",
+        "updated_at": "2025-08-04T03:12:39.273048+00:00"
+      },
+      {
+        "id": "0d4d3909-6478-4344-99a4-18c0b0ed18ed",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_duration",
+        "data": {
+          "id": "c126f3ae-644b-5951-a9cf-1f436d06ad62",
+          "type": "active_duration",
+          "unit": "minute",
+          "value": "67",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:39.325262+00:00",
+        "updated_at": "2025-08-04T03:12:39.325266+00:00"
+      },
+      {
+        "id": "1e387133-9173-4c7b-a09d-feebb258e4a4",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_medium_intensity_duration",
+        "data": {
+          "id": "a7095406-8b3a-56a2-9c40-2fe43953d5f8",
+          "type": "activity_medium_intensity_duration",
+          "unit": "minute",
+          "value": "6",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:39.374544+00:00",
+        "updated_at": "2025-08-04T03:12:39.374549+00:00"
+      },
+      {
+        "id": "2ca5c9a7-ee6c-46ad-821d-d9e5b531b997",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "activity_low_intensity_duration",
+        "data": {
+          "id": "24144fde-19a8-5695-87d2-96c6f2ff44ae",
+          "type": "activity_low_intensity_duration",
+          "unit": "minute",
+          "value": "61",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:39.425472+00:00",
+        "updated_at": "2025-08-04T03:12:39.425476+00:00"
+      },
+      {
+        "id": "24bb8714-5289-47b4-9ef1-f81d81a162d3",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "activity",
+        "type": "active_energy_burned",
+        "data": {
+          "id": "553f6a75-3477-57e5-93cb-4b572db5c7b2",
+          "type": "active_energy_burned",
+          "unit": "kcal",
+          "value": "107",
+          "category": "activity",
+          "valueType": "integer",
+          "aggregation": "total",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:39.474419+00:00",
+        "updated_at": "2025-08-04T03:12:39.474424+00:00"
+      },
+      {
+        "id": "bea60e84-7027-4988-b2da-e73855175637",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "heart_rate_variability_sdnn",
+        "data": {
+          "id": "8d9a941e-8d9d-5588-b429-abde41144b8e",
+          "type": "heart_rate_variability_sdnn",
+          "unit": "millisecond",
+          "value": "42.891",
+          "category": "vitals",
+          "valueType": "double",
+          "aggregation": "average",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:40.462440+00:00",
+        "updated_at": "2025-08-04T03:12:40.462445+00:00"
+      },
+      {
+        "id": "169d554d-889e-421a-8477-bd21c5e6de17",
+        "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+        "category": "vitals",
+        "type": "heart_rate_resting",
+        "data": {
+          "id": "6f6f0c38-bb7e-5087-b4d1-c3726d9cdea5",
+          "type": "heart_rate_resting",
+          "unit": "bpm",
+          "value": "67.0",
+          "category": "vitals",
+          "valueType": "long",
+          "aggregation": "average",
+          "endDateTime": "2025-07-30T23:59:59-04:00",
+          "periodicity": "daily",
+          "startDateTime": "2025-07-30T00:00:00-04:00"
+        },
+        "start_date_time": "2025-07-30T04:00:00+00:00",
+        "end_date_time": "2025-07-31T03:59:59+00:00",
+        "created_at": "2025-08-04T03:12:40.523245+00:00",
+        "updated_at": "2025-08-04T03:12:40.523250+00:00"
+      }
+    ]
+  },
+  "analysis_context": {
+    "has_previous_analysis": false,
+    "previous_analysis_date": null,
+    "previous_archetype": null,
+    "user_preferences": {},
+    "health_goals": {},
+    "dietary_restrictions": {},
+    "lifestyle_context": {},
+    "medical_conditions": {},
+    "formatted_context": ""
+  }
+}

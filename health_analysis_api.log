@@ -1,75 +1,1091 @@
-2025-08-05 16:26:06,771 - WARNING - Dashboard API endpoints not available
-2025-08-05 16:26:06,773 - INFO - Health Analysis API starting up...
-2025-08-05 16:26:06,774 - WARNING - Dashboard API not available at startup
-2025-08-05 16:27:58,073 - INFO - Health Analysis API shutting down...
-2025-08-05 16:27:58,620 - WARNING - Dashboard API endpoints not available
-2025-08-05 16:27:58,623 - INFO - Health Analysis API starting up...
-2025-08-05 16:27:58,623 - WARNING - Dashboard API not available at startup
-2025-08-05 16:29:27,071 - INFO - Health Analysis API shutting down...
-2025-08-05 16:29:27,556 - WARNING - Dashboard API endpoints not available
-2025-08-05 16:29:27,559 - INFO - Health Analysis API starting up...
-2025-08-05 16:29:27,559 - WARNING - Dashboard API not available at startup
-2025-08-05 16:29:29,551 - INFO - Health Analysis API shutting down...
-2025-08-05 16:29:31,268 - WARNING - Dashboard API endpoints not available
-2025-08-05 16:29:31,271 - INFO - Health Analysis API starting up...
-2025-08-05 16:29:31,271 - WARNING - Dashboard API not available at startup
-2025-08-05 16:31:13,777 - INFO - Health Analysis API shutting down...
-2025-08-05 16:31:21,707 - WARNING - Dashboard API endpoints not available
-2025-08-05 16:31:21,709 - INFO - Health Analysis API starting up...
-2025-08-05 16:31:21,709 - WARNING - Dashboard API not available at startup
-2025-08-05 16:31:50,709 - INFO - Health Analysis API shutting down...
-2025-08-05 16:32:00,311 - INFO - Dashboard API Phase 1 endpoints included
-2025-08-05 16:32:00,313 - INFO - Health Analysis API starting up...
-2025-08-05 16:32:00,313 - INFO - Dashboard API Phase 1 initialized successfully
-2025-08-05 16:32:00,675 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
-2025-08-05 16:32:01,079 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/ "HTTP/1.1 200 OK"
-2025-08-05 16:32:01,079 - INFO - hos-fapi health check: healthy
-2025-08-05 16:32:01,079 - INFO - External hos-fapi API connection successful
-2025-08-05 16:32:16,799 - INFO - Supabase client initialized successfully
-2025-08-05 16:32:16,799 - INFO - CacheService initialized
-2025-08-05 16:32:17,140 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
-2025-08-05 16:32:17,140 - INFO - DashboardService initialized
-2025-08-05 16:32:17,140 - INFO - Listing users: limit=20, offset=0
-2025-08-05 16:32:17,980 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=id "HTTP/2 200 OK"
-2025-08-05 16:32:18,310 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.test_user_123&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:19,436 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.test_user_123&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:19,772 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.test_user_123 "HTTP/2 200 OK"
-2025-08-05 16:32:20,064 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.test_user_123 "HTTP/2 200 OK"
-2025-08-05 16:32:20,065 - ERROR - Error getting analysis summary for test_user_123: 'AnalysisRecord' object has no attribute 'get'
-2025-08-05 16:32:20,374 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:20,670 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:20,986 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1 "HTTP/2 200 OK"
-2025-08-05 16:32:21,309 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.demo_user_456&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:21,629 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.demo_user_456&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:21,772 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.demo_user_456 "HTTP/2 200 OK"
-2025-08-05 16:32:22,073 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.demo_user_456 "HTTP/2 200 OK"
-2025-08-05 16:32:22,074 - ERROR - Error getting analysis summary for demo_user_456: 'AnalysisRecord' object has no attribute 'get'
-2025-08-05 16:32:22,403 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:22,534 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:22,656 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
-2025-08-05 16:32:22,982 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
-2025-08-05 16:32:22,983 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
-2025-08-05 16:32:23,199 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/1.1 404 Not Found"
-2025-08-05 16:32:23,200 - WARNING - No scores found for user mbzXA48h4ASzre407KoFMepfyGv1
-2025-08-05 16:32:23,502 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:23,505 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=uJgv8HSUVsdtcFOw4f4nLUG4lYt1 "HTTP/1.1 404 Not Found"
-2025-08-05 16:32:23,506 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=test_user_123 "HTTP/1.1 404 Not Found"
-2025-08-05 16:32:23,506 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=demo_user_456 "HTTP/1.1 404 Not Found"
-2025-08-05 16:32:23,507 - WARNING - No scores found for user uJgv8HSUVsdtcFOw4f4nLUG4lYt1
-2025-08-05 16:32:23,809 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:23,810 - WARNING - No scores found for user test_user_123
-2025-08-05 16:32:24,113 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.test_user_123&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:24,114 - WARNING - No scores found for user demo_user_456
-2025-08-05 16:32:24,414 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.demo_user_456&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:32:24,415 - INFO - Retrieved 4 users (limit=20, offset=0, total=4)
-2025-08-05 16:32:24,415 - INFO - Successfully listed 4 users
-2025-08-05 16:33:12,847 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
-2025-08-05 16:33:13,217 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:33:13,592 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
-2025-08-05 16:33:13,914 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
-2025-08-05 16:33:14,212 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
-2025-08-05 16:33:14,214 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
-2025-08-05 16:33:14,219 - INFO - Retrieved complete profile for user mbzXA48h4ASzre407KoFMepfyGv1
-2025-08-05 16:33:14,220 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
-2025-08-05 16:33:58,676 - INFO - Health Analysis API shutting down...
-2025-08-05 16:33:58,676 - INFO - Dashboard API cleanup completed
+2025-08-06 13:19:12,173 - INFO - Subprocess[72]:  Behavior analysis complete!
+2025-08-06 13:19:12,173 - INFO - → User Response: behavior_analysis - Behavior analysis complete!
+2025-08-06 13:19:12,278 - INFO - Subprocess[73]: 
+2025-08-06 13:19:12,279 - INFO - Subprocess[74]:   Behavioral Analysis Report 
+2025-08-06 13:19:12,279 - INFO - Subprocess[75]:                                                                              
+2025-08-06 13:19:12,279 - INFO - Subprocess[76]:     Behavioral Analysis Report                                           
+2025-08-06 13:19:12,279 - INFO - Subprocess[77]:    2025-08-06 - User: mbzXA48h4ASzre407KoFMepfyGv1                        
+2025-08-06 13:19:12,279 - INFO - Subprocess[78]:         Behavioral Signature                                            
+2025-08-06 13:19:12,279 - INFO - Subprocess[79]:           'Consistent Initiator'                                         
+2025-08-06 13:19:12,279 - INFO - Subprocess[80]:           Confidence: 70.0%                                              
+2025-08-06 13:19:12,279 - INFO - Subprocess[81]:         Sophistication Assessment                                       
+2025-08-06 13:19:12,279 - INFO - Subprocess[82]:           Score: 35/100 (Novice)                                         
+2025-08-06 13:19:12,279 - INFO - Subprocess[83]:           The baseline data shows a plan completion rate around 73.8%    
+2025-08-06 13:19:12,279 - INFO - Subprocess[84]:              with moderate routine adherence and minimal proactive          
+2025-08-06 13:19:12,279 - INFO - Subprocess[85]:              engagement. The short current streak (1 day) indicates early   
+2025-08-06 13:19:12,279 - INFO - Subprocess[86]:              habit formation, while delays and low self-added activities    
+2025-08-06 13:19:12,279 - INFO - Subprocess[87]:              highlight opportunities for growth.                            
+2025-08-06 13:19:12,280 - INFO - Subprocess[88]:         Primary Goal                                                    
+2025-08-06 13:19:12,280 - INFO - Subprocess[89]:           Improve routine consistency and sleep quality                  
+2025-08-06 13:19:12,280 - INFO - Subprocess[90]:           Timeline: 30_days                                              
+2025-08-06 13:19:12,280 - INFO - Subprocess[91]:            Success Metrics                                             
+2025-08-06 13:19:12,280 - INFO - Subprocess[92]:                Increase on-time completion rate to over 70%             
+2025-08-06 13:19:12,280 - INFO - Subprocess[93]:                Extend current streak to at least 3 consecutive days     
+2025-08-06 13:19:12,280 - INFO - Subprocess[94]:                Report perceived improvement in sleep quality            
+2025-08-06 13:19:12,280 - INFO - Subprocess[95]:         Adaptive Parameters                                              
+2025-08-06 13:19:12,280 - INFO - Subprocess[96]:            Complexity: Low                                              
+2025-08-06 13:19:12,280 - INFO - Subprocess[97]:            Time Commitment: Minimal                                     
+2025-08-06 13:19:12,280 - INFO - Subprocess[98]:            Technology Integration: Standard                             
+2025-08-06 13:19:12,280 - INFO - Subprocess[99]:            Customization Level: Basic                                   
+2025-08-06 13:19:12,280 - INFO - Subprocess[100]:         Current Status                                                  
+2025-08-06 13:19:12,280 - INFO - Subprocess[101]:           Readiness Level: Novice                                        
+2025-08-06 13:19:12,280 - INFO - Subprocess[102]:           Habit Formation Stage: Initiation                              
+2025-08-06 13:19:12,280 - INFO - Subprocess[103]:         Key Recommendations                                             
+2025-08-06 13:19:12,280 - INFO - Subprocess[104]:            1. Establish and adhere to a fixed sleep schedule to           
+2025-08-06 13:19:12,280 - INFO - Subprocess[105]:              reinforce routine consistency.                                 
+2025-08-06 13:19:12,280 - INFO - Subprocess[106]:            2. Incorporate proactive in-app reminders to support habit     
+2025-08-06 13:19:12,281 - INFO - Subprocess[107]:              formation.                                                     
+2025-08-06 13:19:12,281 - INFO - Subprocess[108]:            3. Utilize relaxation and stress management techniques to      
+2025-08-06 13:19:12,281 - INFO - Subprocess[109]:              mitigate work-related stress.                                  
+2025-08-06 13:19:12,281 - INFO - Subprocess[110]:            4. Monitor daily engagement and weekly performance to adjust   
+2025-08-06 13:19:12,281 - INFO - Subprocess[111]:              strategies as needed.                                          
+2025-08-06 13:19:12,281 - INFO - Subprocess[112]:            5. Review progress regularly and refine strategies based on    
+2025-08-06 13:19:12,281 - INFO - Subprocess[113]:               emerging behavior patterns.                                    
+2025-08-06 13:19:12,281 - INFO - Subprocess[114]:                                                                              
+2025-08-06 13:19:12,281 - INFO - Subprocess[115]: 
+2025-08-06 13:19:12,281 - INFO - Subprocess[116]:  Creating personalized nutrition plan...
+2025-08-06 13:19:12,281 - INFO - → User Response: nutrition_planning - Creating personalized nutrition plan...
+2025-08-06 13:20:01,501 - INFO - Subprocess[117]:  Nutrition plan created!
+2025-08-06 13:20:01,501 - INFO - → User Response: nutrition_planning - Nutrition plan created!
+2025-08-06 13:20:01,602 - INFO - Subprocess[118]: 
+2025-08-06 13:20:01,602 - INFO - Subprocess[119]:   Personalized Detailed Nutrition Plan 
+2025-08-06 13:20:01,603 - INFO - → User Response: nutrition_planning - Personalized Detailed Nutrition Plan
+2025-08-06 13:20:01,717 - INFO - Subprocess[120]:                                                                              
+2025-08-06 13:20:01,718 - INFO - Subprocess[121]:     Personalized Detailed Nutrition Plan                                 
+2025-08-06 13:20:01,718 - INFO - → User Response: nutrition_planning - Personalized Detailed Nutrition Plan
+2025-08-06 13:20:01,832 - INFO - Subprocess[122]:    2025-08-07                                                             
+2025-08-06 13:20:01,832 - INFO - Subprocess[123]:         Summary: This personalized nutrition plan is designed to        
+2025-08-06 13:20:01,833 - INFO - → User Response: nutrition_planning - Summary: This personalized nutrition plan is desig
+2025-08-06 13:20:01,948 - INFO - Subprocess[124]:          support improved routine consistency and sleep quality. It         
+2025-08-06 13:20:01,948 - INFO - Subprocess[125]:          provides balanced energy distribution across the day,              
+2025-08-06 13:20:01,948 - INFO - Subprocess[126]:          incorporating nutrient-dense meals that promote brain function,    
+2025-08-06 13:20:01,948 - INFO - Subprocess[127]:          steady energy, and relaxation. Each meal and snack is timed to     
+2025-08-06 13:20:01,948 - INFO - Subprocess[128]:          help regulate metabolism and support recovery, addressing          
+2025-08-06 13:20:01,948 - INFO - Subprocess[129]:          work-related stress and seasonal challenges by establishing a      
+2025-08-06 13:20:01,948 - INFO - Subprocess[130]:          consistent eating routine.                                         
+2025-08-06 13:20:01,948 - INFO - Subprocess[131]:         Daily Nutritional Targets                                       
+2025-08-06 13:20:01,948 - INFO - Subprocess[132]:            Calories: 1800                                               
+2025-08-06 13:20:01,948 - INFO - Subprocess[133]:            Protein: 100g (30%)                                          
+2025-08-06 13:20:01,948 - INFO - Subprocess[134]:            Carbs: 200g (40%)                                            
+2025-08-06 13:20:01,948 - INFO - Subprocess[135]:            Fat: 60g (30%)                                               
+2025-08-06 13:20:01,948 - INFO - Subprocess[136]:            Fiber: 30g                                                   
+2025-08-06 13:20:01,949 - INFO - Subprocess[137]:            Sugar: 50g                                                   
+2025-08-06 13:20:01,949 - INFO - Subprocess[138]:            Sodium: 2300mg                                               
+2025-08-06 13:20:01,949 - INFO - Subprocess[139]:            Potassium: 3500mg                                            
+2025-08-06 13:20:01,949 - INFO - Subprocess[140]:            Key Vitamins & Minerals                                     
+2025-08-06 13:20:01,949 - INFO - Subprocess[141]:                Vitamin D: 600 IU                                        
+2025-08-06 13:20:01,949 - INFO - Subprocess[142]:                Calcium: 1000 mg                                         
+2025-08-06 13:20:01,949 - INFO - Subprocess[143]:                Iron: 18 mg                                              
+2025-08-06 13:20:01,949 - INFO - Subprocess[144]:                Magnesium: 400 mg                                        
+2025-08-06 13:20:01,949 - INFO - Subprocess[145]:         Early Morning                                                    
+2025-08-06 13:20:01,949 - INFO - Subprocess[146]:            5:45-6:15 AM                                                
+2025-08-06 13:20:01,949 - INFO - Subprocess[147]:            Tip: Kickstart metabolism with hydration to support         
+2025-08-06 13:20:01,949 - INFO - Subprocess[148]:             digestion and gentle activation of the body after sleep.       
+2025-08-06 13:20:01,949 - INFO - Subprocess[149]:           1. Lemon Water with Almonds                                    
+2025-08-06 13:20:01,949 - INFO - Subprocess[150]:                Details: Begin your day with a glass of water infused   
+2025-08-06 13:20:01,949 - INFO - Subprocess[151]:                 with freshly squeezed lemon to rehydrate and stimulate     
+2025-08-06 13:20:01,949 - INFO - Subprocess[152]:                 digestion, paired with 6 raw almonds to provide a light    
+2025-08-06 13:20:01,949 - INFO - Subprocess[153]:                 source of healthy fats and proteins.                       
+2025-08-06 13:20:01,949 - INFO - Subprocess[154]:                Calories: 50 | Protein: 2g                              
+2025-08-06 13:20:01,950 - INFO - Subprocess[155]:                Macros: Carbs 5g | Fat 4g                               
+2025-08-06 13:20:01,950 - INFO - Subprocess[156]:         Breakfast                                                        
+2025-08-06 13:20:01,950 - INFO - Subprocess[157]:            6:30-7:00 AM                                                
+2025-08-06 13:20:01,950 - INFO - Subprocess[158]:            Tip: Incorporate brain-boosting nutrients and fiber-rich    
+2025-08-06 13:20:01,950 - INFO - Subprocess[159]:             foods to support cognitive function and provide steady energy  
+2025-08-06 13:20:01,950 - INFO - Subprocess[160]:             as you start your day.                                         
+2025-08-06 13:20:01,950 - INFO - Subprocess[161]:           1. Avocado Toast with Egg                                      
+2025-08-06 13:20:01,950 - INFO - Subprocess[162]:                Details: Enjoy one slice of whole grain toast topped    
+2025-08-06 13:20:01,950 - INFO - Subprocess[163]:                 with half a mashed avocado and one poached egg, lightly    
+2025-08-06 13:20:01,950 - INFO - Subprocess[164]:                 seasoned with pepper and a pinch of salt. This meal        
+2025-08-06 13:20:01,950 - INFO - Subprocess[165]:                 supplies omega-3 fatty acids and high-quality protein to   
+2025-08-06 13:20:01,950 - INFO - Subprocess[166]:                 fuel brain function.                                       
+2025-08-06 13:20:01,950 - INFO - Subprocess[167]:                Calories: 300 | Protein: 15g                            
+2025-08-06 13:20:01,950 - INFO - Subprocess[168]:                Macros: Carbs 35g | Fat 12g                             
+2025-08-06 13:20:01,950 - INFO - Subprocess[169]:         Morning Snack                                                    
+2025-08-06 13:20:01,951 - INFO - Subprocess[170]:            9:30-10:00 AM                                               
+2025-08-06 13:20:01,951 - INFO - Subprocess[171]:            Tip: Maintain energy and concentration by keeping blood     
+2025-08-06 13:20:01,951 - INFO - Subprocess[172]:             sugar levels stable with a nutrient-rich snack.                
+2025-08-06 13:20:01,951 - INFO - Subprocess[173]:           1. Greek Yogurt Bowl with Blueberries                          
+2025-08-06 13:20:01,951 - INFO - Subprocess[174]:                Details: A cup of non-fat Greek yogurt mixed with a     
+2025-08-06 13:20:01,951 - INFO - Subprocess[175]:                 half-cup of fresh blueberries and a light drizzle of       
+2025-08-06 13:20:01,951 - INFO - Subprocess[176]:                 honey to offer antioxidants and probiotics for sustained   
+2025-08-06 13:20:01,951 - INFO - Subprocess[177]:                 mental clarity.                                            
+2025-08-06 13:20:01,951 - INFO - Subprocess[178]:                Calories: 150 | Protein: 10g                            
+2025-08-06 13:20:01,951 - INFO - Subprocess[179]:                Macros: Carbs 20g | Fat 2g                              
+2025-08-06 13:20:01,951 - INFO - Subprocess[180]:         Lunch                                                            
+2025-08-06 13:20:01,951 - INFO - Subprocess[181]:            12:00-12:30 PM                                              
+2025-08-06 13:20:01,951 - INFO - Subprocess[182]:            Tip: Fuel your afternoon with a balanced meal combining     
+2025-08-06 13:20:01,951 - INFO - Subprocess[183]:             lean protein, whole grains, and vegetables for sustained       
+2025-08-06 13:20:01,951 - INFO - Subprocess[184]:             energy and improved focus.                                     
+2025-08-06 13:20:01,951 - INFO - Subprocess[185]:           1. Grilled Chicken Salad with Quinoa                           
+2025-08-06 13:20:01,951 - INFO - Subprocess[186]:                Details: A salad featuring 3 oz of grilled chicken      
+2025-08-06 13:20:01,951 - INFO - Subprocess[187]:                 breast on a bed of mixed greens, cherry tomatoes,          
+2025-08-06 13:20:01,951 - INFO - Subprocess[188]:                 cucumbers, and a light olive oil dressing, accompanied by  
+2025-08-06 13:20:01,951 - INFO - Subprocess[189]:                 1/2 cup of cooked quinoa to provide complex                
+2025-08-06 13:20:01,951 - INFO - Subprocess[190]:                 carbohydrates.                                             
+2025-08-06 13:20:01,951 - INFO - Subprocess[191]:                Calories: 450 | Protein: 30g                            
+2025-08-06 13:20:01,952 - INFO - Subprocess[192]:                Macros: Carbs 40g | Fat 15g                             
+2025-08-06 13:20:01,952 - INFO - Subprocess[193]:         Afternoon Snack                                                  
+2025-08-06 13:20:01,952 - INFO - Subprocess[194]:            3:00-3:30 PM                                                
+2025-08-06 13:20:01,952 - INFO - Subprocess[195]:            Tip: Recharge after activity with a snack that stabilizes   
+2025-08-06 13:20:01,952 - INFO - Subprocess[196]:             blood sugar while offering essential nutrients and a modest    
+2025-08-06 13:20:01,952 - INFO - Subprocess[197]:             energy boost.                                                  
+2025-08-06 13:20:01,952 - INFO - Subprocess[198]:           1. Apple with Peanut Butter                                    
+2025-08-06 13:20:01,952 - INFO - Subprocess[199]:                Details: One medium apple sliced and paired with 1      
+2025-08-06 13:20:01,952 - INFO - Subprocess[200]:                 tablespoon of natural peanut butter, delivering a balance  
+2025-08-06 13:20:01,952 - INFO - Subprocess[201]:                 of simple carbohydrates and healthy fats to keep energy    
+2025-08-06 13:20:01,952 - INFO - Subprocess[202]:                 levels steady.                                             
+2025-08-06 13:20:01,952 - INFO - Subprocess[203]:                Calories: 200 | Protein: 4g                             
+2025-08-06 13:20:01,952 - INFO - Subprocess[204]:                Macros: Carbs 28g | Fat 9g                              
+2025-08-06 13:20:01,952 - INFO - Subprocess[205]:         Dinner                                                           
+2025-08-06 13:20:01,952 - INFO - Subprocess[206]:            6:00-6:30 PM                                                
+2025-08-06 13:20:01,952 - INFO - Subprocess[207]:            Tip: Promote muscle recovery and prepare your body for      
+2025-08-06 13:20:01,953 - INFO - Subprocess[208]:             rest by combining lean protein, complex carbohydrates, and     
+2025-08-06 13:20:01,953 - INFO - Subprocess[209]:             nutrient-dense vegetables.                                     
+2025-08-06 13:20:01,953 - INFO - Subprocess[210]:           1. Salmon with Steamed Vegetables and Brown Rice               
+2025-08-06 13:20:01,953 - INFO - Subprocess[211]:                Details: A dinner plate featuring 4 oz of baked salmon  
+2025-08-06 13:20:01,953 - INFO - Subprocess[212]:                 (rich in omega-3 fatty acids), 1 cup of steamed broccoli   
+2025-08-06 13:20:01,953 - INFO - Subprocess[213]:                 and carrots, and 1/2 cup of brown rice. A light drizzle    
+2025-08-06 13:20:01,953 - INFO - Subprocess[214]:                 of olive oil and a squeeze of lemon enhances flavor while  
+2025-08-06 13:20:01,953 - INFO - Subprocess[215]:                 supporting digestion.                                      
+2025-08-06 13:20:01,953 - INFO - Subprocess[216]:                Calories: 500 | Protein: 30g                            
+2025-08-06 13:20:01,953 - INFO - Subprocess[217]:                Macros: Carbs 50g | Fat 15g                             
+2025-08-06 13:20:01,953 - INFO - Subprocess[218]:         Evening Snack                                                    
+2025-08-06 13:20:01,953 - INFO - Subprocess[219]:             8:30-9:00 PM                                                
+2025-08-06 13:20:01,953 - INFO - Subprocess[220]:             Tip: A light snack that promotes relaxation and minimizes   
+2025-08-06 13:20:01,953 - INFO - Subprocess[221]:              digestive load, assisting in preparing your body for a         
+2025-08-06 13:20:01,954 - INFO - Subprocess[222]:              restorative night of sleep.                                    
+2025-08-06 13:20:01,954 - INFO - Subprocess[223]:            1. Herbal Tea with Cottage Cheese                              
+2025-08-06 13:20:01,954 - INFO - Subprocess[224]:                 Details: Enjoy a calming cup of chamomile herbal tea    
+2025-08-06 13:20:01,954 - INFO - Subprocess[225]:                  with 1/2 cup of low-fat cottage cheese sprinkled lightly   
+2025-08-06 13:20:01,954 - INFO - Subprocess[226]:                  with cinnamon. This combination offers a gentle source of  
+2025-08-06 13:20:01,954 - INFO - Subprocess[227]:                  protein and aids in muscle repair overnight.               
+2025-08-06 13:20:01,954 - INFO - Subprocess[228]:                 Calories: 100 | Protein: 10g                            
+2025-08-06 13:20:01,954 - INFO - Subprocess[229]:                 Macros: Carbs 8g | Fat 2g                               
+2025-08-06 13:20:01,954 - INFO - Subprocess[230]:                                                                              
+2025-08-06 13:20:01,954 - INFO - Subprocess[231]: 
+2025-08-06 13:20:01,954 - INFO - Subprocess[232]:  Creating personalized routine plan with behavioral insights for Peak
+2025-08-06 13:20:01,954 - INFO - → User Response: routine_planning - Creating personalized routine plan with behavioral
+2025-08-06 13:20:02,065 - INFO - Subprocess[233]: Performer...
+2025-08-06 13:20:20,784 - INFO - Subprocess[234]:  Behaviorally-informed routine plan created!
+2025-08-06 13:20:20,784 - INFO - → User Response: routine_planning - Behaviorally-informed routine plan created!
+2025-08-06 13:20:20,895 - INFO - Subprocess[235]: 
+2025-08-06 13:20:20,896 - INFO - Subprocess[236]:   Personalized Routine Plan (Peak Performer) 
+2025-08-06 13:20:20,896 - INFO - → User Response: routine_planning - Personalized Routine Plan (Peak Performer)
+2025-08-06 13:20:20,999 - INFO - Subprocess[237]:                                                                              
+2025-08-06 13:20:21,000 - INFO - Subprocess[238]:     Personalized Routine Plan (Peak Performer)                          
+2025-08-06 13:20:21,000 - INFO - → User Response: routine_planning - Personalized Routine Plan (Peak Performer)
+2025-08-06 13:20:21,101 - INFO - Subprocess[239]:    2025-08-07                                                             
+2025-08-06 13:20:21,101 - INFO - Subprocess[240]:         Summary: This routine is tailored for a novice peak performer   
+2025-08-06 13:20:21,101 - INFO - Subprocess[241]:          aiming to improve consistency and sleep quality with minimal yet   
+2025-08-06 13:20:21,101 - INFO - Subprocess[242]:          effective activities. The tasks are designed to ease habit         
+2025-08-06 13:20:21,101 - INFO - Subprocess[243]:          formation, reduce work-related stress, and support a fixed sleep   
+2025-08-06 13:20:21,102 - INFO - Subprocess[244]:          schedule.                                                          
+2025-08-06 13:20:21,102 - INFO - Subprocess[245]:         Morning Wake-up                                                 
+2025-08-06 13:20:21,102 - INFO - Subprocess[246]:            07:00 - 07:45                                               
+2025-08-06 13:20:21,102 - INFO - Subprocess[247]:            Why: Starting the day with structured activities sets the   
+2025-08-06 13:20:21,102 - INFO - Subprocess[248]:             tone for consistency and improves circadian rhythm,            
+2025-08-06 13:20:21,102 - INFO - Subprocess[249]:             supporting both mental alertness and sleep quality.            
+2025-08-06 13:20:21,102 - INFO - Subprocess[250]:           1. Open curtains and get natural light exposure for 5          
+2025-08-06 13:20:21,103 - INFO - Subprocess[251]:             minutes.                                                       
+2025-08-06 13:20:21,103 - INFO - Subprocess[252]:               Exposure to natural light helps regulate the circadian   
+2025-08-06 13:20:21,103 - INFO - Subprocess[253]:                 rhythm and signals the body to wake up, easing the         
+2025-08-06 13:20:21,103 - INFO - Subprocess[254]:                 transition from sleep while reinforcing a consistent       
+2025-08-06 13:20:21,103 - INFO - Subprocess[255]:                 wake-up schedule.                                          
+2025-08-06 13:20:21,103 - INFO - Subprocess[256]:           2. Engage in a 5-minute guided breathing or mindfulness        
+2025-08-06 13:20:21,103 - INFO - Subprocess[257]:              session.                                                       
+2025-08-06 13:20:21,103 - INFO - Subprocess[258]:                This brief mindfulness practice reduces work-related     
+2025-08-06 13:20:21,104 - INFO - Subprocess[259]:                  stress and primes the mind for a focused day, especially   
+2025-08-06 13:20:21,104 - INFO - Subprocess[260]:                  useful for novices starting to build a reliable routine.   
+2025-08-06 13:20:21,104 - INFO - Subprocess[261]:         Focus Block                                                     
+2025-08-06 13:20:21,104 - INFO - Subprocess[262]:            08:00 - 09:30                                               
+2025-08-06 13:20:21,104 - INFO - Subprocess[263]:            Why: A dedicated work session allows for uninterrupted      
+2025-08-06 13:20:21,104 - INFO - Subprocess[264]:             focus, critical for productivity while keeping the routine     
+2025-08-06 13:20:21,104 - INFO - Subprocess[265]:             simple to minimize overwhelm.                                  
+2025-08-06 13:20:21,104 - INFO - Subprocess[266]:           1. Set a clear work objective and spend 45 minutes on a        
+2025-08-06 13:20:21,105 - INFO - Subprocess[267]:             focused work session.                                          
+2025-08-06 13:20:21,105 - INFO - Subprocess[268]:               Having a specific goal encourages consistent work        
+2025-08-06 13:20:21,105 - INFO - Subprocess[269]:                 habits and aids in progressive task completion, important  
+2025-08-06 13:20:21,105 - INFO - Subprocess[270]:                 for building self-trust and routine adherence.             
+2025-08-06 13:20:21,105 - INFO - Subprocess[271]:           2. Take a 5-minute stretch break midway to refresh the body.   
+2025-08-06 13:20:21,105 - INFO - Subprocess[272]:                Short physical breaks enhance blood flow and reduce      
+2025-08-06 13:20:21,105 - INFO - Subprocess[273]:                  mental fatigue, which is especially beneficial for         
+2025-08-06 13:20:21,105 - INFO - Subprocess[274]:                  managing stress and keeping energy levels balanced.        
+2025-08-06 13:20:21,106 - INFO - Subprocess[275]:         Afternoon Recharge                                              
+2025-08-06 13:20:21,106 - INFO - Subprocess[276]:            14:00 - 14:20                                               
+2025-08-06 13:20:21,106 - INFO - Subprocess[277]:            Why: A brief recharge session re-energizes the body and     
+2025-08-06 13:20:21,106 - INFO - Subprocess[278]:             mind, helping maintain momentum through the day without        
+2025-08-06 13:20:21,106 - INFO - Subprocess[279]:             overburdening a novice performer.                              
+2025-08-06 13:20:21,106 - INFO - Subprocess[280]:           1. Take a 10-minute light walk outdoors.                       
+2025-08-06 13:20:21,107 - INFO - Subprocess[281]:               Walking provides gentle physical activity that boosts    
+2025-08-06 13:20:21,107 - INFO - Subprocess[282]:                 mood and reduces work-related stress, while also           
+2025-08-06 13:20:21,107 - INFO - Subprocess[283]:                 reinforcing the habit of stepping away for reset periods.  
+2025-08-06 13:20:21,107 - INFO - Subprocess[284]:           2. Practice a 5-minute relaxation or mindfulness exercise.     
+2025-08-06 13:20:21,107 - INFO - Subprocess[285]:                This approach addresses stress and fosters a moment of   
+2025-08-06 13:20:21,107 - INFO - Subprocess[286]:                  mental clarity, essential for maintaining a balanced and   
+2025-08-06 13:20:21,107 - INFO - Subprocess[287]:                  consistent routine.                                        
+2025-08-06 13:20:21,107 - INFO - Subprocess[288]:         Evening Wind-down                                               
+2025-08-06 13:20:21,108 - INFO - Subprocess[289]:             21:00 - 21:35                                               
+2025-08-06 13:20:21,108 - INFO - Subprocess[290]:             Why: A structured wind-down routine aids in transitioning   
+2025-08-06 13:20:21,108 - INFO - Subprocess[291]:              to sleep, reinforces daily consistency, and improves overall   
+2025-08-06 13:20:21,108 - INFO - Subprocess[292]:              sleep quality.                                                 
+2025-08-06 13:20:21,108 - INFO - Subprocess[293]:            1. Perform a 10-minute gentle yoga or stretching routine.      
+2025-08-06 13:20:21,108 - INFO - Subprocess[294]:                Gentle physical activity signals the body to begin       
+2025-08-06 13:20:21,108 - INFO - Subprocess[295]:                  winding down, reduces residual stress from the day, and    
+2025-08-06 13:20:21,108 - INFO - Subprocess[296]:                  promotes better sleep onset.                               
+2025-08-06 13:20:21,109 - INFO - Subprocess[297]:            2. Spend 5 minutes writing in a sleep diary/reflection         
+2025-08-06 13:20:21,109 - INFO - Subprocess[298]:               journal.                                                       
+2025-08-06 13:20:21,109 - INFO - Subprocess[299]:                 Reflecting on the day helps solidify the routine,        
+2025-08-06 13:20:21,109 - INFO - Subprocess[300]:                   allows for stress release, and serves as a tool for        
+2025-08-06 13:20:21,109 - INFO - Subprocess[301]:                   monitoring progress, which is key for habit formation and  
+2025-08-06 13:20:21,109 - INFO - Subprocess[302]:                   long-term consistency.                                     
+2025-08-06 13:20:21,109 - INFO - Subprocess[303]:                                                                              
+2025-08-06 13:20:21,109 - INFO - Subprocess[304]: 
+2025-08-06 13:20:21,109 - INFO - Subprocess[305]:  Creating analysis history record...
+2025-08-06 13:20:21,432 - INFO - Subprocess[306]: [ANALYSIS] Created new analysis record: e6d1a5e6-08d4-4306-8ff4-cb91643af1c8
+2025-08-06 13:20:21,433 - INFO - Subprocess[307]:  Analysis record created: e6d1a5e6-08d4-4306-8ff4-cb91643af1c8
+2025-08-06 13:20:21,434 - INFO - Subprocess[308]:  Logging complete output data...
+2025-08-06 13:20:21,438 - INFO - Subprocess[309]:  Output data logged to output_4.txt
+2025-08-06 13:20:21,439 - INFO - Subprocess[310]: 
+2025-08-06 13:20:21,439 - INFO - Subprocess[311]: ===============================================================================
+2025-08-06 13:20:21,439 - INFO - Subprocess[312]: =
+2025-08-06 13:20:21,440 - INFO - Subprocess[313]:  COMPREHENSIVE HEALTH ANALYSIS COMPLETE! 
+2025-08-06 13:20:21,440 - INFO - → User Response: health_analysis - COMPREHENSIVE HEALTH ANALYSIS COMPLETE!
+2025-08-06 13:20:21,544 - INFO - Subprocess[314]: ===============================================================================
+2025-08-06 13:20:21,544 - INFO - Subprocess[315]: =
+2025-08-06 13:20:21,544 - INFO - Subprocess[316]:  Health metrics analyzed for profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:20:21,544 - INFO - Subprocess[317]:  Comprehensive behavior analysis completed (Structured Output)
+2025-08-06 13:20:21,544 - INFO - → User Response: behavior_analysis - Comprehensive behavior analysis completed (Structu
+2025-08-06 13:20:21,648 - INFO - Subprocess[318]:  Personalized nutrition plan generated (Structured Output)
+2025-08-06 13:20:21,649 - INFO - → User Response: nutrition_planning - Personalized nutrition plan generated (Structured 
+2025-08-06 13:20:21,764 - INFO - Subprocess[319]:  Behaviorally-informed routine plan generated (Structured Output)
+2025-08-06 13:20:21,764 - INFO - → User Response: routine_planning - Behaviorally-informed routine plan generated (Stru
+2025-08-06 13:20:21,873 - INFO - Subprocess[320]:  User memory updated with latest results
+2025-08-06 13:20:21,873 - INFO - Subprocess[321]:  Selected Archetype: Peak Performer
+2025-08-06 13:20:21,873 - INFO - → User Response: processing - Selected Archetype: Peak Performer
+2025-08-06 13:20:21,986 - INFO - Subprocess[322]:  Analysis Type: Initial Analysis
+2025-08-06 13:20:21,986 - INFO - Subprocess[323]: Analysis period: 2025-07-30 17:18:45.999903+00:00 to 2025-08-06
+2025-08-06 13:20:21,986 - INFO - Subprocess[324]: 17:18:45.999903+00:00
+2025-08-06 13:20:21,986 - INFO - Subprocess[325]: ===============================================================================
+2025-08-06 13:20:21,986 - INFO - Subprocess[326]: =
+2025-08-06 13:20:22,145 - INFO - Subprocess ended, total lines processed: 326
+2025-08-06 13:20:22,145 - INFO - Subprocess completed with return code: 0
+2025-08-06 13:20:22,145 - INFO - Analysis completed successfully
+2025-08-06 13:20:22,146 - INFO - === CLEANUP PHASE ===
+2025-08-06 13:20:22,146 - INFO - Terminating process PID: 56980
+2025-08-06 13:20:22,146 - INFO - Process terminated gracefully
+2025-08-06 13:20:22,146 - INFO - Removed process 1850963017424 from active processes
+2025-08-06 13:20:22,146 - INFO - === ANALYSIS REQUEST COMPLETED ===
+2025-08-06 13:20:22,146 - INFO - Active processes remaining: 0
+2025-08-06 13:20:22,250 - INFO - Health Analysis API shutting down...
+2025-08-06 13:20:22,250 - INFO - Dashboard API cleanup completed
+2025-08-06 13:20:24,633 - INFO - Dashboard API Phase 1 endpoints included
+2025-08-06 13:20:24,634 - INFO - Dashboard API Phase 2 endpoints included
+2025-08-06 13:20:24,635 - INFO - Dashboard API successfully initialized
+2025-08-06 13:20:24,636 - INFO - Health Analysis API starting up...
+2025-08-06 13:20:24,637 - INFO - Dashboard API Phase 1 & 2 initialized successfully
+2025-08-06 13:20:24,963 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 13:20:25,125 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/ "HTTP/1.1 200 OK"
+2025-08-06 13:20:25,126 - INFO - hos-fapi health check: healthy
+2025-08-06 13:20:25,126 - INFO - External hos-fapi API connection successful
+2025-08-06 13:20:25,126 - INFO - Phase 2 Analysis Data API features available:
+2025-08-06 13:20:25,126 - INFO -   - Date-based analysis data extraction
+2025-08-06 13:20:25,126 - INFO -   - JSON column parsing (behavior, nutrition, routine, engagement)
+2025-08-06 13:20:25,126 - INFO -   - Multiple analyses per day support
+2025-08-06 13:20:25,126 - INFO -   - Intelligent caching (5min today, 1hr historical)
+2025-08-06 13:20:25,127 - INFO - Health Analysis API shutting down...
+2025-08-06 13:20:25,127 - INFO - Dashboard API cleanup completed
+2025-08-06 13:20:26,932 - INFO - Dashboard API Phase 1 endpoints included
+2025-08-06 13:20:26,933 - INFO - Dashboard API Phase 2 endpoints included
+2025-08-06 13:20:26,933 - INFO - Dashboard API successfully initialized
+2025-08-06 13:20:26,935 - INFO - Health Analysis API starting up...
+2025-08-06 13:20:26,935 - INFO - Dashboard API Phase 1 & 2 initialized successfully
+2025-08-06 13:20:27,264 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 13:20:27,385 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/ "HTTP/1.1 200 OK"
+2025-08-06 13:20:27,386 - INFO - hos-fapi health check: healthy
+2025-08-06 13:20:27,386 - INFO - External hos-fapi API connection successful
+2025-08-06 13:20:27,386 - INFO - Phase 2 Analysis Data API features available:
+2025-08-06 13:20:27,386 - INFO -   - Date-based analysis data extraction
+2025-08-06 13:20:27,386 - INFO -   - JSON column parsing (behavior, nutrition, routine, engagement)
+2025-08-06 13:20:27,386 - INFO -   - Multiple analyses per day support
+2025-08-06 13:20:27,386 - INFO -   - Intelligent caching (5min today, 1hr historical)
+2025-08-06 13:20:55,405 - INFO - Supabase client initialized successfully
+2025-08-06 13:20:55,405 - INFO - CacheService initialized
+2025-08-06 13:20:56,121 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 13:20:56,121 - INFO - DashboardService initialized
+2025-08-06 13:20:56,122 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 13:20:57,276 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 13:20:57,281 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:20:57,281 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:20:57,281 - INFO - DashboardService cleanup completed
+2025-08-06 13:23:18,690 - INFO - Supabase client initialized successfully
+2025-08-06 13:23:18,690 - INFO - CacheService initialized
+2025-08-06 13:23:19,370 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 13:23:19,370 - INFO - DashboardService initialized
+2025-08-06 13:23:19,371 - INFO - Listing users: limit=100, offset=0
+2025-08-06 13:23:20,508 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=id "HTTP/2 200 OK"
+2025-08-06 13:23:20,820 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.qHvNu7XPT3aaiHegu0rfgjIFGns2&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:22,558 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.qHvNu7XPT3aaiHegu0rfgjIFGns2&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:22,876 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.qHvNu7XPT3aaiHegu0rfgjIFGns2 "HTTP/2 200 OK"
+2025-08-06 13:23:23,174 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.hjpIETnPxHftVzrqc3lBiXaXR2Y2&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:23,509 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.hjpIETnPxHftVzrqc3lBiXaXR2Y2&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:23,839 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.hjpIETnPxHftVzrqc3lBiXaXR2Y2 "HTTP/2 200 OK"
+2025-08-06 13:23:24,170 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.test_user_123&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:24,488 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.test_user_123&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:24,810 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.test_user_123 "HTTP/2 200 OK"
+2025-08-06 13:23:25,127 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.test_user_123 "HTTP/2 200 OK"
+2025-08-06 13:23:25,128 - ERROR - Error getting analysis summary for test_user_123: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 13:23:25,258 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.aYBHiMJe0nUrWBz8cv0RBP2sKWA2&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:25,552 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.aYBHiMJe0nUrWBz8cv0RBP2sKWA2&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:25,865 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.aYBHiMJe0nUrWBz8cv0RBP2sKWA2 "HTTP/2 200 OK"
+2025-08-06 13:23:25,998 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.F3woeEZ4ZNYWx6ZXnaoiKmcP6x63&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:26,290 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.F3woeEZ4ZNYWx6ZXnaoiKmcP6x63&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:26,605 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.F3woeEZ4ZNYWx6ZXnaoiKmcP6x63 "HTTP/2 200 OK"
+2025-08-06 13:23:26,719 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=test_user_123 "HTTP/1.1 404 Not Found"
+2025-08-06 13:23:26,721 - WARNING - No scores found for user test_user_123
+2025-08-06 13:23:26,855 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.test_user_123&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:27,184 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.demo_user_456&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:27,501 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.demo_user_456&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:27,641 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.demo_user_456 "HTTP/2 200 OK"
+2025-08-06 13:23:27,964 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.demo_user_456 "HTTP/2 200 OK"
+2025-08-06 13:23:27,964 - ERROR - Error getting analysis summary for demo_user_456: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 13:23:27,966 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=hjpIETnPxHftVzrqc3lBiXaXR2Y2 "HTTP/1.1 404 Not Found"
+2025-08-06 13:23:27,967 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=qHvNu7XPT3aaiHegu0rfgjIFGns2 "HTTP/1.1 404 Not Found"
+2025-08-06 13:23:27,968 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=aYBHiMJe0nUrWBz8cv0RBP2sKWA2 "HTTP/1.1 404 Not Found"
+2025-08-06 13:23:27,969 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=F3woeEZ4ZNYWx6ZXnaoiKmcP6x63 "HTTP/1.1 404 Not Found"
+2025-08-06 13:23:27,969 - WARNING - No scores found for user hjpIETnPxHftVzrqc3lBiXaXR2Y2
+2025-08-06 13:23:28,275 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.hjpIETnPxHftVzrqc3lBiXaXR2Y2&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:28,277 - WARNING - No scores found for user qHvNu7XPT3aaiHegu0rfgjIFGns2
+2025-08-06 13:23:28,580 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.qHvNu7XPT3aaiHegu0rfgjIFGns2&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:28,581 - WARNING - No scores found for user aYBHiMJe0nUrWBz8cv0RBP2sKWA2
+2025-08-06 13:23:28,710 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.aYBHiMJe0nUrWBz8cv0RBP2sKWA2&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:28,711 - WARNING - No scores found for user F3woeEZ4ZNYWx6ZXnaoiKmcP6x63
+2025-08-06 13:23:29,032 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.F3woeEZ4ZNYWx6ZXnaoiKmcP6x63&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:29,343 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:29,682 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:30,006 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 13:23:30,302 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 13:23:30,302 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 13:23:30,615 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:30,937 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:31,073 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1 "HTTP/2 200 OK"
+2025-08-06 13:23:31,075 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=demo_user_456 "HTTP/1.1 404 Not Found"
+2025-08-06 13:23:31,077 - WARNING - No scores found for user demo_user_456
+2025-08-06 13:23:31,391 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.demo_user_456&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:31,392 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/1.1 404 Not Found"
+2025-08-06 13:23:31,393 - WARNING - No scores found for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:23:31,692 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:31,694 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=uJgv8HSUVsdtcFOw4f4nLUG4lYt1 "HTTP/1.1 404 Not Found"
+2025-08-06 13:23:31,695 - WARNING - No scores found for user uJgv8HSUVsdtcFOw4f4nLUG4lYt1
+2025-08-06 13:23:32,008 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.uJgv8HSUVsdtcFOw4f4nLUG4lYt1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:23:32,010 - INFO - Retrieved 8 users (limit=100, offset=0, total=8)
+2025-08-06 13:23:32,011 - INFO - Successfully listed 8 users
+2025-08-06 13:36:16,706 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:36:17,167 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:36:17,420 - INFO - Supabase client initialized successfully
+2025-08-06 13:36:17,420 - INFO - CacheService initialized
+2025-08-06 13:36:17,555 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:36:17,846 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 13:36:18,111 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 13:36:18,111 - INFO - DashboardService initialized
+2025-08-06 13:36:18,152 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 13:36:18,153 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 13:36:18,156 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 13:36:19,221 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 13:36:19,224 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:36:19,224 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:36:19,224 - INFO - DashboardService cleanup completed
+2025-08-06 13:36:19,416 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/1.1 404 Not Found"
+2025-08-06 13:36:19,417 - WARNING - No scores found for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:36:19,727 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 13:36:19,729 - INFO - Retrieved complete profile for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:36:19,729 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:43:40,141 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:43:40,141 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:43:40,876 - INFO - Supabase client initialized successfully
+2025-08-06 13:43:40,876 - INFO - CacheService initialized
+2025-08-06 13:43:41,579 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 13:43:41,579 - INFO - DashboardService initialized
+2025-08-06 13:43:41,580 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 13:43:42,762 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 13:43:42,767 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:43:42,768 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:43:42,768 - INFO - DashboardService cleanup completed
+2025-08-06 13:43:44,990 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:43:44,991 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:43:45,717 - INFO - Supabase client initialized successfully
+2025-08-06 13:43:45,717 - INFO - CacheService initialized
+2025-08-06 13:43:46,406 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 13:43:46,407 - INFO - DashboardService initialized
+2025-08-06 13:43:46,407 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 13:43:47,490 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 13:43:47,493 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:43:47,493 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:43:47,493 - INFO - DashboardService cleanup completed
+2025-08-06 13:44:16,217 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:44:16,217 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 13:44:16,916 - INFO - Supabase client initialized successfully
+2025-08-06 13:44:16,916 - INFO - CacheService initialized
+2025-08-06 13:44:17,596 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 13:44:17,596 - INFO - DashboardService initialized
+2025-08-06 13:44:17,597 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 13:44:18,708 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 13:44:18,710 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:44:18,710 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 13:44:18,710 - INFO - DashboardService cleanup completed
+2025-08-06 14:09:08,891 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:09,399 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-06 14:09:09,612 - INFO - Supabase client initialized successfully
+2025-08-06 14:09:09,612 - INFO - CacheService initialized
+2025-08-06 14:09:09,766 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 14:09:10,059 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 14:09:10,180 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 14:09:10,180 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 14:09:10,314 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/1.1 404 Not Found"
+2025-08-06 14:09:10,315 - WARNING - No scores found for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:10,325 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 14:09:10,325 - INFO - DashboardService initialized
+2025-08-06 14:09:10,626 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 14:09:10,628 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 14:09:11,736 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 14:09:11,737 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:09:11,738 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:09:11,738 - INFO - DashboardService cleanup completed
+2025-08-06 14:09:11,739 - INFO - Retrieved complete profile for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:11,739 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:14,412 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:14,413 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:15,093 - INFO - Supabase client initialized successfully
+2025-08-06 14:09:15,093 - INFO - CacheService initialized
+2025-08-06 14:09:15,794 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 14:09:15,794 - INFO - DashboardService initialized
+2025-08-06 14:09:15,795 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 14:09:16,695 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 14:09:16,696 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:09:16,696 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:09:16,696 - INFO - DashboardService cleanup completed
+2025-08-06 14:09:23,142 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:23,142 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:23,857 - INFO - Supabase client initialized successfully
+2025-08-06 14:09:23,857 - INFO - CacheService initialized
+2025-08-06 14:09:24,565 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 14:09:24,565 - INFO - DashboardService initialized
+2025-08-06 14:09:24,565 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 14:09:25,461 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 14:09:25,462 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:09:25,462 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:09:25,462 - INFO - DashboardService cleanup completed
+2025-08-06 14:09:30,406 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:30,407 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:09:31,051 - INFO - Supabase client initialized successfully
+2025-08-06 14:09:31,051 - INFO - CacheService initialized
+2025-08-06 14:09:31,717 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 14:09:31,717 - INFO - DashboardService initialized
+2025-08-06 14:09:31,718 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 14:09:32,766 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 14:09:32,767 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:09:32,767 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:09:32,767 - INFO - DashboardService cleanup completed
+2025-08-06 14:13:20,787 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:13:20,787 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:13:21,489 - INFO - Supabase client initialized successfully
+2025-08-06 14:13:21,489 - INFO - CacheService initialized
+2025-08-06 14:13:22,185 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 14:13:22,186 - INFO - DashboardService initialized
+2025-08-06 14:13:22,186 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 14:13:23,320 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 14:13:23,321 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:13:23,321 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:13:23,321 - INFO - DashboardService cleanup completed
+2025-08-06 14:13:26,542 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:13:26,542 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:13:27,233 - INFO - Supabase client initialized successfully
+2025-08-06 14:13:27,234 - INFO - CacheService initialized
+2025-08-06 14:13:27,908 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 14:13:27,908 - INFO - DashboardService initialized
+2025-08-06 14:13:27,909 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 14:13:28,955 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 14:13:28,976 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:13:28,977 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:13:28,977 - INFO - DashboardService cleanup completed
+2025-08-06 14:17:54,827 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:17:54,828 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 14:17:55,539 - INFO - Supabase client initialized successfully
+2025-08-06 14:17:55,539 - INFO - CacheService initialized
+2025-08-06 14:17:56,222 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 14:17:56,222 - INFO - DashboardService initialized
+2025-08-06 14:17:56,223 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 14:17:57,365 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 14:17:57,366 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:17:57,366 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:17:57,366 - INFO - DashboardService cleanup completed
+2025-08-06 14:18:07,181 - INFO - Supabase client initialized successfully
+2025-08-06 14:18:07,181 - INFO - CacheService initialized
+2025-08-06 14:18:07,892 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 14:18:07,893 - INFO - DashboardService initialized
+2025-08-06 14:18:07,893 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-05, limit=10, type=None
+2025-08-06 14:18:09,002 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-05&analysis_date=lt.2025-08-05T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 14:18:09,003 - INFO - Retrieved 0 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 14:18:09,004 - INFO - Successfully retrieved 0 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 14:18:09,004 - INFO - DashboardService cleanup completed
+2025-08-06 14:18:12,652 - INFO - Supabase client initialized successfully
+2025-08-06 14:18:12,652 - INFO - CacheService initialized
+2025-08-06 14:18:13,363 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 14:18:13,363 - INFO - DashboardService initialized
+2025-08-06 14:18:13,364 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 14:18:14,249 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 14:18:14,251 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:18:14,251 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 14:18:14,251 - INFO - DashboardService cleanup completed
+2025-08-06 15:19:36,397 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:19:36,891 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-06 15:19:37,134 - INFO - Supabase client initialized successfully
+2025-08-06 15:19:37,134 - INFO - CacheService initialized
+2025-08-06 15:19:37,231 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 15:19:37,516 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 15:19:37,810 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 15:19:37,811 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 15:19:37,838 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:19:37,838 - INFO - DashboardService initialized
+2025-08-06 15:19:37,839 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:19:38,909 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:19:38,911 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:19:38,911 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:19:38,911 - INFO - DashboardService cleanup completed
+2025-08-06 15:19:39,083 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/1.1 404 Not Found"
+2025-08-06 15:19:39,084 - WARNING - No scores found for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:19:39,404 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 15:19:39,405 - INFO - Retrieved complete profile for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:19:39,405 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:40:13,408 - INFO - Health Analysis API shutting down...
+2025-08-06 15:40:13,408 - INFO - Dashboard API cleanup completed
+2025-08-06 15:40:15,933 - INFO - Dashboard API Phase 1 endpoints included
+2025-08-06 15:40:15,934 - INFO - Dashboard API Phase 2 endpoints included
+2025-08-06 15:40:15,935 - INFO - Dashboard API Phase 3 endpoints included
+2025-08-06 15:40:15,935 - INFO - Dashboard API successfully initialized
+2025-08-06 15:40:15,937 - INFO - Health Analysis API starting up...
+2025-08-06 15:40:15,937 - INFO - Dashboard API Phase 1 & 2 initialized successfully
+2025-08-06 15:40:16,260 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:40:16,534 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/ "HTTP/1.1 200 OK"
+2025-08-06 15:40:16,536 - INFO - hos-fapi health check: healthy
+2025-08-06 15:40:16,536 - INFO - External hos-fapi API connection successful
+2025-08-06 15:40:16,536 - INFO - Phase 2 Analysis Data API features available:
+2025-08-06 15:40:16,536 - INFO -   - Date-based analysis data extraction
+2025-08-06 15:40:16,536 - INFO -   - JSON column parsing (behavior, nutrition, routine, engagement)
+2025-08-06 15:40:16,536 - INFO -   - Multiple analyses per day support
+2025-08-06 15:40:16,536 - INFO -   - Intelligent caching (5min today, 1hr historical)
+2025-08-06 15:40:16,537 - INFO - Health Analysis API shutting down...
+2025-08-06 15:40:16,537 - INFO - Dashboard API cleanup completed
+2025-08-06 15:40:18,641 - INFO - Dashboard API Phase 1 endpoints included
+2025-08-06 15:40:18,642 - INFO - Dashboard API Phase 2 endpoints included
+2025-08-06 15:40:18,643 - INFO - Dashboard API Phase 3 endpoints included
+2025-08-06 15:40:18,643 - INFO - Dashboard API successfully initialized
+2025-08-06 15:40:18,645 - INFO - Health Analysis API starting up...
+2025-08-06 15:40:18,645 - INFO - Dashboard API Phase 1 & 2 initialized successfully
+2025-08-06 15:40:18,958 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:40:19,082 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/ "HTTP/1.1 200 OK"
+2025-08-06 15:40:19,082 - INFO - hos-fapi health check: healthy
+2025-08-06 15:40:19,082 - INFO - External hos-fapi API connection successful
+2025-08-06 15:40:19,082 - INFO - Phase 2 Analysis Data API features available:
+2025-08-06 15:40:19,082 - INFO -   - Date-based analysis data extraction
+2025-08-06 15:40:19,082 - INFO -   - JSON column parsing (behavior, nutrition, routine, engagement)
+2025-08-06 15:40:19,082 - INFO -   - Multiple analyses per day support
+2025-08-06 15:40:19,082 - INFO -   - Intelligent caching (5min today, 1hr historical)
+2025-08-06 15:41:00,285 - INFO - Fetching health scores for user mbzXA48h4ASzre407KoFMepfyGv1 from 2025-08-01 to 2025-08-04
+2025-08-06 15:41:00,285 - ERROR - Error fetching health scores: 'HosFapiClient' object has no attribute 'get_health_overview'
+2025-08-06 15:41:00,286 - ERROR - Error in get_health_scores: 'HosFapiClient' object has no attribute 'get_health_overview'
+2025-08-06 15:41:17,849 - INFO - Fetching health biomarkers for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-04
+2025-08-06 15:41:17,849 - ERROR - Error fetching health biomarkers: 'HosFapiClient' object has no attribute 'get_activity_metrics'
+2025-08-06 15:41:17,849 - ERROR - Error in get_health_biomarkers: 'HosFapiClient' object has no attribute 'get_activity_metrics'
+2025-08-06 15:41:34,241 - INFO - Supabase client initialized successfully
+2025-08-06 15:41:34,241 - INFO - CacheService initialized
+2025-08-06 15:41:34,241 - INFO - Supabase client initialized successfully
+2025-08-06 15:41:34,242 - INFO - CacheService initialized
+2025-08-06 15:41:34,644 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:41:34,644 - INFO - DashboardService initialized
+2025-08-06 15:41:34,644 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:41:34,650 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:41:34,650 - INFO - DashboardService initialized
+2025-08-06 15:41:35,414 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:41:35,416 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:41:35,416 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:41:35,416 - INFO - DashboardService cleanup completed
+2025-08-06 15:41:35,418 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:41:36,111 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-06 15:41:37,147 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 15:41:37,439 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 15:41:37,761 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 15:41:37,762 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 15:41:37,764 - INFO - Fetching health scores for user mbzXA48h4ASzre407KoFMepfyGv1 from 2025-08-01 to 2025-08-04
+2025-08-06 15:41:37,764 - ERROR - Error fetching health scores: 'HosFapiClient' object has no attribute 'get_health_overview'
+2025-08-06 15:41:37,764 - ERROR - Error in get_health_scores: 'HosFapiClient' object has no attribute 'get_health_overview'
+2025-08-06 15:41:37,890 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/1.1 404 Not Found"
+2025-08-06 15:41:37,892 - WARNING - No scores found for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:41:38,200 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 15:41:38,200 - INFO - Retrieved complete profile for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:41:38,200 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:44:39,711 - INFO - Fetching health biomarkers for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-04
+2025-08-06 15:44:39,711 - ERROR - Error fetching health biomarkers: 'HosFapiClient' object has no attribute 'get_activity_metrics'
+2025-08-06 15:44:39,712 - ERROR - Error in get_health_biomarkers: 'HosFapiClient' object has no attribute 'get_activity_metrics'
+2025-08-06 15:44:39,919 - INFO - Health Analysis API shutting down...
+2025-08-06 15:44:39,920 - INFO - Dashboard API cleanup completed
+2025-08-06 15:44:42,110 - INFO - Dashboard API Phase 1 endpoints included
+2025-08-06 15:44:42,112 - INFO - Dashboard API Phase 2 endpoints included
+2025-08-06 15:44:42,112 - INFO - Dashboard API Phase 3 endpoints included
+2025-08-06 15:44:42,112 - INFO - Dashboard API successfully initialized
+2025-08-06 15:44:42,114 - INFO - Health Analysis API starting up...
+2025-08-06 15:44:42,114 - INFO - Dashboard API Phase 1 & 2 initialized successfully
+2025-08-06 15:44:42,430 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:44:42,551 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/ "HTTP/1.1 200 OK"
+2025-08-06 15:44:42,551 - INFO - hos-fapi health check: healthy
+2025-08-06 15:44:42,551 - INFO - External hos-fapi API connection successful
+2025-08-06 15:44:42,552 - INFO - Phase 2 Analysis Data API features available:
+2025-08-06 15:44:42,552 - INFO -   - Date-based analysis data extraction
+2025-08-06 15:44:42,552 - INFO -   - JSON column parsing (behavior, nutrition, routine, engagement)
+2025-08-06 15:44:42,552 - INFO -   - Multiple analyses per day support
+2025-08-06 15:44:42,552 - INFO -   - Intelligent caching (5min today, 1hr historical)
+2025-08-06 15:44:42,552 - INFO - Health Analysis API shutting down...
+2025-08-06 15:44:42,552 - INFO - Dashboard API cleanup completed
+2025-08-06 15:44:44,688 - INFO - Dashboard API Phase 1 endpoints included
+2025-08-06 15:44:44,690 - INFO - Dashboard API Phase 2 endpoints included
+2025-08-06 15:44:44,691 - INFO - Dashboard API Phase 3 endpoints included
+2025-08-06 15:44:44,691 - INFO - Dashboard API successfully initialized
+2025-08-06 15:44:44,693 - INFO - Health Analysis API starting up...
+2025-08-06 15:44:44,693 - INFO - Dashboard API Phase 1 & 2 initialized successfully
+2025-08-06 15:44:45,018 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:44:45,131 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/ "HTTP/1.1 200 OK"
+2025-08-06 15:44:45,132 - INFO - hos-fapi health check: healthy
+2025-08-06 15:44:45,132 - INFO - External hos-fapi API connection successful
+2025-08-06 15:44:45,132 - INFO - Phase 2 Analysis Data API features available:
+2025-08-06 15:44:45,132 - INFO -   - Date-based analysis data extraction
+2025-08-06 15:44:45,132 - INFO -   - JSON column parsing (behavior, nutrition, routine, engagement)
+2025-08-06 15:44:45,132 - INFO -   - Multiple analyses per day support
+2025-08-06 15:44:45,132 - INFO -   - Intelligent caching (5min today, 1hr historical)
+2025-08-06 15:45:06,180 - INFO - Fetching health scores for user mbzXA48h4ASzre407KoFMepfyGv1 from 2025-08-01 to 2025-08-04
+2025-08-06 15:45:07,849 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-01 "HTTP/1.1 200 OK"
+2025-08-06 15:45:09,250 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-02 "HTTP/1.1 200 OK"
+2025-08-06 15:45:10,440 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-03 "HTTP/1.1 200 OK"
+2025-08-06 15:45:11,680 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-04 "HTTP/1.1 200 OK"
+2025-08-06 15:45:33,055 - INFO - Fetching health scores for user mbzXA48h4ASzre407KoFMepfyGv1 from 2025-07-01 to 2025-08-04
+2025-08-06 15:45:34,509 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-01 "HTTP/1.1 200 OK"
+2025-08-06 15:45:35,885 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-02 "HTTP/1.1 200 OK"
+2025-08-06 15:45:37,227 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-03 "HTTP/1.1 200 OK"
+2025-08-06 15:45:38,802 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-04 "HTTP/1.1 200 OK"
+2025-08-06 15:45:40,236 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-05 "HTTP/1.1 200 OK"
+2025-08-06 15:45:41,571 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-06 "HTTP/1.1 200 OK"
+2025-08-06 15:45:42,845 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-07 "HTTP/1.1 200 OK"
+2025-08-06 15:45:44,227 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-08 "HTTP/1.1 200 OK"
+2025-08-06 15:45:45,635 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-09 "HTTP/1.1 200 OK"
+2025-08-06 15:45:47,006 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-10 "HTTP/1.1 200 OK"
+2025-08-06 15:45:48,394 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-11 "HTTP/1.1 200 OK"
+2025-08-06 15:45:49,741 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-12 "HTTP/1.1 200 OK"
+2025-08-06 15:45:51,115 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-13 "HTTP/1.1 200 OK"
+2025-08-06 15:45:52,469 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-14 "HTTP/1.1 200 OK"
+2025-08-06 15:45:53,757 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-15 "HTTP/1.1 200 OK"
+2025-08-06 15:45:55,171 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-16 "HTTP/1.1 200 OK"
+2025-08-06 15:45:56,530 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-17 "HTTP/1.1 200 OK"
+2025-08-06 15:45:57,822 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-18 "HTTP/1.1 200 OK"
+2025-08-06 15:45:59,327 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-19 "HTTP/1.1 200 OK"
+2025-08-06 15:46:00,558 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-20 "HTTP/1.1 200 OK"
+2025-08-06 15:46:01,950 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-21 "HTTP/1.1 200 OK"
+2025-08-06 15:46:03,354 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-22 "HTTP/1.1 200 OK"
+2025-08-06 15:46:04,736 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-23 "HTTP/1.1 200 OK"
+2025-08-06 15:46:06,163 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-24 "HTTP/1.1 200 OK"
+2025-08-06 15:46:07,545 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-25 "HTTP/1.1 200 OK"
+2025-08-06 15:46:08,941 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-26 "HTTP/1.1 200 OK"
+2025-08-06 15:46:10,457 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-27 "HTTP/1.1 200 OK"
+2025-08-06 15:46:11,870 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-28 "HTTP/1.1 200 OK"
+2025-08-06 15:46:13,202 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-29 "HTTP/1.1 200 OK"
+2025-08-06 15:46:14,556 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-30 "HTTP/1.1 200 OK"
+2025-08-06 15:46:15,922 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-31 "HTTP/1.1 200 OK"
+2025-08-06 15:46:15,975 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-01 "HTTP/1.1 200 OK"
+2025-08-06 15:46:16,042 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-02 "HTTP/1.1 200 OK"
+2025-08-06 15:46:16,105 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-03 "HTTP/1.1 200 OK"
+2025-08-06 15:46:16,157 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-04 "HTTP/1.1 200 OK"
+2025-08-06 15:46:50,962 - INFO - Fetching health biomarkers for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-01
+2025-08-06 15:46:53,465 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/activity?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-01 "HTTP/1.1 200 OK"
+2025-08-06 15:46:54,567 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/sleep?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-01 "HTTP/1.1 200 OK"
+2025-08-06 15:46:56,260 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/recovery?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-01 "HTTP/1.1 200 OK"
+2025-08-06 15:47:52,006 - INFO - Fetching health biomarkers for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-07-28
+2025-08-06 15:47:53,482 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/activity?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-28 "HTTP/1.1 200 OK"
+2025-08-06 15:47:54,584 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/sleep?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-28 "HTTP/1.1 200 OK"
+2025-08-06 15:47:56,293 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/recovery?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-28 "HTTP/1.1 200 OK"
+2025-08-06 15:49:00,934 - INFO - Supabase client initialized successfully
+2025-08-06 15:49:00,935 - INFO - CacheService initialized
+2025-08-06 15:49:00,941 - INFO - Supabase client initialized successfully
+2025-08-06 15:49:00,941 - INFO - CacheService initialized
+2025-08-06 15:49:01,478 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:49:01,478 - INFO - DashboardService initialized
+2025-08-06 15:49:01,478 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:49:01,482 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:49:01,482 - INFO - DashboardService initialized
+2025-08-06 15:49:02,396 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-06 15:49:03,476 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 15:49:03,772 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 15:49:04,110 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 15:49:04,110 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 15:49:04,111 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:49:04,852 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:49:04,853 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:49:04,853 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:49:04,853 - INFO - DashboardService cleanup completed
+2025-08-06 15:49:04,946 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/1.1 404 Not Found"
+2025-08-06 15:49:04,946 - WARNING - No scores found for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:49:05,267 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 15:49:05,269 - INFO - Retrieved complete profile for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:49:05,269 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:49:12,058 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:49:12,058 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:49:12,495 - INFO - Supabase client initialized successfully
+2025-08-06 15:49:12,496 - INFO - CacheService initialized
+2025-08-06 15:49:12,908 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:49:12,909 - INFO - DashboardService initialized
+2025-08-06 15:49:12,909 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:49:13,657 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:49:13,658 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:49:13,658 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:49:13,658 - INFO - DashboardService cleanup completed
+2025-08-06 15:50:00,954 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:50:00,954 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:50:01,441 - INFO - Supabase client initialized successfully
+2025-08-06 15:50:01,441 - INFO - CacheService initialized
+2025-08-06 15:50:01,905 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:50:01,905 - INFO - DashboardService initialized
+2025-08-06 15:50:01,906 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:50:02,762 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:50:02,763 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:50:02,763 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:50:02,763 - INFO - DashboardService cleanup completed
+2025-08-06 15:50:57,079 - INFO - Fetching health scores for user mbzXA48h4ASzre407KoFMepfyGv1 from 2025-07-30 to 2025-08-06
+2025-08-06 15:50:57,328 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-30 "HTTP/1.1 200 OK"
+2025-08-06 15:50:57,402 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:50:57,402 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:50:57,413 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-31 "HTTP/1.1 200 OK"
+2025-08-06 15:50:57,799 - INFO - Supabase client initialized successfully
+2025-08-06 15:50:57,799 - INFO - CacheService initialized
+2025-08-06 15:50:58,186 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:50:58,186 - INFO - DashboardService initialized
+2025-08-06 15:50:58,186 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:50:58,995 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:50:58,997 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:50:58,997 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:50:58,997 - INFO - DashboardService cleanup completed
+2025-08-06 15:50:58,998 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-01 "HTTP/1.1 200 OK"
+2025-08-06 15:51:00,420 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-02 "HTTP/1.1 200 OK"
+2025-08-06 15:51:01,550 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-03 "HTTP/1.1 200 OK"
+2025-08-06 15:51:02,848 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-04 "HTTP/1.1 200 OK"
+2025-08-06 15:51:04,271 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-05 "HTTP/1.1 200 OK"
+2025-08-06 15:51:05,545 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-06 "HTTP/1.1 200 OK"
+2025-08-06 15:51:05,553 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:52:21,399 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:52:21,399 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:52:21,443 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:52:21,743 - INFO - Supabase client initialized successfully
+2025-08-06 15:52:21,743 - INFO - CacheService initialized
+2025-08-06 15:52:22,066 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:52:22,066 - INFO - DashboardService initialized
+2025-08-06 15:52:22,066 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:52:22,806 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:52:22,808 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:52:22,808 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:52:22,808 - INFO - DashboardService cleanup completed
+2025-08-06 15:53:20,445 - INFO - Fetching health scores for user mbzXA48h4ASzre407KoFMepfyGv1 from 2025-07-23 to 2025-08-06
+2025-08-06 15:53:22,657 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-23 "HTTP/1.1 200 OK"
+2025-08-06 15:53:23,987 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-24 "HTTP/1.1 200 OK"
+2025-08-06 15:53:25,241 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-25 "HTTP/1.1 200 OK"
+2025-08-06 15:53:26,496 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-26 "HTTP/1.1 200 OK"
+2025-08-06 15:53:27,916 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-27 "HTTP/1.1 200 OK"
+2025-08-06 15:53:29,252 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-28 "HTTP/1.1 200 OK"
+2025-08-06 15:53:30,537 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-29 "HTTP/1.1 200 OK"
+2025-08-06 15:53:31,341 - INFO - Fetching health biomarkers for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:53:31,811 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-30 "HTTP/1.1 200 OK"
+2025-08-06 15:53:33,264 - INFO - Fetching health biomarkers for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 15:53:33,636 - INFO - Supabase client initialized successfully
+2025-08-06 15:53:33,636 - INFO - CacheService initialized
+2025-08-06 15:53:34,046 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:53:34,047 - INFO - DashboardService initialized
+2025-08-06 15:53:34,047 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-05, limit=10, type=None
+2025-08-06 15:53:34,808 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-05&analysis_date=lt.2025-08-05T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:53:34,809 - INFO - Retrieved 0 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 15:53:34,809 - INFO - Successfully retrieved 0 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 15:53:34,809 - INFO - DashboardService cleanup completed
+2025-08-06 15:53:35,354 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-07-31 "HTTP/1.1 200 OK"
+2025-08-06 15:53:36,436 - INFO - Fetching health biomarkers for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-04
+2025-08-06 15:53:37,070 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/activity?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-06 "HTTP/1.1 200 OK"
+2025-08-06 15:53:37,071 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/activity?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-05 "HTTP/1.1 200 OK"
+2025-08-06 15:53:37,073 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-01 "HTTP/1.1 200 OK"
+2025-08-06 15:53:37,180 - INFO - Supabase client initialized successfully
+2025-08-06 15:53:37,180 - INFO - CacheService initialized
+2025-08-06 15:53:37,615 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:53:37,615 - INFO - DashboardService initialized
+2025-08-06 15:53:37,616 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-04, limit=10, type=None
+2025-08-06 15:53:38,234 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-04&analysis_date=lt.2025-08-04T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:53:38,236 - INFO - Retrieved 0 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-04
+2025-08-06 15:53:38,237 - INFO - Successfully retrieved 0 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-04
+2025-08-06 15:53:38,237 - INFO - DashboardService cleanup completed
+2025-08-06 15:53:38,792 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/activity?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-04 "HTTP/1.1 200 OK"
+2025-08-06 15:53:39,959 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/sleep?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-06 "HTTP/1.1 200 OK"
+2025-08-06 15:53:41,122 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/sleep?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-05 "HTTP/1.1 200 OK"
+2025-08-06 15:53:43,183 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-02 "HTTP/1.1 200 OK"
+2025-08-06 15:53:43,186 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/recovery?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-06 "HTTP/1.1 200 OK"
+2025-08-06 15:53:44,355 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/sleep?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-04 "HTTP/1.1 200 OK"
+2025-08-06 15:53:46,323 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/recovery?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-05 "HTTP/1.1 200 OK"
+2025-08-06 15:53:46,326 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-03 "HTTP/1.1 200 OK"
+2025-08-06 15:53:48,107 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-04 "HTTP/1.1 200 OK"
+2025-08-06 15:53:48,111 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/recovery?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-04 "HTTP/1.1 200 OK"
+2025-08-06 15:53:48,168 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-05 "HTTP/1.1 200 OK"
+2025-08-06 15:53:48,228 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/overview?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-06 "HTTP/1.1 200 OK"
+2025-08-06 15:54:40,343 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-04
+2025-08-06 15:54:47,033 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-04
+2025-08-06 15:55:01,357 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-04
+2025-08-06 15:55:10,042 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-04
+2025-08-06 15:55:20,360 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-04
+2025-08-06 15:55:26,037 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-04
+2025-08-06 15:55:44,925 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-05
+2025-08-06 15:55:45,394 - INFO - Supabase client initialized successfully
+2025-08-06 15:55:45,394 - INFO - CacheService initialized
+2025-08-06 15:55:45,831 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:55:45,831 - INFO - DashboardService initialized
+2025-08-06 15:55:45,832 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-05, limit=10, type=None
+2025-08-06 15:55:46,742 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-05&analysis_date=lt.2025-08-05T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:55:46,745 - INFO - Retrieved 0 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 15:55:46,745 - INFO - Successfully retrieved 0 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 15:55:46,745 - INFO - DashboardService cleanup completed
+2025-08-06 15:55:49,012 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:55:49,012 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:55:49,049 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:55:49,500 - INFO - Supabase client initialized successfully
+2025-08-06 15:55:49,500 - INFO - CacheService initialized
+2025-08-06 15:55:49,969 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:55:49,969 - INFO - DashboardService initialized
+2025-08-06 15:55:49,969 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:55:50,795 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:55:50,796 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:55:50,797 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:55:50,797 - INFO - DashboardService cleanup completed
+2025-08-06 15:55:52,643 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-06
+2025-08-06 15:56:23,403 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-01
+2025-08-06 15:56:23,809 - INFO - Supabase client initialized successfully
+2025-08-06 15:56:23,809 - INFO - CacheService initialized
+2025-08-06 15:56:24,177 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:56:24,177 - INFO - DashboardService initialized
+2025-08-06 15:56:24,178 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-01, limit=10, type=None
+2025-08-06 15:56:24,949 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-01&analysis_date=lt.2025-08-01T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:56:24,950 - INFO - Retrieved 0 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-01
+2025-08-06 15:56:24,950 - INFO - Successfully retrieved 0 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-01
+2025-08-06 15:56:24,950 - INFO - DashboardService cleanup completed
+2025-08-06 15:57:15,048 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-01
+2025-08-06 15:57:20,038 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-01
+2025-08-06 15:57:26,337 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-01
+2025-08-06 15:57:32,036 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-01
+2025-08-06 15:57:38,350 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-01
+2025-08-06 15:58:02,037 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:58:02,038 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:58:02,351 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:58:02,483 - INFO - Supabase client initialized successfully
+2025-08-06 15:58:02,483 - INFO - CacheService initialized
+2025-08-06 15:58:02,863 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:58:02,863 - INFO - DashboardService initialized
+2025-08-06 15:58:02,864 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:58:03,783 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:58:03,785 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:58:03,785 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:58:03,785 - INFO - DashboardService cleanup completed
+2025-08-06 15:58:07,059 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:58:15,070 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:58:20,050 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:58:20,051 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:58:20,361 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:58:20,449 - INFO - Supabase client initialized successfully
+2025-08-06 15:58:20,449 - INFO - CacheService initialized
+2025-08-06 15:58:20,769 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:58:20,769 - INFO - DashboardService initialized
+2025-08-06 15:58:20,769 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:58:21,376 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:58:21,377 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:58:21,378 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:58:21,378 - INFO - DashboardService cleanup completed
+2025-08-06 15:58:24,089 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:58:24,089 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:58:24,139 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:58:24,470 - INFO - Supabase client initialized successfully
+2025-08-06 15:58:24,470 - INFO - CacheService initialized
+2025-08-06 15:58:24,791 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:58:24,791 - INFO - DashboardService initialized
+2025-08-06 15:58:24,792 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:58:25,520 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:58:25,522 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:58:25,522 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:58:25,522 - INFO - DashboardService cleanup completed
+2025-08-06 15:59:29,776 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:59:29,776 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:59:29,800 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:59:30,257 - INFO - Supabase client initialized successfully
+2025-08-06 15:59:30,258 - INFO - CacheService initialized
+2025-08-06 15:59:30,718 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:59:30,718 - INFO - DashboardService initialized
+2025-08-06 15:59:30,718 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:59:31,565 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:59:31,566 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:59:31,567 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:59:31,567 - INFO - DashboardService cleanup completed
+2025-08-06 15:59:40,923 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:59:40,923 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 15:59:41,232 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 15:59:41,406 - INFO - Supabase client initialized successfully
+2025-08-06 15:59:41,406 - INFO - CacheService initialized
+2025-08-06 15:59:41,818 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:59:41,818 - INFO - DashboardService initialized
+2025-08-06 15:59:41,818 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 15:59:42,723 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:59:42,724 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:59:42,724 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 15:59:42,724 - INFO - DashboardService cleanup completed
+2025-08-06 15:59:47,086 - INFO - Supabase client initialized successfully
+2025-08-06 15:59:47,086 - INFO - CacheService initialized
+2025-08-06 15:59:47,514 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:59:47,514 - INFO - DashboardService initialized
+2025-08-06 15:59:47,514 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-01, limit=10, type=None
+2025-08-06 15:59:48,335 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-01&analysis_date=lt.2025-08-01T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:59:48,336 - INFO - Retrieved 0 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-01
+2025-08-06 15:59:48,336 - INFO - Successfully retrieved 0 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-01
+2025-08-06 15:59:48,336 - INFO - DashboardService cleanup completed
+2025-08-06 15:59:50,701 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-01
+2025-08-06 15:59:57,437 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-05
+2025-08-06 15:59:57,888 - INFO - Supabase client initialized successfully
+2025-08-06 15:59:57,888 - INFO - CacheService initialized
+2025-08-06 15:59:58,284 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 15:59:58,284 - INFO - DashboardService initialized
+2025-08-06 15:59:58,284 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-05, limit=10, type=None
+2025-08-06 15:59:59,087 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-05&analysis_date=lt.2025-08-05T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 15:59:59,091 - INFO - Retrieved 0 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 15:59:59,091 - INFO - Successfully retrieved 0 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 15:59:59,091 - INFO - DashboardService cleanup completed
+2025-08-06 16:00:02,977 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-06
+2025-08-06 16:00:03,323 - INFO - Supabase client initialized successfully
+2025-08-06 16:00:03,323 - INFO - CacheService initialized
+2025-08-06 16:00:03,730 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 16:00:03,730 - INFO - DashboardService initialized
+2025-08-06 16:00:03,730 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 16:00:04,496 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 16:00:04,499 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:00:04,499 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:00:04,499 - INFO - DashboardService cleanup completed
+2025-08-06 16:00:28,610 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:00:28,610 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:00:28,626 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 16:00:29,045 - INFO - Supabase client initialized successfully
+2025-08-06 16:00:29,046 - INFO - CacheService initialized
+2025-08-06 16:00:29,448 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 16:00:29,448 - INFO - DashboardService initialized
+2025-08-06 16:00:29,448 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 16:00:30,264 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 16:00:30,266 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:00:30,266 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:00:30,266 - INFO - DashboardService cleanup completed
+2025-08-06 16:00:59,035 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:00:59,036 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:00:59,345 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 16:00:59,449 - INFO - Supabase client initialized successfully
+2025-08-06 16:00:59,449 - INFO - CacheService initialized
+2025-08-06 16:00:59,785 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 16:00:59,785 - INFO - DashboardService initialized
+2025-08-06 16:00:59,785 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 16:01:00,569 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 16:01:00,571 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:01:00,571 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:01:00,572 - INFO - DashboardService cleanup completed
+2025-08-06 16:01:24,847 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:01:24,847 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:01:25,147 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 16:01:25,318 - INFO - Supabase client initialized successfully
+2025-08-06 16:01:25,318 - INFO - CacheService initialized
+2025-08-06 16:01:25,704 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 16:01:25,704 - INFO - DashboardService initialized
+2025-08-06 16:01:25,704 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 16:01:26,528 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 16:01:26,530 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:01:26,530 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:01:26,530 - INFO - DashboardService cleanup completed
+2025-08-06 16:01:28,858 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-06
+2025-08-06 16:01:32,640 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-05
+2025-08-06 16:01:33,040 - INFO - Supabase client initialized successfully
+2025-08-06 16:01:33,041 - INFO - CacheService initialized
+2025-08-06 16:01:33,451 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 16:01:33,451 - INFO - DashboardService initialized
+2025-08-06 16:01:33,451 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-05, limit=10, type=None
+2025-08-06 16:01:34,233 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-05&analysis_date=lt.2025-08-05T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 16:01:34,233 - INFO - Retrieved 0 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 16:01:34,233 - INFO - Successfully retrieved 0 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-05
+2025-08-06 16:01:34,233 - INFO - DashboardService cleanup completed
+2025-08-06 16:01:37,517 - INFO - Cache hit for health biomarkers: health_biomarkers:mbzXA48h4ASzre407KoFMepfyGv1:2025-08-06
+2025-08-06 16:01:37,913 - INFO - Supabase client initialized successfully
+2025-08-06 16:01:37,913 - INFO - CacheService initialized
+2025-08-06 16:01:38,081 - INFO - Fetching health biomarkers for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-07
+2025-08-06 16:01:38,335 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 16:01:38,335 - INFO - DashboardService initialized
+2025-08-06 16:01:38,336 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 16:01:38,973 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 16:01:38,975 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:01:38,976 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:01:38,976 - INFO - DashboardService cleanup completed
+2025-08-06 16:01:39,416 - INFO - Supabase client initialized successfully
+2025-08-06 16:01:39,416 - INFO - CacheService initialized
+2025-08-06 16:01:39,748 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 16:01:39,748 - INFO - DashboardService initialized
+2025-08-06 16:01:39,748 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-07, limit=10, type=None
+2025-08-06 16:01:40,429 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-07&analysis_date=lt.2025-08-07T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 16:01:40,429 - INFO - Retrieved 0 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-07
+2025-08-06 16:01:40,429 - INFO - Successfully retrieved 0 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-07
+2025-08-06 16:01:40,429 - INFO - DashboardService cleanup completed
+2025-08-06 16:01:40,974 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/activity?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-07 "HTTP/1.1 200 OK"
+2025-08-06 16:01:42,374 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/sleep?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-07 "HTTP/1.1 200 OK"
+2025-08-06 16:01:44,437 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/recovery?profile_id=mbzXA48h4ASzre407KoFMepfyGv1&period=2025-08-07 "HTTP/1.1 200 OK"
+2025-08-06 16:04:17,730 - INFO - Listing users: limit=100, offset=0
+2025-08-06 16:04:18,151 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=profile_id "HTTP/2 200 OK"
+2025-08-06 16:04:18,521 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:18,820 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:19,104 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 16:04:19,410 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 16:04:19,412 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 16:04:19,717 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.test_user_123&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:19,848 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.test_user_123&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:20,143 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.test_user_123 "HTTP/2 200 OK"
+2025-08-06 16:04:20,452 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.test_user_123 "HTTP/2 200 OK"
+2025-08-06 16:04:20,453 - ERROR - Error getting analysis summary for test_user_123: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 16:04:20,760 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.demo_user_456&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:21,047 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.demo_user_456&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:21,341 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.demo_user_456 "HTTP/2 200 OK"
+2025-08-06 16:04:21,463 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.demo_user_456 "HTTP/2 200 OK"
+2025-08-06 16:04:21,464 - ERROR - Error getting analysis summary for demo_user_456: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 16:04:21,571 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/1.1 404 Not Found"
+2025-08-06 16:04:21,573 - WARNING - No scores found for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:04:21,858 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:21,861 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=demo_user_456 "HTTP/1.1 404 Not Found"
+2025-08-06 16:04:21,862 - INFO - HTTP Request: GET https://hos-fapi-hm-sahha.onrender.com/api/v1/health-metrics/scores?profile_id=test_user_123 "HTTP/1.1 404 Not Found"
+2025-08-06 16:04:21,863 - WARNING - No scores found for user demo_user_456
+2025-08-06 16:04:21,987 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.demo_user_456&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:21,988 - WARNING - No scores found for user test_user_123
+2025-08-06 16:04:22,105 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/scores?select=%2A&profile_id=eq.test_user_123&order=score_date_time.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:22,107 - INFO - Retrieved 3 users (limit=100, offset=0, total=3)
+2025-08-06 16:04:22,107 - INFO - Successfully listed 3 users
+2025-08-06 16:04:51,149 - INFO - Listing users: limit=100, offset=0
+2025-08-06 16:04:51,149 - INFO - Successfully listed 3 users
+2025-08-06 16:04:56,066 - INFO - Getting user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:04:56,435 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/profiles?select=%2A&id=eq.mbzXA48h4ASzre407KoFMepfyGv1&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:56,774 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&order=analysis_date.desc&limit=1 "HTTP/2 200 OK"
+2025-08-06 16:04:56,925 - INFO - HTTP Request: HEAD https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 16:04:57,052 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=analysis_type&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1 "HTTP/2 200 OK"
+2025-08-06 16:04:57,053 - ERROR - Error getting analysis summary for mbzXA48h4ASzre407KoFMepfyGv1: 'AnalysisRecord' object has no attribute 'get'
+2025-08-06 16:04:57,053 - INFO - Retrieved complete profile for user mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:04:57,053 - INFO - Successfully retrieved user profile: mbzXA48h4ASzre407KoFMepfyGv1
+2025-08-06 16:04:57,070 - INFO - Cache hit for health scores: health_scores:mbzXA48h4ASzre407KoFMepfyGv1:2025-07-30:2025-08-06
+2025-08-06 16:04:57,455 - INFO - Supabase client initialized successfully
+2025-08-06 16:04:57,455 - INFO - CacheService initialized
+2025-08-06 16:04:57,886 - INFO - HosFapiClient initialized with base_url: https://hos-fapi-hm-sahha.onrender.com
+2025-08-06 16:04:57,886 - INFO - DashboardService initialized
+2025-08-06 16:04:57,887 - INFO - Analysis data request: user=mbzXA48h4ASzre407KoFMepfyGv1, date=2025-08-06, limit=10, type=None
+2025-08-06 16:04:58,458 - INFO - HTTP Request: GET https://ijcckqnqruwvqqbkiubb.supabase.co/rest/v1/analysis_memory?select=%2A&profile_id=eq.mbzXA48h4ASzre407KoFMepfyGv1&analysis_date=gte.2025-08-06&analysis_date=lt.2025-08-06T23%3A59%3A59.999999%2B00%3A00&order=analysis_date.desc%2Ccreated_at.desc&limit=10 "HTTP/2 200 OK"
+2025-08-06 16:04:58,459 - INFO - Retrieved 1 analysis records for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:04:58,459 - INFO - Successfully retrieved 1 analyses for user mbzXA48h4ASzre407KoFMepfyGv1 on 2025-08-06
+2025-08-06 16:04:58,459 - INFO - DashboardService cleanup completed

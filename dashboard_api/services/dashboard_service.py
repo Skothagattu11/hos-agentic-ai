@@ -12,6 +12,7 @@ from ..models.phase1_models import (
     ServiceStatus, SystemStatistics, CachePerformance,
     ServiceInfoResponse, ExternalServices, ArchetypeEnum
 )
+from ..models.phase2_models import AnalysisDataResponse, AnalysisRecord
 
 logger = logging.getLogger(__name__)
 
@@ -327,6 +328,126 @@ class DashboardService:
             ),
             supported_archetypes=list(ArchetypeEnum)
         )
+    
+    async def get_user_analysis_data(
+        self, 
+        user_id: str, 
+        date: str, 
+        limit: int = 10, 
+        analysis_type: Optional[str] = None
+    ) -> AnalysisDataResponse:
+        """
+        Fetch all analysis_memory records for user on specific date.
+        Returns complete JSON columns for frontend display.
+        
+        Args:
+            user_id: Profile ID to fetch data for
+            date: Date in YYYY-MM-DD format
+            limit: Maximum number of analyses to return (default: 10)
+            analysis_type: Optional filter by 'initial' or 'follow_up'
+            
+        Returns:
+            AnalysisDataResponse with all analysis records for the date
+        """
+        try:
+            logger.debug(f"Fetching analysis data for user {user_id} on {date} (limit={limit}, type={analysis_type})")
+            
+            # Check cache first
+            cache_key = f"analysis_data:{user_id}:{date}:{analysis_type or 'all'}:{limit}"
+            cached_result = await self.cache_service.get(cache_key)
+            if cached_result:
+                logger.debug(f"Returning cached analysis data for {user_id} on {date}")
+                return AnalysisDataResponse(**cached_result)
+            
+            # Build query with filters
+            query = """
+            SELECT 
+                id, profile_id, analysis_date, analysis_type, archetype, 
+                previous_analysis_id, behavior_analysis, nutrition_plan, 
+                routine_plan, user_preferences, health_goals, dietary_restrictions,
+                lifestyle_context, medical_conditions, analysis_insights, 
+                health_trends, improvement_areas, success_patterns, 
+                engagement_metrics, performance_metrics, extras,
+                created_at, updated_at
+            FROM analysis_memory 
+            WHERE profile_id = $1 AND DATE(analysis_date) = $2
+            """
+            
+            params = [user_id, date]
+            
+            # Add analysis_type filter if specified
+            if analysis_type:
+                query += " AND analysis_type = $3"
+                params.append(analysis_type)
+                query += " ORDER BY analysis_date DESC, created_at DESC LIMIT $4"
+                params.append(limit)
+            else:
+                query += " ORDER BY analysis_date DESC, created_at DESC LIMIT $3"
+                params.append(limit)
+            
+            logger.debug(f"Executing query with params: {params}")
+            
+            # Execute query via database service
+            records = await self.db_service.fetch_all(query, params)
+            
+            logger.debug(f"Found {len(records)} analysis records for user {user_id} on {date}")
+            
+            # Transform records to response format
+            analyses = []
+            for record in records:
+                try:
+                    analysis = AnalysisRecord(
+                        analysis_id=str(record["id"]),
+                        analysis_date=record["analysis_date"],
+                        analysis_type=record["analysis_type"],
+                        archetype=record["archetype"],
+                        previous_analysis_id=str(record["previous_analysis_id"]) if record["previous_analysis_id"] else None,
+                        created_at=record["created_at"],
+                        updated_at=record["updated_at"],
+                        
+                        # JSON columns - return as parsed objects, handle None gracefully
+                        behavior_analysis=record["behavior_analysis"] or {},
+                        nutrition_plan=record["nutrition_plan"] or {},
+                        routine_plan=record["routine_plan"] or {},
+                        user_preferences=record["user_preferences"] or {},
+                        health_goals=record["health_goals"] or {},
+                        dietary_restrictions=record["dietary_restrictions"] or {},
+                        lifestyle_context=record["lifestyle_context"] or {},
+                        medical_conditions=record["medical_conditions"] or {},
+                        analysis_insights=record["analysis_insights"] or {},
+                        health_trends=record["health_trends"] or {},
+                        improvement_areas=record["improvement_areas"] or {},
+                        success_patterns=record["success_patterns"] or {},
+                        engagement_metrics=record["engagement_metrics"] or {},
+                        performance_metrics=record["performance_metrics"] or {},
+                        extras=record["extras"] or {}
+                    )
+                    analyses.append(analysis)
+                    
+                except Exception as e:
+                    logger.error(f"Error parsing analysis record {record.get('id', 'unknown')}: {e}")
+                    continue  # Skip malformed records
+            
+            response = AnalysisDataResponse(
+                user_id=user_id,
+                date=date,
+                total_analyses=len(analyses),
+                analyses=analyses
+            )
+            
+            # Cache the result (1 hour for historical dates, 5 minutes for today)
+            from datetime import date as date_module
+            today = date_module.today().isoformat()
+            cache_ttl = 300 if date == today else 3600  # 5 minutes for today, 1 hour for historical
+            
+            await self.cache_service.set(cache_key, response.dict(), ttl=cache_ttl)
+            
+            logger.info(f"Retrieved {len(analyses)} analysis records for user {user_id} on {date}")
+            return response
+            
+        except Exception as e:
+            logger.error(f"Error fetching analysis data for user {user_id} on {date}: {e}")
+            raise Exception(f"Error fetching analysis data: {str(e)}")
     
     async def cleanup(self):
         """Cleanup resources"""

@@ -228,3 +228,75 @@ class DatabaseService:
             results["supabase_database"] = f"error: {str(e)}"
         
         return results
+    
+    async def fetch_all(self, query: str, params: List[Any]) -> List[Dict[str, Any]]:
+        """
+        Execute raw SQL query and return all results.
+        For Phase 2 analysis data extraction.
+        
+        Args:
+            query: SQL query string with $1, $2, etc. placeholders
+            params: List of parameters to bind to query
+            
+        Returns:
+            List of dictionaries representing query results
+        """
+        try:
+            logger.debug(f"Executing query: {query[:100]}... with {len(params)} params")
+            
+            # Get Supabase client
+            client = None
+            if self.supabase:
+                client = self.supabase
+            elif hasattr(self.analysis_history.connection, 'client'):
+                client = self.analysis_history.connection.client
+            
+            if not client:
+                raise Exception("No database client available")
+            
+            # Convert PostgreSQL-style query ($1, $2) to Supabase RPC or direct table query
+            # For analysis_memory queries, we'll use Supabase table API instead of raw SQL
+            
+            if "FROM analysis_memory" in query and "WHERE profile_id = $1 AND DATE(analysis_date) = $2" in query:
+                # Handle the specific analysis_memory query for Phase 2
+                profile_id = params[0]
+                target_date = params[1]
+                
+                # Build Supabase query
+                query_builder = client.table('analysis_memory')\
+                    .select('*')\
+                    .eq('profile_id', profile_id)\
+                    .gte('analysis_date', target_date)\
+                    .lt('analysis_date', f"{target_date}T23:59:59.999999+00:00")\
+                    .order('analysis_date', desc=True)\
+                    .order('created_at', desc=True)
+                
+                # Add analysis_type filter if provided
+                if len(params) >= 4 and params[2]:  # analysis_type parameter exists
+                    query_builder = query_builder.eq('analysis_type', params[2])
+                    limit_value = params[3] if len(params) > 3 else params[2]  # Handle parameter order
+                else:
+                    limit_value = params[2] if len(params) > 2 else 10
+                
+                # Apply limit
+                if isinstance(limit_value, int):
+                    query_builder = query_builder.limit(limit_value)
+                
+                # Execute query
+                response = query_builder.execute()
+                
+                if response.data:
+                    logger.debug(f"Query returned {len(response.data)} results")
+                    return response.data
+                else:
+                    logger.debug("Query returned no results")
+                    return []
+            
+            else:
+                # For other queries, try to handle generically or raise error
+                logger.error(f"Unsupported query type: {query[:50]}...")
+                raise Exception("This query type is not yet supported by fetch_all method")
+            
+        except Exception as e:
+            logger.error(f"Error executing query: {e}")
+            raise Exception(f"Database query failed: {str(e)}")

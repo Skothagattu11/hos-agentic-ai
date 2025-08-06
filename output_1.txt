@@ -1,0 +1,316 @@
+{
+  "timestamp": "2025-08-06T10:33:49.978911",
+  "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+  "user_data_summary": {
+    "date_range": {
+      "start_date": "2025-08-05T14:31:59.119274+00:00",
+      "end_date": "2025-08-06T14:31:59.119274+00:00",
+      "days": "1970-01-01 00:00:01+00:00"
+    },
+    "data_counts": {
+      "scores": 0,
+      "biomarkers": 0,
+      "archetypes": 28
+    },
+    "score_types": [],
+    "biomarker_categories": [],
+    "archetype_names": [
+      "bed_schedule",
+      "overall_wellness",
+      "wake_schedule",
+      "sleep_efficiency",
+      "sleep_pattern"
+    ]
+  },
+  "behavior_analysis": {
+    "analysis_date": "2025-08-06",
+    "user_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+    "behavioral_signature": {
+      "signature": "Stalled Initiation",
+      "confidence": 0.3
+    },
+    "sophistication_assessment": {
+      "score": 5,
+      "category": "Novice",
+      "justification": "The drastic drop in completion rate from 75% to 0%, combined with zero self-modifications and proactive behaviors over the past day, clearly indicates regression. Despite stable biomarker trends, the behavioral engagement remains critically low, anchoring the user in the initiation phase."
+    },
+    "primary_goal": {
+      "goal": "Re-establish a consistent daily routine and reignite habit formation",
+      "timeline": "Next 7 days",
+      "success_metrics": [
+        "Achieve >50% daily completion rate",
+        "Record at least one proactive behavior daily",
+        "Maintain a minimum 2-day consistency streak"
+      ]
+    },
+    "adaptive_parameters": {
+      "complexity_level": "Low",
+      "time_commitment": "Minimal",
+      "technology_integration": "Basic",
+      "customization_level": "High"
+    },
+    "evidence_based_kpis": {
+      "behavioral_metrics": [
+        "Daily completion rate",
+        "Frequency of self-modification events"
+      ],
+      "performance_metrics": [
+        "On-time task completion",
+        "Consistency streak length"
+      ],
+      "mastery_metrics": [
+        "Strength of cue-to-routine association",
+        "Progress in habitual integration"
+      ]
+    },
+    "personalized_strategy": {
+      "motivation_drivers": [
+        "Immediate reinforcement",
+        "Positive feedback"
+      ],
+      "habit_integration": [
+        "Introduce micro-habits with clear, incremental steps",
+        "Utilize simplified routines to reduce decision fatigue"
+      ],
+      "barrier_mitigation": [
+        "Implement short-term accountability prompts",
+        "Analyze and minimize environmental distractions"
+      ]
+    },
+    "adaptation_framework": {
+      "escalation_triggers": [
+        "Completion rate consistently above 50% for 3 consecutive days",
+        "Noticeable improvement in self-modification behaviors"
+      ],
+      "deescalation_triggers": [
+        "0% completion rate for 2 consecutive days",
+        "Absence of any proactive engagement"
+      ],
+      "adaptation_frequency": "Daily"
+    },
+    "readiness_level": "Novice",
+    "habit_formation_stage": "Initiation",
+    "motivation_profile": {
+      "primary_drivers": [
+        "Immediate feedback",
+        "Simplicity"
+      ],
+      "secondary_drivers": [],
+      "motivation_type": "Intrinsic",
+      "reward_preferences": [
+        "Small, immediate rewards"
+      ],
+      "accountability_level": "High",
+      "social_motivation": "Low"
+    },
+    "context_considerations": [
+      "Immediate low engagement environment",
+      "Lack of proactive behavior and self-driven modifications"
+    ],
+    "recommendations": [
+      "Reintroduce micro-habits with an emphasis on immediate, tangible rewards",
+      "Leverage external accountability tools to prompt daily engagement",
+      "Simplify tasks to minimize cognitive load and barriers to initiation",
+      "Increase frequency of behavioral prompts and cues throughout the day"
+    ]
+  },
+  "nutrition_plan": {
+    "date": "2025-08-06",
+    "nutrition": {
+      "summary": "This personalized nutrition plan is designed for today to help re-establish a consistent daily routine by incorporating clear, structured meal timings and nutrient-dense foods. Each meal is carefully timed to support energy levels, brain function, and recovery based on your current behavioral patterns and archetypes.",
+      "nutritional_info": {
+        "calories": 2000,
+        "protein": 105,
+        "protein_percent": 20,
+        "carbs": 200,
+        "carbs_percent": 50,
+        "fat": 62,
+        "fat_percent": 30,
+        "fiber": 30,
+        "sugar": 60,
+        "sodium": 1500,
+        "potassium": 3500,
+        "vitamins": {
+          "Vitamin_D": "600 IU",
+          "Calcium": "1000 mg",
+          "Iron": "18 mg",
+          "Magnesium": "400 mg"
+        }
+      },
+      "Early_Morning": {
+        "time_range": "5:45-6:15 AM",
+        "nutrition_tip": "Starting your day with hydration jumpstarts metabolism and signals your body to begin digesting the day’s nutrients. This light intake keeps your routine simple, which is great for habit formation.",
+        "meals": [
+          {
+            "name": "Lemon Water & Herbal Infusion",
+            "details": "300 ml of warm water mixed with the juice of half a lemon and one teaspoon of honey, accompanied by a cup of chamomile tea. This combination promotes hydration, aids digestion, and gently wakes up your metabolism.",
+            "calories": 20,
+            "protein": 0,
+            "macros": {
+              "carbs": 5,
+              "fat": 0
+            }
+          }
+        ]
+      },
+      "Breakfast": {
+        "time_range": "6:30-7:00 AM",
+        "nutrition_tip": "A nutrient-dense breakfast supports brain function and helps set a steady energy level for the day, essential for re-establishing a consistent routine.",
+        "meals": [
+          {
+            "name": "Oatmeal with Berries & Nuts",
+            "details": "Prepare 1/2 cup of rolled oats cooked in 1 cup of unsweetened almond milk. Top with 1/2 cup mixed berries and 1 tablespoon chopped walnuts. This meal is rich in fiber and antioxidants to kickstart your day.",
+            "calories": 350,
+            "protein": 10,
+            "macros": {
+              "carbs": 50,
+              "fat": 10
+            }
+          }
+        ]
+      },
+      "Morning_Snack": {
+        "time_range": "9:30-10:00 AM",
+        "nutrition_tip": "A balanced mid-morning snack helps maintain steady blood sugar levels and prevents energy dips, promoting focused productivity.",
+        "meals": [
+          {
+            "name": "Greek Yogurt with Honey and Almonds",
+            "details": "Enjoy 150 grams of low-fat Greek yogurt drizzled with 1 teaspoon of honey and topped with 10 almonds. This snack offers a blend of protein and healthy fats to sustain energy.",
+            "calories": 150,
+            "protein": 12,
+            "macros": {
+              "carbs": 15,
+              "fat": 5
+            }
+          }
+        ]
+      },
+      "Lunch": {
+        "time_range": "12:00-12:30 PM",
+        "nutrition_tip": "A hearty and balanced lunch refuels the body, maintains energy levels, and supports sustained mental performance during your active midday hours.",
+        "meals": [
+          {
+            "name": "Quinoa Salad with Grilled Chicken",
+            "details": "Enjoy 3 oz of grilled chicken breast served over 1 cup of quinoa mixed with chopped bell peppers, cucumber, and cherry tomatoes, drizzled with 1 teaspoon of olive oil and lemon juice dressing. This meal offers lean protein and complex carbohydrates.",
+            "calories": 450,
+            "protein": 30,
+            "macros": {
+              "carbs": 45,
+              "fat": 15
+            }
+          }
+        ]
+      },
+      "Afternoon_Snack": {
+        "time_range": "3:00-3:30 PM",
+        "nutrition_tip": "An afternoon snack replenishes energy following activity and helps curb late-day cravings, keeping you aligned with your daily routine goals.",
+        "meals": [
+          {
+            "name": "Apple with Peanut Butter",
+            "details": "Consume one medium apple paired with 1 tablespoon of natural peanut butter. This snack delivers a mix of simple and complex carbohydrates along with a small amount of protein and healthy fats.",
+            "calories": 200,
+            "protein": 4,
+            "macros": {
+              "carbs": 30,
+              "fat": 9
+            }
+          }
+        ]
+      },
+      "Dinner": {
+        "time_range": "6:00-6:30 PM",
+        "nutrition_tip": "A balanced dinner provides essential nutrients for muscle recovery and stabilizes energy levels overnight, crucial for long-term health and routine reinforcement.",
+        "meals": [
+          {
+            "name": "Baked Salmon with Steamed Broccoli and Sweet Potato",
+            "details": "Enjoy 3 oz of baked salmon seasoned with herbs, alongside 1 cup of steamed broccoli and one medium baked sweet potato. This meal is rich in omega-3 fatty acids, antioxidants, and complex carbohydrates.",
+            "calories": 500,
+            "protein": 35,
+            "macros": {
+              "carbs": 40,
+              "fat": 20
+            }
+          }
+        ]
+      },
+      "Evening_Snack": {
+        "time_range": "8:30-9:00 PM",
+        "nutrition_tip": "A light, protein-rich evening snack aids in muscle repair and stabilizes blood sugar levels, supporting a restful night's sleep and reinforcing daily routine consistency.",
+        "meals": [
+          {
+            "name": "Cottage Cheese with Sliced Peaches",
+            "details": "Combine 1/2 cup of low-fat cottage cheese with half a sliced peach. This snack is an excellent source of casein protein which slowly releases amino acids during sleep.",
+            "calories": 150,
+            "protein": 14,
+            "macros": {
+              "carbs": 15,
+              "fat": 3
+            }
+          }
+        ]
+      }
+    }
+  },
+  "routine_plan": {
+    "date": "2025-08-06",
+    "routine": {
+      "summary": "Daily routine plan designed to gently reintroduce consistent behavior through micro-habits. This routine offers immediate reinforcement, positive feedback, and low barriers to entry, aligning with a novice's readiness and initiation stage.",
+      "morning_wakeup": {
+        "time_range": "07:00 - 07:45",
+        "why_it_matters": "A gentle start creates a positive momentum for the day. Establishing fundamental micro-habits immediately reinforces accountability and builds the foundation for further routine adherence.",
+        "tasks": [
+          {
+            "task": "Drink a glass of water upon waking",
+            "reason": "Hydration supports cognitive clarity and physically rewards the initiation of the day, offering an immediate positive benefit."
+          },
+          {
+            "task": "Perform a 5-minute light stretching routine",
+            "reason": "Simple stretching activates blood flow and muscle engagement, lowering the barrier to physical activity and providing a quick reinforcement mechanism."
+          }
+        ]
+      },
+      "focus_block": {
+        "time_range": "09:00 - 10:30",
+        "why_it_matters": "A clearly structured focus block helps establish a disciplined work pattern, crucial for building consistency. The tasks are kept minimal to reduce decision fatigue.",
+        "tasks": [
+          {
+            "task": "Write down 3 main goals for today",
+            "reason": "Clarifying priorities offers immediate cognitive organization, reinforcing the habit of planning and providing a sense of accomplishment with low complexity."
+          },
+          {
+            "task": "Engage in a 25-minute timed work session with a short break after",
+            "reason": "A brief, structured work session promotes sustained focus, making it easier to build work habits without overwhelming cognitive load."
+          }
+        ]
+      },
+      "afternoon_recharge": {
+        "time_range": "13:00 - 13:30",
+        "why_it_matters": "Short, restorative activities prevent afternoon fatigue and re-energize the mind, reinforcing the value of taking minimal but effective breaks.",
+        "tasks": [
+          {
+            "task": "Take a 5-7 minute brisk walk",
+            "reason": "Light physical activity quickly boosts mood and energy while offering immediate physical feedback with minimal effort."
+          },
+          {
+            "task": "Practice a 5-minute mindfulness breathing exercise",
+            "reason": "This micro-habit aids in stress reduction and mental clarity, reinforcing the value of short breaks and providing an instant sense of calm."
+          }
+        ]
+      },
+      "evening_winddown": {
+        "time_range": "20:00 - 20:35",
+        "why_it_matters": "Wind-down activities signal the mind and body to transition into recovery mode, ensuring improved sleep and reinforcing the habit of relaxation.",
+        "tasks": [
+          {
+            "task": "Implement a 10-minute digital disconnect",
+            "reason": "Reducing screen time before sleep lowers cognitive stimulation, allowing for a smoother transition to rest and immediate relief from digital overwhelm."
+          },
+          {
+            "task": "Write down one thing you are grateful for today",
+            "reason": "Engaging in reflection promotes positive reinforcement and builds a habit of gratitude, contributing to improved mood and satisfaction."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -65,6 +65,106 @@ class HosFapiClient:
         """Get user biomarkers"""
         return await self.get_health_metrics(profile_id, "biomarkers")
     
+    async def get_health_overview(self, profile_id: str, period: str = "today") -> Optional[Dict[str, Any]]:
+        """Get health overview from hos-fapi-hm-sahha-main"""
+        try:
+            logger.debug(f"Fetching health overview for user {profile_id}, period: {period}")
+            
+            response = await self.client.get(
+                "/api/v1/health-metrics/overview",
+                params={"profile_id": profile_id, "period": period}
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                logger.debug(f"Successfully fetched health overview for user {profile_id}")
+                return data
+            elif response.status_code == 404:
+                logger.warning(f"No health overview found for user {profile_id}")
+                return None
+            else:
+                logger.error(f"HTTP {response.status_code} getting health overview: {response.text}")
+                response.raise_for_status()
+                
+        except Exception as e:
+            logger.error(f"Error getting health overview: {e}")
+            raise
+    
+    async def get_activity_metrics(self, profile_id: str, period: str = "today") -> Optional[Dict[str, Any]]:
+        """Get activity metrics from hos-fapi-hm-sahha-main"""
+        try:
+            logger.debug(f"Fetching activity metrics for user {profile_id}, period: {period}")
+            
+            response = await self.client.get(
+                "/api/v1/health-metrics/activity",
+                params={"profile_id": profile_id, "period": period}
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                logger.debug(f"Successfully fetched activity metrics for user {profile_id}")
+                return data
+            elif response.status_code == 404:
+                logger.warning(f"No activity metrics found for user {profile_id}")
+                return None
+            else:
+                logger.error(f"HTTP {response.status_code} getting activity metrics: {response.text}")
+                response.raise_for_status()
+                
+        except Exception as e:
+            logger.error(f"Error getting activity metrics: {e}")
+            raise
+    
+    async def get_sleep_metrics(self, profile_id: str, period: str = "today") -> Optional[Dict[str, Any]]:
+        """Get sleep metrics from hos-fapi-hm-sahha-main"""
+        try:
+            logger.debug(f"Fetching sleep metrics for user {profile_id}, period: {period}")
+            
+            response = await self.client.get(
+                "/api/v1/health-metrics/sleep",
+                params={"profile_id": profile_id, "period": period}
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                logger.debug(f"Successfully fetched sleep metrics for user {profile_id}")
+                return data
+            elif response.status_code == 404:
+                logger.warning(f"No sleep metrics found for user {profile_id}")
+                return None
+            else:
+                logger.error(f"HTTP {response.status_code} getting sleep metrics: {response.text}")
+                response.raise_for_status()
+                
+        except Exception as e:
+            logger.error(f"Error getting sleep metrics: {e}")
+            raise
+    
+    async def get_recovery_metrics(self, profile_id: str, period: str = "today") -> Optional[Dict[str, Any]]:
+        """Get recovery metrics from hos-fapi-hm-sahha-main"""
+        try:
+            logger.debug(f"Fetching recovery metrics for user {profile_id}, period: {period}")
+            
+            response = await self.client.get(
+                "/api/v1/health-metrics/recovery",
+                params={"profile_id": profile_id, "period": period}
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                logger.debug(f"Successfully fetched recovery metrics for user {profile_id}")
+                return data
+            elif response.status_code == 404:
+                logger.warning(f"No recovery metrics found for user {profile_id}")
+                return None
+            else:
+                logger.error(f"HTTP {response.status_code} getting recovery metrics: {response.text}")
+                response.raise_for_status()
+                
+        except Exception as e:
+            logger.error(f"Error getting recovery metrics: {e}")
+            raise
+    
     async def health_check(self) -> bool:
         """Check if hos-fapi-hm-sahha-main is accessible"""
         try:

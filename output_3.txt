@@ -1,0 +1,351 @@
+{
+  "timestamp": "2025-08-06T11:37:47.614439",
+  "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+  "user_data_summary": {
+    "date_range": {
+      "start_date": "2025-08-05T15:35:35.360670+00:00",
+      "end_date": "2025-08-06T15:35:35.360670+00:00",
+      "days": "1970-01-01 00:00:01+00:00"
+    },
+    "data_counts": {
+      "scores": 0,
+      "biomarkers": 0,
+      "archetypes": 28
+    },
+    "score_types": [],
+    "biomarker_categories": [],
+    "archetype_names": [
+      "sleep_pattern",
+      "overall_wellness",
+      "bed_schedule",
+      "sleep_efficiency",
+      "wake_schedule"
+    ]
+  },
+  "behavior_analysis": {
+    "analysis_date": "2025-08-06",
+    "user_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+    "behavioral_signature": {
+      "signature": "Routine Disruption",
+      "confidence": 0.65
+    },
+    "sophistication_assessment": {
+      "score": 10,
+      "category": "Novice",
+      "justification": "The current behavioral performance shows a drastic decline with a 75% drop in completion rates and minimal engagement in self-modifications and proactive actions. Although biomarker trends remain stable, low task execution indicates significant regression from previously emerging consistency."
+    },
+    "primary_goal": {
+      "goal": "Re-establish daily routine consistency and restart habit formation",
+      "timeline": "Next 14 days",
+      "success_metrics": [
+        "Increase completion rate to at least 60%",
+        "Achieve a minimum 3-day continuous streak",
+        "Record at least one self-modification or proactive action per week"
+      ]
+    },
+    "adaptive_parameters": {
+      "complexity_level": "Low",
+      "time_commitment": "15-30 minutes daily",
+      "technology_integration": "Moderate",
+      "customization_level": "High"
+    },
+    "evidence_based_kpis": {
+      "behavioral_metrics": [
+        "Daily completion rate",
+        "Frequency of self-modifications",
+        "Number of proactive behaviors"
+      ],
+      "performance_metrics": [
+        "On-time completion percentage",
+        "Timeliness of task initiation"
+      ],
+      "mastery_metrics": [
+        "Consistency streak",
+        "Progression from initiation to early habit formation"
+      ]
+    },
+    "personalized_strategy": {
+      "motivation_drivers": [
+        "Need for structure",
+        "Desire for accountability"
+      ],
+      "habit_integration": [
+        "Implement micro-habit triggers",
+        "Utilize routine reminders"
+      ],
+      "barrier_mitigation": [
+        "Simplify tasks to reduce overwhelm",
+        "Introduce immediate rewards to incentivize small wins"
+      ]
+    },
+    "adaptation_framework": {
+      "escalation_triggers": [
+        "Completion rate above 80% for 7 consecutive days",
+        "Consistent daily engagement and self-initiated behaviors"
+      ],
+      "deescalation_triggers": [
+        "No task completions for 3 or more consecutive days",
+        "Persistently low streaks and engagement levels"
+      ],
+      "adaptation_frequency": "Weekly reassessment"
+    },
+    "readiness_level": "Novice",
+    "habit_formation_stage": "Initiation",
+    "motivation_profile": {
+      "primary_drivers": [
+        "Structure",
+        "Accountability"
+      ],
+      "secondary_drivers": [
+        "Social support",
+        "External encouragement"
+      ],
+      "motivation_type": "Mixed",
+      "reward_preferences": [
+        "Immediate tangible rewards",
+        "Verbal praise"
+      ],
+      "accountability_level": "High",
+      "social_motivation": "High"
+    },
+    "context_considerations": [
+      "Stable biomarker profiles indicating healthy physiological status",
+      "Potential environmental distractions affecting routine adherence"
+    ],
+    "recommendations": [
+      "Focus on re-establishing a very simple, consistent daily routine using micro-goals.",
+      "Utilize reminders and accountability partners to overcome current barriers.",
+      "Gradually increase task complexity only after demonstrating sustained improvements.",
+      "Engage in weekly self-review sessions to adjust strategies based on progress."
+    ]
+  },
+  "nutrition_plan": {
+    "date": "2025-08-06",
+    "nutrition": {
+      "summary": "This nutrition plan is designed for a day of re-establishing routine and building healthy habits. With structured meal timings, each block is tailored to deliver balanced macronutrients, essential vitamins, and energy to support cognitive function, muscle recovery, and overall well-being. The plan emphasizes simple, nutrient-dense foods to foster consistency and ease in habit formation.",
+      "nutritional_info": {
+        "calories": 1900,
+        "protein": 100,
+        "protein_percent": 21,
+        "carbs": 240,
+        "carbs_percent": 50,
+        "fat": 60,
+        "fat_percent": 28,
+        "fiber": 25,
+        "sugar": 35,
+        "sodium": 1500,
+        "potassium": 3500,
+        "vitamins": {
+          "Vitamin_D": "600 IU",
+          "Calcium": "1000 mg",
+          "Iron": "18 mg",
+          "Magnesium": "400 mg"
+        }
+      },
+      "Early_Morning": {
+        "time_range": "5:45-6:15 AM",
+        "nutrition_tip": "Starting the day with hydration and light nutrients boosts metabolism and sets a positive tone for a consistent morning routine.",
+        "meals": [
+          {
+            "name": "Lemon-Infused Apple & Almonds",
+            "details": "Enjoy a small apple (~95 calories) paired with 5 raw almonds (~35 calories) to gently wake up your digestive system, providing natural sugars, fiber, and a hint of healthy fats.",
+            "calories": 130,
+            "protein": 3,
+            "macros": {
+              "carbs": 27,
+              "fat": 5
+            }
+          }
+        ]
+      },
+      "Breakfast": {
+        "time_range": "6:30-7:00 AM",
+        "nutrition_tip": "A balanced breakfast with brain-boosting foods supports cognitive function and sets an organized tone for the day.",
+        "meals": [
+          {
+            "name": "Spinach Egg Toast",
+            "details": "One slice whole grain toast topped with 1 scrambled egg and a handful of baby spinach, finished with 1/4 avocado spread. This meal provides complex carbohydrates, lean protein, and healthy fats to kickstart your day.",
+            "calories": 220,
+            "protein": 12,
+            "macros": {
+              "carbs": 25,
+              "fat": 8
+            }
+          },
+          {
+            "name": "Blueberry Walnut Smoothie",
+            "details": "Blend 8 oz of unsweetened almond milk with 1/2 cup blueberries and 1 tbsp chopped walnuts for a refreshing dose of antioxidants and omega-3 fatty acids.",
+            "calories": 150,
+            "protein": 4,
+            "macros": {
+              "carbs": 20,
+              "fat": 6
+            }
+          }
+        ]
+      },
+      "Morning_Snack": {
+        "time_range": "9:30-10:00 AM",
+        "nutrition_tip": "A nutrient-dense mid-morning snack helps sustain energy levels and prevent fatigue until lunch.",
+        "meals": [
+          {
+            "name": "Greek Yogurt with Honey, Chia, and Granola",
+            "details": "1 small container of Greek yogurt drizzled with a bit of honey, mixed with 1 tsp chia seeds and topped with 1 tbsp granola. This snack combines protein, probiotics, and a crunchy texture to keep you energized.",
+            "calories": 170,
+            "protein": 10,
+            "macros": {
+              "carbs": 20,
+              "fat": 3
+            }
+          }
+        ]
+      },
+      "Lunch": {
+        "time_range": "12:00-12:30 PM",
+        "nutrition_tip": "A protein-rich, fiber-filled lunch supports sustained energy and concentration through the midday hours.",
+        "meals": [
+          {
+            "name": "Grilled Chicken Salad",
+            "details": "A fresh salad featuring 3 oz of grilled chicken breast over 2 cups of mixed greens with cherry tomatoes and cucumber, dressed lightly with 1 tsp olive oil and vinegar. This dish is high in lean protein and vitamins.",
+            "calories": 250,
+            "protein": 25,
+            "macros": {
+              "carbs": 10,
+              "fat": 10
+            }
+          },
+          {
+            "name": "Whole Grain Roll",
+            "details": "Enjoy a freshly baked whole grain roll that adds complex carbohydrates necessary for a steady afternoon energy release.",
+            "calories": 200,
+            "protein": 5,
+            "macros": {
+              "carbs": 40,
+              "fat": 2
+            }
+          }
+        ]
+      },
+      "Afternoon_Snack": {
+        "time_range": "3:00-3:30 PM",
+        "nutrition_tip": "A light afternoon snack helps replenish energy after activity without overloading your digestive system.",
+        "meals": [
+          {
+            "name": "Apple Slices with Peanut Butter",
+            "details": "One medium apple sliced and paired with 1 tablespoon of natural peanut butter provides a balance of natural sugars, fiber, and healthy fats for sustained energy.",
+            "calories": 190,
+            "protein": 4,
+            "macros": {
+              "carbs": 28,
+              "fat": 9
+            }
+          }
+        ]
+      },
+      "Dinner": {
+        "time_range": "6:00-6:30 PM",
+        "nutrition_tip": "A balanced dinner is essential for muscle recovery and to prepare the body for a restful night, integrating lean protein with complex carbohydrates and vegetables.",
+        "meals": [
+          {
+            "name": "Baked Salmon",
+            "details": "A 4 oz portion of baked salmon seasoned with lemon and herbs, rich in omega-3 fatty acids and high-quality protein.",
+            "calories": 230,
+            "protein": 25,
+            "macros": {
+              "carbs": 0,
+              "fat": 15
+            }
+          },
+          {
+            "name": "Quinoa & Steamed Broccoli",
+            "details": "A hearty side of 3/4 cup cooked quinoa paired with 1 cup steamed broccoli drizzled with a touch of olive oil provides complex carbs, fiber, and a spectrum of micronutrients.",
+            "calories": 210,
+            "protein": 6,
+            "macros": {
+              "carbs": 30,
+              "fat": 7
+            }
+          }
+        ]
+      },
+      "Evening_Snack": {
+        "time_range": "8:30-9:00 PM",
+        "nutrition_tip": "A light, protein-rich evening snack supports muscle recovery and aids in a calm transition to sleep.",
+        "meals": [
+          {
+            "name": "Cottage Cheese & Pineapple with Almonds",
+            "details": "A bowl combining 1/2 cup low-fat cottage cheese with pineapple chunks, topped with 5 unsalted almonds. This snack delivers slow-digesting protein and a touch of natural sweetness to end the day.",
+            "calories": 150,
+            "protein": 12,
+            "macros": {
+              "carbs": 12,
+              "fat": 3
+            }
+          }
+        ]
+      }
+    }
+  },
+  "routine_plan": {
+    "date": "2025-08-06",
+    "routine": {
+      "summary": "This routine is designed for re-establishing consistency through small, manageable micro-tasks. The focus is on structure and accountability, minimizing overwhelm while building habits through immediate, simple rewards.",
+      "morning_wakeup": {
+        "time_range": "07:00-07:15",
+        "why_it_matters": "A clear, structured morning sets the tone for the day. Starting with hydration and a moment of intention creates a positive, accountable mindset that’s ideal for initiating a new habit.",
+        "tasks": [
+          {
+            "task": "Drink a glass of water and do light stretching",
+            "reason": "Hydration and gentle movement help activate your body and signal the start of your day, making it easier to build a consistent routine."
+          },
+          {
+            "task": "Reflect on one priority for the day",
+            "reason": "Spending a minute to mentally outline your main goal offers structure and instills accountability, which is crucial at the initiation stage."
+          }
+        ]
+      },
+      "focus_block": {
+        "time_range": "08:00-08:20",
+        "why_it_matters": "A short but focused session helps cultivate concentration without overpowering your limited daily time commitment. It builds a sense of achievement and encourages a routine of productive micro-goals.",
+        "tasks": [
+          {
+            "task": "Engage in a 10-minute deep work or focused task session",
+            "reason": "A compact work session leverages peak concentration while remaining simple and non-intimidating, reinforcing the habit of deliberate focus."
+          },
+          {
+            "task": "Take a 5-minute break to assess progress",
+            "reason": "Brief reflective pauses foster accountability and provide immediate feedback, essential for maintaining motivation and clarity."
+          }
+        ]
+      },
+      "afternoon_recharge": {
+        "time_range": "13:00-13:10",
+        "why_it_matters": "A mid-day energy boost helps overcome potential distractions and maintains overall engagement. Keeping the activities short supports consistent commitment amidst distractions.",
+        "tasks": [
+          {
+            "task": "Take a 5-minute walk or perform simple stretches",
+            "reason": "Light physical activity boosts your energy levels while being easy to implement, supporting both physical wellness and attention revitalization."
+          },
+          {
+            "task": "Practice 3-5 minutes of mindful breathing",
+            "reason": "Mindful breathing reduces stress and strengthens mental focus, creating both immediate rewards and a foundation for future routine success."
+          }
+        ]
+      },
+      "evening_winddown": {
+        "time_range": "21:30-21:45",
+        "why_it_matters": "A structured wind-down enables recovery, helps you review the day’s accomplishments, and primes your body for restful sleep, solidifying the day’s routines.",
+        "tasks": [
+          {
+            "task": "Reflect and write down one achievement or positive moment",
+            "reason": "Journaling a small win reinforces accountability and provides immediate positive feedback, which is key to building consistent, rewarding habits."
+          },
+          {
+            "task": "Engage in a 5-minute relaxation routine (e.g., calming music or light meditation)",
+            "reason": "A focused wind-down reduces mental clutter and prepares both body and mind for sleep, ensuring the routine ends on a satisfying note."
+          }
+        ]
+      }
+    }
+  }
+}

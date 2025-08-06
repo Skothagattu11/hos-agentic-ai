@@ -1,0 +1,349 @@
+{
+  "timestamp": "2025-08-06T10:36:58.508233",
+  "profile_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+  "user_data_summary": {
+    "date_range": {
+      "start_date": "2025-07-30T14:34:51.199145+00:00",
+      "end_date": "2025-08-06T14:34:51.199145+00:00",
+      "days": "1970-01-01 00:00:07+00:00"
+    },
+    "data_counts": {
+      "scores": 25,
+      "biomarkers": 81,
+      "archetypes": 28
+    },
+    "score_types": [
+      "activity",
+      "mental_wellbeing",
+      "wellbeing",
+      "readiness",
+      "sleep"
+    ],
+    "biomarker_categories": [
+      "sleep",
+      "activity"
+    ],
+    "archetype_names": [
+      "sleep_efficiency",
+      "overall_wellness",
+      "wake_schedule",
+      "bed_schedule",
+      "sleep_pattern"
+    ]
+  },
+  "behavior_analysis": {
+    "analysis_date": "2025-08-06",
+    "user_id": "mbzXA48h4ASzre407KoFMepfyGv1",
+    "behavioral_signature": {
+      "signature": "Emerging Consistency",
+      "confidence": 0.8
+    },
+    "sophistication_assessment": {
+      "score": 30,
+      "category": "Novice",
+      "justification": "The user shows a moderate plan completion rate of 73.8% but has a low frequency of proactive behaviors and self-initiated activity. A current streak of only 1 day, along with an average delay of 15 minutes and declining biomarker trends, indicates an early stage of habit formation."
+    },
+    "primary_goal": {
+      "goal": "Increase daily consistency and improve sleep quality",
+      "timeline": "30_days",
+      "success_metrics": [
+        "Achieve >80% plan completion",
+        "Reduce average delay to <10 minutes",
+        "Report improved sleep quality"
+      ]
+    },
+    "adaptive_parameters": {
+      "complexity_level": "Low",
+      "time_commitment": "Moderate daily commitment",
+      "technology_integration": "Basic",
+      "customization_level": "Basic"
+    },
+    "evidence_based_kpis": {
+      "behavioral_metrics": [
+        "daily plan completion",
+        "current streak",
+        "check-in delay"
+      ],
+      "performance_metrics": [
+        "plan completion rate",
+        "on-time completion rate",
+        "sleep efficiency"
+      ],
+      "mastery_metrics": [
+        "improvement in overall consistency",
+        "habit automaticity"
+      ]
+    },
+    "personalized_strategy": {
+      "motivation_drivers": [
+        "health improvement",
+        "self-care"
+      ],
+      "habit_integration": [
+        "Establish consistent morning and evening routines",
+        "Implement an evening routine checklist"
+      ],
+      "barrier_mitigation": [
+        "Schedule adjustments to mitigate work stress and seasonal changes",
+        "Prioritize sleep hygiene practices"
+      ]
+    },
+    "adaptation_framework": {
+      "escalation_triggers": [
+        "Sustained >80% plan completion for 7 days",
+        "Emergence of self-initiated tasks"
+      ],
+      "deescalation_triggers": [
+        "Persistently high average delays",
+        "Further decline in biomarker trends"
+      ],
+      "adaptation_frequency": "weekly re-evaluation"
+    },
+    "readiness_level": "Novice",
+    "habit_formation_stage": "Initiation",
+    "motivation_profile": {
+      "primary_drivers": [
+        "health improvement",
+        "self-care"
+      ],
+      "secondary_drivers": [
+        "better sleep",
+        "stress reduction"
+      ],
+      "motivation_type": "Intrinsic",
+      "reward_preferences": [
+        "immediate feedback",
+        "visual progress tracking"
+      ],
+      "accountability_level": "Medium",
+      "social_motivation": "Low"
+    },
+    "context_considerations": [
+      "work_stress",
+      "seasonal_changes"
+    ],
+    "recommendations": [
+      "Focus on establishing a consistent routine",
+      "Prioritize sleep hygiene",
+      "Reduce delays by scheduling specific check-in times",
+      "Monitor progress closely over the next 30 days"
+    ]
+  },
+  "nutrition_plan": {
+    "date": "2025-07-30",
+    "nutrition": {
+      "summary": "Personalized daily nutrition plan tailored to support improved sleep quality, sustained energy, and overall wellness. This plan emphasizes hydration, balanced macronutrients, and mindful nutrient timing to help establish consistent routines and mitigate work stress.",
+      "nutritional_info": {
+        "calories": 2000,
+        "protein": 125,
+        "protein_percent": 25,
+        "carbs": 225,
+        "carbs_percent": 45,
+        "fat": 67,
+        "fat_percent": 30,
+        "fiber": 30,
+        "sugar": 50,
+        "sodium": 2300,
+        "potassium": 4700,
+        "vitamins": {
+          "Vitamin_D": "600 IU",
+          "Calcium": "1000 mg",
+          "Iron": "18 mg",
+          "Magnesium": "400 mg"
+        }
+      },
+      "Early_Morning": {
+        "time_range": "5:45-6:15 AM",
+        "nutrition_tip": "Kickstart your metabolism and stabilize your circadian rhythm with hydration and a light protein boost to support digestion and wakeful alertness.",
+        "meals": [
+          {
+            "name": "Warm Lemon Water & Greek Yogurt with Berries",
+            "details": "Begin your day with a cup of warm water infused with lemon and a dash of honey, paired with 100g of plain Greek yogurt and ½ cup of mixed berries. This combination hydrates you and provides a light source of protein and antioxidants.",
+            "calories": 150,
+            "protein": 11,
+            "macros": {
+              "carbs": 18,
+              "fat": 1
+            }
+          }
+        ]
+      },
+      "Breakfast": {
+        "time_range": "6:30-7:00 AM",
+        "nutrition_tip": "Incorporating brain-boosting foods in the morning fuels cognitive function and helps stabilize energy, which is vital for managing work stress and fostering mental clarity.",
+        "meals": [
+          {
+            "name": "Spinach & Avocado Omelet with Whole-Grain Toast",
+            "details": "Prepare an omelet using 2 eggs, a handful of fresh spinach, and 1/4 of an avocado. Serve with a slice of whole-grain toast. This meal delivers quality protein, healthy fats, and complex carbohydrates to sustain energy levels.",
+            "calories": 280,
+            "protein": 16,
+            "macros": {
+              "carbs": 18,
+              "fat": 16
+            }
+          }
+        ]
+      },
+      "Morning_Snack": {
+        "time_range": "9:30-10:00 AM",
+        "nutrition_tip": "A balanced mid-morning snack stabilizes blood sugar levels and provides a steady release of energy to avoid a mid-morning slump.",
+        "meals": [
+          {
+            "name": "Apple Slices with Almonds",
+            "details": "Enjoy a small apple, sliced and paired with 12 raw almonds. This snack offers natural sugars, fiber, and healthy fats to keep you energized until lunch.",
+            "calories": 136,
+            "protein": 3,
+            "macros": {
+              "carbs": 17,
+              "fat": 7
+            }
+          }
+        ]
+      },
+      "Lunch": {
+        "time_range": "12:00-12:30 PM",
+        "nutrition_tip": "A protein-rich, balanced meal with lean meat, whole grains, and fresh vegetables fuels sustained energy and aids muscle repair over the afternoon.",
+        "meals": [
+          {
+            "name": "Grilled Chicken Salad with Quinoa",
+            "details": "Combine 3 oz of grilled chicken breast with 1/2 cup of cooked quinoa, a bed of mixed greens, cherry tomatoes, and cucumbers. Drizzle with 1 tbsp of olive oil. This meal offers lean protein, complex carbohydrates, and healthy fats.",
+            "calories": 400,
+            "protein": 30,
+            "macros": {
+              "carbs": 25,
+              "fat": 20
+            }
+          }
+        ]
+      },
+      "Afternoon_Snack": {
+        "time_range": "3:00-3:30 PM",
+        "nutrition_tip": "Following any physical or mental activity, refuel with a combination of simple carbohydrates and protein to assist in muscle recovery and maintain steady energy.",
+        "meals": [
+          {
+            "name": "High-Protein Energy Bar",
+            "details": "Select an energy bar that provides at least 15g of protein, 25g of carbohydrates, and moderate healthy fats to quickly replenish energy stores.",
+            "calories": 200,
+            "protein": 15,
+            "macros": {
+              "carbs": 25,
+              "fat": 7
+            }
+          },
+          {
+            "name": "Fresh Banana",
+            "details": "A small banana offers natural sugars and potassium, which supports muscle function and further boosts energy.",
+            "calories": 90,
+            "protein": 1,
+            "macros": {
+              "carbs": 23,
+              "fat": 0
+            }
+          }
+        ]
+      },
+      "Dinner": {
+        "time_range": "6:00-6:30 PM",
+        "nutrition_tip": "An evening meal focused on recovery incorporates anti-inflammatory nutrients, aiding in muscle repair and promoting better sleep quality.",
+        "meals": [
+          {
+            "name": "Baked Salmon with Steamed Broccoli and Sweet Potato",
+            "details": "Enjoy a 4 oz portion of baked salmon, served with 1 cup of steamed broccoli and a medium sweet potato. This dish supplies omega-3 fatty acids, lean protein, and complex carbohydrates essential for recovery.",
+            "calories": 390,
+            "protein": 31,
+            "macros": {
+              "carbs": 35,
+              "fat": 15
+            }
+          }
+        ]
+      },
+      "Evening_Snack": {
+        "time_range": "8:30-9:00 PM",
+        "nutrition_tip": "A light snack in the evening prevents hunger without overloading the digestive system, promoting relaxation and better sleep quality.",
+        "meals": [
+          {
+            "name": "Whole-Grain Crackers with Low-Fat Cheese",
+            "details": "Pair 5 whole-grain crackers with a slice of low-fat cheese and a calming cup of chamomile tea. This modest snack delivers protein and complex carbohydrates to support nighttime recovery.",
+            "calories": 120,
+            "protein": 7,
+            "macros": {
+              "carbs": 13,
+              "fat": 4
+            }
+          }
+        ]
+      }
+    }
+  },
+  "routine_plan": {
+    "date": "2025-08-07",
+    "routine": {
+      "summary": "Today's routine is designed to establish a consistent daily rhythm that promotes better sleep quality, reduces work stress, and initiates a habit of structured self-care. Each task is set at a novice complexity level and tailored to your emerging consistency profile while keeping the commitment moderate and practical.",
+      "morning_wakeup": {
+        "time_range": "7:00 - 7:45 AM",
+        "why_it_matters": "A consistent morning routine sets your circadian rhythm and primes you for a day of health improvements and self-care. This block focuses on hydration, gentle movement, and reflection to jump-start your day with low complexity.",
+        "tasks": [
+          {
+            "task": "Drink a glass of water and perform a 5-minute deep-breathing exercise.",
+            "reason": "Hydration and mindful breathing boost circulation and mental clarity, essential for initiating improved sleep hygiene and overall self-care."
+          },
+          {
+            "task": "Engage in 5-7 minutes of light stretching or yoga.",
+            "reason": "Gentle stretching activates muscles and relieves tension, counteracting sleep stiffness and preparing your body for the day ahead."
+          },
+          {
+            "task": "Spend 5 minutes journaling your sleep reflections and setting 1-2 simple goals for the day.",
+            "reason": "Documenting sleep quality and intentions builds consistency, reinforcing a commitment to self-care and gradual habit formation."
+          }
+        ]
+      },
+      "focus_block": {
+        "time_range": "9:00 - 10:30 AM",
+        "why_it_matters": "This block is designed to build an early habit of focused productivity while maintaining cognitive clarity. It is crafted to address work-related stress and enhance concentration through simple, structured tasks.",
+        "tasks": [
+          {
+            "task": "Identify and note your top 3 priorities for the day.",
+            "reason": "Clarifying your daily goals reduces work stress and aligns your actions with performance improvements by creating a clear mental roadmap."
+          },
+          {
+            "task": "Engage in a 60-minute deep-focus work session on one priority task.",
+            "reason": "A sustained work period helps in developing focused energy, critical for building productive habits without overwhelming you."
+          },
+          {
+            "task": "Take a 5-minute mindfulness break to perform light breathing exercises.",
+            "reason": "Interrupting prolonged focus with short breaks minimizes cognitive fatigue and maintains advanced performance consistency."
+          }
+        ]
+      },
+      "afternoon_recharge": {
+        "time_range": "1:00 - 1:20 PM",
+        "why_it_matters": "A quick rejuvenation period helps break the sedentary cycle, reduces stress, and improves overall mood. This block is vital to maintain steady energy levels and mitigate work-related pressures.",
+        "tasks": [
+          {
+            "task": "Take a 10-minute brisk walk, either outdoors or in a well-lit indoor space.",
+            "reason": "Physical movement stimulates blood flow and can help counteract post-lunch drowsiness, aligning with self-care and health improvement goals."
+          },
+          {
+            "task": "Spend 5 minutes on a mindfulness check-in, focusing on your posture and breathing.",
+            "reason": "A brief reset using meditation can ease work-related stress and lay the groundwork for consistent energy management and sleep improvement."
+          }
+        ]
+      },
+      "evening_winddown": {
+        "time_range": "9:00 - 9:35 PM",
+        "why_it_matters": "An effective evening wind-down enhances sleep quality by signaling the body to prepare for rest. Prioritizing screen-free time and gentle relaxation optimizes your sleep hygiene.",
+        "tasks": [
+          {
+            "task": "Engage in a 20-minute digital detox by reading or enjoying a quiet hobby.",
+            "reason": "Minimizing screen exposure before bed supports your circadian rhythm and reduces mental overstimulation, directly aiding sleep quality."
+          },
+          {
+            "task": "Perform 10 minutes of guided relaxation stretching or progressive muscle relaxation.",
+            "reason": "Targeted relaxation exercises help release the physical tension accrued throughout the day, creating a calming transition to a restorative sleep state."
+          }
+        ]
+      }
+    }
+  }
+}
